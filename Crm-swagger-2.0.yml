@@ -194,36 +194,18 @@ paths:
         - token
       tags:
       - session
-  /logout:
+  /rest/CrmGroup:
     get:
-      summary: Logout (revoke bearer token)
+      summary: Search CrmGroup business object records or get contextualized metadata
       security:
       - bearerAuth: []
       produces:
       - application/json
-      operationId: logout
-      responses:
-        '200':
-          description: Successfull logout
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-      tags:
-      - session
-  /rest/CrmMeanOfContact:
-    get:
-      summary: Search CrmMeanOfContact business object records or get contextualized
-        metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-crmmeanofcontact-search
+      operationId: obj-crmgroup-search
       responses:
         '200':
           schema:
-            $ref: '#/definitions/ArrayOfCrmMeanOfContact'
+            $ref: '#/definitions/ArrayOfCrmGroup'
           description: Success in searching business object records (or in getting
             contextualized business object metadata, documentation, ...)
         '401':
@@ -251,40 +233,127 @@ paths:
         type: boolean
         required: false
       - in: query
-        name: crmMocPriority
-        description: Search filter for Priority
+        name: crmGrpName
+        description: Search filter for Name
+        type: string
+        required: false
+      tags:
+      - CrmGroup
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      tags:
+      - session
+  /rest/CrmLead:
+    get:
+      summary: Search CrmLead business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmlead-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfCrmLead'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: crmLeadCreation
+        description: Search filter for Lead Création
+        type: string
+        required: false
+      - in: query
+        name: crmLeadDirection
+        description: Search filter for Lead direction
         type: string
         required: false
         enum:
-        - '1'
-        - '2'
-        - '3'
+        - N
+        - O
+        - I
       - in: query
-        name: crmMocType
-        description: Search filter for Type
+        name: crmLeadTitle
+        description: Search filter for Title
+        type: string
+        required: false
+      - in: query
+        name: crmLeadState
+        description: Search filter for Etat
         type: string
         required: false
         enum:
-        - Email
-        - Phone
-        - Fax
+        - TBQ
+        - OK
+        - KO
       - in: query
-        name: crmMocContent
-        description: Search filter for Content
-        type: string
-        required: false
-      - in: query
-        name: crmMocCtcId
+        name: crmLeadCtcId
         description: Search filter for Contact
         type: string
         required: false
       - in: query
-        name: crmMocCtcId__crmCtcName
+        name: crmLeadCtcId__crmCtcName
         description: Search filter for Contact Contact name
         type: string
         required: false
+      - in: query
+        name: crmLeadCtcId__crmCtcAccId__crmAccName
+        description: Search filter for Contact Account Account name
+        type: string
+        required: false
+      - in: query
+        name: crmLeadCtcId__crmCtcAccId
+        description: Search filter for Contact Account
+        type: string
+        required: false
+      - in: query
+        name: crmLeadCtcId__crmCtcUsrId
+        description: Search filter for Contact User
+        type: string
+        required: false
+      - in: query
+        name: crmLeadCtcId__crmCtcUsrId__usr_login
+        description: Search filter for Login
+        type: string
+        required: false
       tags:
-      - CrmMeanOfContact
+      - CrmLead
   /rest/CrmAccount:
     get:
       summary: Search CrmAccount business object records or get contextualized metadata
@@ -329,82 +398,45 @@ paths:
         type: string
         required: false
       - in: query
-        name: crmCtcName
-        description: Search filter for Contact name
-        type: string
-        required: false
-      - in: query
         name: crmAccEmployee
         description: Search filter for Number of employees
         type: integer
         required: false
+      - in: query
+        name: crmAccComment
+        description: Search filter for Comment
+        type: string
+        required: false
+      - in: query
+        name: crmAccShortLabel
+        description: Search filter for Short label
+        type: string
+        required: false
+      - in: query
+        name: crmAccSector
+        description: Search filter for Sector
+        type: string
+        required: false
+        enum:
+        - PRI
+        - PUB
+        - ELSE
+      - in: query
+        name: crmAccTurnover
+        description: Search filter for Turnover
+        type: integer
+        required: false
+      - in: query
+        name: crmAccSource
+        description: Search filter for Source
+        type: string
+        required: false
+        enum:
+        - EXHI
+        - WEB
+        - NET
       tags:
       - CrmAccount
-  /rest/CrmContact:
-    get:
-      summary: Search CrmContact business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-crmcontact-search
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ArrayOfCrmContact'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-      parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: crmCtcName
-        description: Search filter for Contact name
-        type: string
-        required: false
-      - in: query
-        name: crmCtcAccId
-        description: Search filter for Account
-        type: string
-        required: false
-      - in: query
-        name: crmCtcAccId__crmAccName
-        description: Search filter for Account name
-        type: string
-        required: false
-      - in: query
-        name: crmContactSimpleUserid
-        description: Search filter for User
-        type: string
-        required: false
-      - in: query
-        name: crmContactSimpleUserid__usr_login
-        description: Search filter for Login
-        type: string
-        required: false
-      tags:
-      - CrmContact
   /rest/CrmContact/{row_id}:
     post:
       summary: Create a new CrmContactbusiness object record
@@ -565,6 +597,168 @@ paths:
         name: body
       tags:
       - CrmContact
+      consumes:
+      - application/json
+  /rest/CrmLead/{row_id}:
+    post:
+      summary: Create a new CrmLeadbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmlead-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/CrmLead'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/CrmLead'
+        in: body
+        name: body
+      tags:
+      - CrmLead
+      consumes:
+      - application/json
+    get:
+      summary: Get a CrmLead business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmlead-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/CrmLead'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - CrmLead
+    delete:
+      summary: Delete a CrmLead business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmlead-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - CrmLead
+    put:
+      summary: Update a CrmLeadbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmlead-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/CrmLead'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/CrmLead'
+        in: body
+        name: body
+      tags:
+      - CrmLead
       consumes:
       - application/json
   /rest/CrmAccount/{row_id}:
@@ -752,6 +946,307 @@ paths:
         required: false
       tags:
       - session
+  /rest/CrmMeanOfContact:
+    get:
+      summary: Search CrmMeanOfContact business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmmeanofcontact-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfCrmMeanOfContact'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: crmMocPriority
+        description: Search filter for Priority
+        type: string
+        required: false
+        enum:
+        - '1'
+        - '2'
+        - '3'
+      - in: query
+        name: crmMocType
+        description: Search filter for Type
+        type: string
+        required: false
+        enum:
+        - Email
+        - Phone
+        - Fax
+      - in: query
+        name: crmMocContent
+        description: Search filter for Content
+        type: string
+        required: false
+      - in: query
+        name: crmMocCtcId
+        description: Search filter for Contact
+        type: string
+        required: false
+      - in: query
+        name: crmMocCtcId__crmCtcName
+        description: Search filter for Contact Contact name
+        type: string
+        required: false
+      tags:
+      - CrmMeanOfContact
+  /rest/CrmGroup/{row_id}:
+    post:
+      summary: Create a new CrmGroupbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmgroup-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/CrmGroup'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/CrmGroup'
+        in: body
+        name: body
+      tags:
+      - CrmGroup
+      consumes:
+      - application/json
+    get:
+      summary: Get a CrmGroup business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmgroup-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/CrmGroup'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - CrmGroup
+    delete:
+      summary: Delete a CrmGroup business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmgroup-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - CrmGroup
+    put:
+      summary: Update a CrmGroupbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmgroup-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/CrmGroup'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/CrmGroup'
+        in: body
+        name: body
+      tags:
+      - CrmGroup
+      consumes:
+      - application/json
+  /rest/CrmContact:
+    get:
+      summary: Search CrmContact business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-crmcontact-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfCrmContact'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: crmCtcName
+        description: Search filter for Contact name
+        type: string
+        required: false
+      - in: query
+        name: crmCtcAccId
+        description: Search filter for Account
+        type: string
+        required: false
+      - in: query
+        name: crmCtcAccId__crmAccName
+        description: Search filter for Account name
+        type: string
+        required: false
+      - in: query
+        name: crmCtcUsrId
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: crmCtcUsrId__usr_login
+        description: Search filter for Login
+        type: string
+        required: false
+      tags:
+      - CrmContact
 securityDefinitions:
   basicAuth:
     type: basic
@@ -780,17 +1275,17 @@ definitions:
       crmCtcAccId:
         description: Account
         type: string
+      crmCtcUsrId:
+        description: User
+        type: string
       crmCtcAccId__crmAccName:
         description: Account name
         type: string
-      crmContactSimpleUserid:
-        description: User
+      crmCtcUsrId__usr_login:
+        description: Login
         type: string
       row_id:
         description: Unique technical row ID
-        type: string
-      crmContactSimpleUserid__usr_login:
-        description: Login
         type: string
   ArrayOfCrmContact:
     type: array
@@ -863,6 +1358,14 @@ definitions:
     type: array
     items:
       $ref: '#/definitions/CrmAccount'
+  ArrayOfCrmGroup:
+    type: array
+    items:
+      $ref: '#/definitions/CrmGroup'
+  ArrayOfCrmLead:
+    type: array
+    items:
+      $ref: '#/definitions/CrmLead'
   PlaceMapData:
     type: object
     properties:
@@ -877,11 +1380,24 @@ definitions:
   CrmAccount:
     type: object
     properties:
+      crmAccShortLabel:
+        description: Short label
+        type: string
+      crmAccTurnover:
+        description: Turnover
+        type: integer
       crmAccName:
         description: Account name
         type: string
-      crmCtcName:
-        description: Contact name
+      crmAccSector:
+        description: Sector
+        type: string
+        enum:
+        - PRI
+        - PUB
+        - ELSE
+      crmAccComment:
+        description: Comment
         type: string
       row_id:
         description: Unique technical row ID
@@ -889,11 +1405,72 @@ definitions:
       crmAccEmployee:
         description: Number of employees
         type: integer
+      crmAccSource:
+        description: Source
+        type: string
+        enum:
+        - EXHI
+        - WEB
+        - NET
+  CrmGroup:
+    type: object
+    properties:
+      crmGrpName:
+        description: Name
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
   ActionResult:
     type: object
     properties:
       result:
         description: Action result
+        type: string
+  CrmLead:
+    type: object
+    properties:
+      crmLeadCreation:
+        description: Lead Création
+        type: string
+        example: yyyy-MM-dd
+      crmLeadCtcId__crmCtcAccId:
+        description: Contact Account
+        type: string
+      crmLeadDirection:
+        description: Lead direction
+        type: string
+        enum:
+        - N
+        - O
+        - I
+      crmLeadCtcId__crmCtcAccId__crmAccName:
+        description: Contact Account Account name
+        type: string
+      crmLeadTitle:
+        description: Title
+        type: string
+      crmLeadState:
+        description: Etat
+        type: string
+        enum:
+        - TBQ
+        - OK
+        - KO
+      crmLeadCtcId__crmCtcUsrId__usr_login:
+        description: Login
+        type: string
+      crmLeadCtcId__crmCtcName:
+        description: Contact Contact name
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      crmLeadCtcId:
+        description: Contact
+        type: string
+      crmLeadCtcId__crmCtcUsrId:
+        description: Contact User
         type: string
   TreeviewData:
     type: object
@@ -962,5 +1539,9 @@ tags:
   description: Account
 - name: CrmContact
   description: Contact
+- name: CrmGroup
+  description: Group
+- name: CrmLead
+  description: CrmLead
 - name: CrmMeanOfContact
   description: Mean of contact
