@@ -41,6 +41,34 @@
     - `WEB` Website
     - `NET` Réseau
 
+`CrmCollaborator` business object definition
+--------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `usr_login`                                                  | regexp(100)                              | yes*     | yes       | yes      | Login                                                                            |
+| `usr_first_name`                                             | char(50)                                 |          | yes       | yes      | First name                                                                       |
+| `usr_last_name`                                              | char(50)                                 |          | yes       | yes      | Last name                                                                        |
+| `usr_lang`                                                   | enum(3) using `LANG` list                | yes      | yes       | yes      | Language                                                                         |
+| `usr_email`                                                  | email(100)                               |          | yes       | yes      | Email address                                                                    |
+| `usr_cell_num`                                               | phone(20)                                |          | yes       | yes      | Mobile/cellular phone number                                                     |
+| `usr_active`                                                 | enum(1) using `USER_STATUS` list         |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `LANG`
+    - `ENU` English language
+    - `FRA` French language
+* `USER_STATUS`
+    - `0` Disabled
+    - `1` Enabled
+    - `2` Pending
+    - `3` Web services only
+
 `CrmContact` business object definition
 ---------------------------------------
 
@@ -53,8 +81,6 @@
 | `crmCtcName`                                                 | char(30)                                 | yes*     | yes       |          | -                                                                                |
 | `crmCtcAccId` link to **`CrmAccount`**                       | id                                       | yes      | yes       |          | -                                                                                |
 | _Ref. `crmCtcAccId.crmAccName`_                              | _char(30)_                               |          |           |          | -                                                                                |
-| `crmCtcUsrId` link to **`SimpleUser`**                       | id                                       | yes      | yes       |          | -                                                                                |
-| _Ref. `crmCtcUsrId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 
 `CrmGroup` business object definition
 -------------------------------------
