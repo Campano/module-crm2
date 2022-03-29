@@ -27,4 +27,5 @@ public class CrmCollaborator extends com.simplicite.objects.System.SimpleUser {
 		f = getField("viw_name");
 		f.setVisibility(ObjectField.VIS_NOT);
 	}
+	
 }
