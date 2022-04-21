@@ -15,7 +15,7 @@ public class CrmActivity extends ObjectDB {
 	@Override
 	public List<String> preValidate() {
 		List<String> msgs = new ArrayList<>();
-		ObjectField f = getField("crmActId");
+		ObjectField f = getField("crmActNumber");
 		if (isNew()||isCopied())
 			f.setValue(getGrant().getNextIdForColumn(getTable(),f.getDBName()));
 

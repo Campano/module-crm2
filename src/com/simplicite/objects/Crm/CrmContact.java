@@ -7,21 +7,21 @@ import com.simplicite.util.exceptions.*;
 import com.simplicite.util.tools.*;
 
 /**
- * Business object CrmLead
+ * Business object CrmContact
  */
-public class CrmLead extends ObjectDB {
+public class CrmContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 	
-	
-	// todo synchronize
 	@Override
 	public List<String> preValidate() {
-
-		List<String> msgs = new ArrayList<>();
-		ObjectField f = getField("crmLeadNumber");
-		if (isNew()||isCopied())
+		ObjectField f = getField("crmCtcNumber");
+		if (isNew() || isCopied())
 			f.setValue(getGrant().getNextIdForColumn(getTable(),f.getDBName()));
+		return null;
+	}
 
-		return msgs;
+	@Override
+	public void initCreate() {
+		setFieldValue("crmCtcNumber", "0");
 	}
 }

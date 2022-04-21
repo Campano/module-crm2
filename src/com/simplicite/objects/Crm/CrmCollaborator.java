@@ -28,4 +28,15 @@ public class CrmCollaborator extends com.simplicite.objects.System.SimpleUser {
 		f.setVisibility(ObjectField.VIS_NOT);
 	}
 	
+	@Override
+	public String postSave() {
+		super.postSave();
+		Grant g = getGrant();
+		if (g.hasResponsibility("CRM_ADMIN") || g.hasResponsibility("ADMIN")) {
+			Grant.addResponsibility(getRowId(), "CRM_GROUP");
+		}
+
+		return null;
+	}
+
 }
