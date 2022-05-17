@@ -8,7 +8,7 @@ import com.simplicite.util.tools.*;
 
 /**
  * Business object CrmActivity
- */
+ */ 
 public class CrmActivity extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 	
