@@ -308,7 +308,8 @@
 | _Ref. `crmOppColId.usr_first_name`_                          | _char(50)_                               |          |           | yes      | _First name_                                                                     |
 | _Ref. `crmOppColId.usr_last_name`_                           | _char(50)_                               |          |           | yes      | _Last name_                                                                      |
 | `crmOppDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
-| `crmOppAmount`                                               | int(11)                                  |          | yes       |          | -                                                                                |
+| `crmOppAmount`                                               | float(11, 2)                             |          | yes       |          | -                                                                                |
+| `crmOppEstimatedAmount`                                      | float(10, 2)                             |          | yes       |          | -                                                                                |
 
 ### Lists
 
@@ -332,6 +333,18 @@
 | _Ref. `crmOppprdOppId.crmOppTitle`_                          | _char(50)_                               |          |           |          | -                                                                                |
 | `crmOppprdPrdId` link to **`CrmProduct`**                    | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `crmOppprdPrdId.crmPrdLabel`_                          | _char(30)_                               |          |           |          | -                                                                                |
+| _Ref. `crmOppprdPrdId.crmPrdPrice`_                          | _int(11)_                                |          |           |          | -                                                                                |
+| `crmOppprdQuantity`                                          | int(11)                                  |          | yes       |          | -                                                                                |
+| _Ref. `crmOppprdPrdId.crmPrdBillingMethod`_                  | _enum(255) using `CRMPRDBILLINGMETHOD` list_ |          |           |          | -                                                                                |
+
+### Lists
+
+* `CRMPRDBILLINGMETHOD`
+    - `Unitary` UNI
+    - `Daily` DAY
+    - `Weekly` WEE
+    - `Monthly` MON
+    - `Yearly` YEA
 
 `CrmProduct` business object definition
 ---------------------------------------

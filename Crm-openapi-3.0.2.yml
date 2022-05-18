@@ -366,8 +366,11 @@ components:
       type: object
       properties:
         crmOppAmount:
-          description: Crm opp amount
-          type: integer
+          description: Amount
+          type: number
+        crmOppEstimatedAmount:
+          description: Estimated Amount
+          type: number
         crmOppState:
           description: State
           type: string
@@ -637,9 +640,24 @@ components:
     CrmOppPrd:
       type: object
       properties:
+        crmOppprdPrdId__crmPrdBillingMethod:
+          description: Billing Method
+          type: string
+          enum:
+          - Unitary
+          - Daily
+          - Weekly
+          - Monthly
+          - Yearly
+        crmOppprdQuantity:
+          description: Quantity
+          type: integer
         crmOppprdPrdId__crmPrdLabel:
           description: Label
           type: string
+        crmOppprdPrdId__crmPrdPrice:
+          description: Price
+          type: integer
         crmOppprdOppId:
           description: Crm oppprd opp id
           type: string
@@ -1253,10 +1271,16 @@ paths:
         description: Search filter for Documents
         required: false
       - schema:
-          type: integer
+          type: number
         in: query
         name: crmOppAmount
-        description: Search filter for Crm opp amount
+        description: Search filter for Amount
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: crmOppEstimatedAmount
+        description: Search filter for Estimated Amount
         required: false
       tags:
       - CrmOpportunity
@@ -2447,6 +2471,30 @@ paths:
         in: query
         name: crmOppprdPrdId__crmPrdLabel
         description: Search filter for Label
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: crmOppprdPrdId__crmPrdPrice
+        description: Search filter for Price
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: crmOppprdQuantity
+        description: Search filter for Quantity
+        required: false
+      - schema:
+          type: string
+          enum:
+          - Unitary
+          - Daily
+          - Weekly
+          - Monthly
+          - Yearly
+        in: query
+        name: crmOppprdPrdId__crmPrdBillingMethod
+        description: Search filter for Billing Method
         required: false
       tags:
       - CrmOppPrd

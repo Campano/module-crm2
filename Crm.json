@@ -3739,11 +3739,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmActivity.java",
-       "size": 310,
+       "size": 550,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmLead.java",
-       "id": "11626",
+       "id": "11661",
        "object": "ObjectInternal",
        "rowid": "2027"
       },
@@ -4531,11 +4531,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 314,
+       "size": 940,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmCollaborator.java",
-       "id": "11657",
+       "id": "11662",
        "object": "ObjectInternal",
        "rowid": "2025"
       },
@@ -9962,11 +9962,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmLead.java",
-       "size": 297,
+       "size": 571,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmLead.java",
-       "id": "11656",
+       "id": "11663",
        "object": "ObjectInternal",
        "rowid": "2023"
       },
@@ -13661,7 +13661,7 @@
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmOpportunity.java",
-       "id": "11659",
+       "id": "11667",
        "object": "ObjectInternal",
        "rowid": "2032"
       },
@@ -14315,7 +14315,7 @@
          "item": {
           "obf_object_id__obo_name": "CrmOpportunity",
           "obf_field_id__fld_name": "crmOppAmount",
-          "obf_field_id__fld_type": "1",
+          "obf_field_id__fld_type": "2",
           "obf_order": 160,
           "obf_group_by": null,
           "obf_dfault_order": null,
@@ -14337,8 +14337,8 @@
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
           "obf_field_id__fld_dfault": null,
-          "obf_area_id__ofa_name": null,
-          "obf_area_id__ofa_position": null,
+          "obf_area_id__ofa_name": "CrmOpportunity-1",
+          "obf_area_id__ofa_position": 1,
           "row_module_id__mdl_name": "Crm"
          },
          "links": [{
@@ -14363,13 +14363,13 @@
             "fld_listmore": false,
             "fld_listsum": null,
             "fld_tray": null,
-            "fld_type": "1",
+            "fld_type": "2",
             "fld_type_id__flt_code": null,
             "fld_list_id__lov_name": null,
             "fld_copy": true,
             "fld_size": 11,
             "fld_minsize": null,
-            "fld_precision": null,
+            "fld_precision": "2",
             "fld_fromdate_id__fld_name": null,
             "fld_dfault": null,
             "fld_indexable": false,
@@ -14399,7 +14399,7 @@
                "tsl_typeField": "F",
                "tsl_id__fld_name": "crmOppAmount",
                "tsl_lang": "ENU",
-               "tsl_value": "Crm opp amount",
+               "tsl_value": "Amount",
                "tsl_simplehelp": null,
                "tsl_short_value": null,
                "tsl_placeholder": null,
@@ -14416,6 +14416,126 @@
                "tsl_id__fld_name": "crmOppAmount",
                "tsl_lang": "FRA",
                "tsl_value": "Crm opp amount",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmOpportunity~crmOppEstimatedAmount~170",
+         "item": {
+          "obf_object_id__obo_name": "CrmOpportunity",
+          "obf_field_id__fld_name": "crmOppEstimatedAmount",
+          "obf_field_id__fld_type": "2",
+          "obf_order": 170,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmOpportunity-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "crmOppEstimatedAmount",
+           "item": {
+            "fld_name": {"value": "crmOppEstimatedAmount"},
+            "fld_dbname": "crm_opp_estimated_amount",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "2",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 10,
+            "fld_minsize": null,
+            "fld_precision": "2",
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Crm"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppEstimatedAmount~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppEstimatedAmount",
+               "tsl_lang": "ENU",
+               "tsl_value": "Estimated Amount",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppEstimatedAmount~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppEstimatedAmount",
+               "tsl_lang": "FRA",
+               "tsl_value": "Crm opp estimated amount",
                "tsl_simplehelp": null,
                "tsl_short_value": null,
                "tsl_placeholder": null,
@@ -14787,7 +14907,16 @@
       "obo_dbtable": "crm_opp_prd",
       "obo_role": "OBJ",
       "obo_class": null,
-      "obo_script_id": null,
+      "obo_script_id": {
+       "path": "src/com/simplicite/objects/Crm/CrmOppPrd.java",
+       "size": 1309,
+       "field": "obo_script_id",
+       "mime": "text/plain",
+       "name": "CrmOppPrd.java",
+       "id": "11666",
+       "object": "ObjectInternal",
+       "rowid": "2038"
+      },
       "obo_usets": "1",
       "obo_nosearch": "1",
       "obo_comment": null,
@@ -15096,8 +15225,8 @@
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
           "obf_field_id__fld_dfault": null,
-          "obf_area_id__ofa_name": "CrmOppPrd-1",
-          "obf_area_id__ofa_position": 1,
+          "obf_area_id__ofa_name": "CrmOppPrd-2",
+          "obf_area_id__ofa_position": 2,
           "row_module_id__mdl_name": "Crm"
          },
          "links": [{
@@ -15292,6 +15421,416 @@
              "fld_classification": null,
              "row_module_id__mdl_name": "Crm"
             }
+           }]
+          }
+         ]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmOppPrd~crmPrdPrice~220",
+         "item": {
+          "obf_object_id__obo_name": "CrmOppPrd",
+          "obf_field_id__fld_name": "crmPrdPrice",
+          "obf_field_id__fld_type": "1",
+          "obf_order": 220,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": "crmOppprdPrdId",
+          "obf_ref_object_id__obo_name": "CrmProduct",
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": "3",
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": "0",
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmOppPrd-2",
+          "obf_area_id__ofa_position": 2,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [
+          {
+           "object": "TranslateObjectField",
+           "label": "Object field translation",
+           "icon": "img/system/translation",
+           "field": "tsl_id",
+           "list": [{
+            "object": "TranslateObjectField",
+            "userkey": "L~CrmOppPrd~crmPrdPrice~220~ENU",
+            "item": {
+             "tsl_typeObjectField": "L",
+             "tsl_id__obf_object_id__obo_name": "CrmOppPrd",
+             "tsl_id__obf_field_id__fld_name": "crmPrdPrice",
+             "tsl_id__obf_order": 220,
+             "tsl_lang": "ENU",
+             "tsl_value": "Price",
+             "tsl_simplehelp": null,
+             "tsl_short_value": null,
+             "tsl_listhelp": null,
+             "tsl_placeholder": null,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }]
+          },
+          {
+           "object": "Field",
+           "label": "Field",
+           "icon": "img/system/field",
+           "field": "",
+           "list": [{
+            "object": "Field",
+            "userkey": "crmPrdPrice",
+            "item": {
+             "fld_name": {"value": "crmPrdPrice"},
+             "fld_dbname": "crm_prd_price",
+             "fld_visible": "3",
+             "fld_updatable": "1",
+             "fld_required": true,
+             "fld_fonctid": false,
+             "fld_research": null,
+             "fld_researchreq": "0",
+             "fld_sort": "C",
+             "fld_more": false,
+             "fld_listmore": false,
+             "fld_listsum": null,
+             "fld_tray": null,
+             "fld_type": "1",
+             "fld_type_id__flt_code": null,
+             "fld_list_id__lov_name": null,
+             "fld_copy": true,
+             "fld_size": 11,
+             "fld_minsize": null,
+             "fld_precision": null,
+             "fld_fromdate_id__fld_name": null,
+             "fld_dfault": null,
+             "fld_indexable": false,
+             "fld_autocomp": "0",
+             "fld_groupby": false,
+             "fld_updall": true,
+             "fld_case": null,
+             "fld_righttoleft": false,
+             "fld_rendering": "EURO",
+             "fld_speech": null,
+             "fld_calc": null,
+             "fld_objlist": null,
+             "fld_comment": null,
+             "fld_classification": null,
+             "row_module_id__mdl_name": "Crm"
+            },
+            "links": [{
+             "object": "TranslateField",
+             "label": "Field translation",
+             "icon": "img/system/translation",
+             "field": "tsl_id",
+             "list": [
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmPrdPrice~ENU",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmPrdPrice",
+                "tsl_lang": "ENU",
+                "tsl_value": "Price",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              },
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmPrdPrice~FRA",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmPrdPrice",
+                "tsl_lang": "FRA",
+                "tsl_value": "Crm prd price",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              }
+             ]
+            }]
+           }]
+          }
+         ]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmOppPrd~crmOppprdQuantity~230",
+         "item": {
+          "obf_object_id__obo_name": "CrmOppPrd",
+          "obf_field_id__fld_name": "crmOppprdQuantity",
+          "obf_field_id__fld_type": "1",
+          "obf_order": 230,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmOppPrd-2",
+          "obf_area_id__ofa_position": 2,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "crmOppprdQuantity",
+           "item": {
+            "fld_name": {"value": "crmOppprdQuantity"},
+            "fld_dbname": "crm_oppprd_quantity",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "1",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 11,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": "NUM",
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Crm"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppprdQuantity~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppprdQuantity",
+               "tsl_lang": "ENU",
+               "tsl_value": "Quantity",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppprdQuantity~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppprdQuantity",
+               "tsl_lang": "FRA",
+               "tsl_value": "Crm oppprd quantity",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmOppPrd~crmPrdBillingMethod~230",
+         "item": {
+          "obf_object_id__obo_name": "CrmOppPrd",
+          "obf_field_id__fld_name": "crmPrdBillingMethod",
+          "obf_field_id__fld_type": "7",
+          "obf_order": 230,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": "crmOppprdPrdId",
+          "obf_ref_object_id__obo_name": "CrmProduct",
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": "3",
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": "0",
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmOppPrd-2",
+          "obf_area_id__ofa_position": 2,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [
+          {
+           "object": "TranslateObjectField",
+           "label": "Object field translation",
+           "icon": "img/system/translation",
+           "field": "tsl_id",
+           "list": [{
+            "object": "TranslateObjectField",
+            "userkey": "L~CrmOppPrd~crmPrdBillingMethod~230~ENU",
+            "item": {
+             "tsl_typeObjectField": "L",
+             "tsl_id__obf_object_id__obo_name": "CrmOppPrd",
+             "tsl_id__obf_field_id__fld_name": "crmPrdBillingMethod",
+             "tsl_id__obf_order": 230,
+             "tsl_lang": "ENU",
+             "tsl_value": "Billing Method",
+             "tsl_simplehelp": null,
+             "tsl_short_value": null,
+             "tsl_listhelp": null,
+             "tsl_placeholder": null,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }]
+          },
+          {
+           "object": "Field",
+           "label": "Field",
+           "icon": "img/system/field",
+           "field": "",
+           "list": [{
+            "object": "Field",
+            "userkey": "crmPrdBillingMethod",
+            "item": {
+             "fld_name": {"value": "crmPrdBillingMethod"},
+             "fld_dbname": "crm_prd_billing_method",
+             "fld_visible": "3",
+             "fld_updatable": "1",
+             "fld_required": false,
+             "fld_fonctid": false,
+             "fld_research": "1",
+             "fld_researchreq": "0",
+             "fld_sort": "C",
+             "fld_more": false,
+             "fld_listmore": false,
+             "fld_listsum": null,
+             "fld_tray": null,
+             "fld_type": "7",
+             "fld_type_id__flt_code": null,
+             "fld_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+             "fld_copy": true,
+             "fld_size": 255,
+             "fld_minsize": null,
+             "fld_precision": null,
+             "fld_fromdate_id__fld_name": null,
+             "fld_dfault": null,
+             "fld_indexable": false,
+             "fld_autocomp": "0",
+             "fld_groupby": false,
+             "fld_updall": true,
+             "fld_case": null,
+             "fld_righttoleft": false,
+             "fld_rendering": "SB",
+             "fld_speech": null,
+             "fld_calc": null,
+             "fld_objlist": null,
+             "fld_comment": null,
+             "fld_classification": null,
+             "row_module_id__mdl_name": "Crm"
+            },
+            "links": [{
+             "object": "TranslateField",
+             "label": "Field translation",
+             "icon": "img/system/translation",
+             "field": "tsl_id",
+             "list": [
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmPrdBillingMethod~ENU",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmPrdBillingMethod",
+                "tsl_lang": "ENU",
+                "tsl_value": "Billing Method",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              },
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmPrdBillingMethod~FRA",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmPrdBillingMethod",
+                "tsl_lang": "FRA",
+                "tsl_value": "Crm prd billing method",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              }
+             ]
+            }]
            }]
           }
          ]
@@ -15583,94 +16122,7 @@
           "obf_area_id__ofa_name": "CrmProduct-1",
           "obf_area_id__ofa_position": 1,
           "row_module_id__mdl_name": "Crm"
-         },
-         "links": [{
-          "object": "Field",
-          "label": "Field",
-          "icon": "img/system/field",
-          "field": "",
-          "list": [{
-           "object": "Field",
-           "userkey": "crmPrdPrice",
-           "item": {
-            "fld_name": {"value": "crmPrdPrice"},
-            "fld_dbname": "crm_prd_price",
-            "fld_visible": "3",
-            "fld_updatable": "1",
-            "fld_required": true,
-            "fld_fonctid": false,
-            "fld_research": null,
-            "fld_researchreq": "0",
-            "fld_sort": "C",
-            "fld_more": false,
-            "fld_listmore": false,
-            "fld_listsum": null,
-            "fld_tray": null,
-            "fld_type": "1",
-            "fld_type_id__flt_code": null,
-            "fld_list_id__lov_name": null,
-            "fld_copy": true,
-            "fld_size": 11,
-            "fld_minsize": null,
-            "fld_precision": null,
-            "fld_fromdate_id__fld_name": null,
-            "fld_dfault": null,
-            "fld_indexable": false,
-            "fld_autocomp": "0",
-            "fld_groupby": false,
-            "fld_updall": true,
-            "fld_case": null,
-            "fld_righttoleft": false,
-            "fld_rendering": "EURO",
-            "fld_speech": null,
-            "fld_calc": null,
-            "fld_objlist": null,
-            "fld_comment": null,
-            "fld_classification": null,
-            "row_module_id__mdl_name": "Crm"
-           },
-           "links": [{
-            "object": "TranslateField",
-            "label": "Field translation",
-            "icon": "img/system/translation",
-            "field": "tsl_id",
-            "list": [
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmPrdPrice~ENU",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmPrdPrice",
-               "tsl_lang": "ENU",
-               "tsl_value": "Price",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             },
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmPrdPrice~FRA",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmPrdPrice",
-               "tsl_lang": "FRA",
-               "tsl_value": "Crm prd price",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             }
-            ]
-           }]
-          }]
-         }]
+         }
         },
         {
          "object": "ObjectFieldSystem",
@@ -15823,94 +16275,7 @@
           "obf_area_id__ofa_name": "CrmProduct-1",
           "obf_area_id__ofa_position": 1,
           "row_module_id__mdl_name": "Crm"
-         },
-         "links": [{
-          "object": "Field",
-          "label": "Field",
-          "icon": "img/system/field",
-          "field": "",
-          "list": [{
-           "object": "Field",
-           "userkey": "crmPrdBillingMethod",
-           "item": {
-            "fld_name": {"value": "crmPrdBillingMethod"},
-            "fld_dbname": "crm_prd_billing_method",
-            "fld_visible": "3",
-            "fld_updatable": "1",
-            "fld_required": false,
-            "fld_fonctid": false,
-            "fld_research": "1",
-            "fld_researchreq": "0",
-            "fld_sort": "C",
-            "fld_more": false,
-            "fld_listmore": false,
-            "fld_listsum": null,
-            "fld_tray": null,
-            "fld_type": "7",
-            "fld_type_id__flt_code": null,
-            "fld_list_id__lov_name": "CRMPRDBILLINGMETHOD",
-            "fld_copy": true,
-            "fld_size": 255,
-            "fld_minsize": null,
-            "fld_precision": null,
-            "fld_fromdate_id__fld_name": null,
-            "fld_dfault": null,
-            "fld_indexable": false,
-            "fld_autocomp": "0",
-            "fld_groupby": false,
-            "fld_updall": true,
-            "fld_case": null,
-            "fld_righttoleft": false,
-            "fld_rendering": "SB",
-            "fld_speech": null,
-            "fld_calc": null,
-            "fld_objlist": null,
-            "fld_comment": null,
-            "fld_classification": null,
-            "row_module_id__mdl_name": "Crm"
-           },
-           "links": [{
-            "object": "TranslateField",
-            "label": "Field translation",
-            "icon": "img/system/translation",
-            "field": "tsl_id",
-            "list": [
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmPrdBillingMethod~ENU",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmPrdBillingMethod",
-               "tsl_lang": "ENU",
-               "tsl_value": "Billing Method",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             },
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmPrdBillingMethod~FRA",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmPrdBillingMethod",
-               "tsl_lang": "FRA",
-               "tsl_value": "Crm prd billing method",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             }
-            ]
-           }]
-          }]
-         }]
+         }
         }
        ]
       },
@@ -15942,8 +16307,8 @@
          "obf_inline": false,
          "obf_rendering": null,
          "obf_treedepth": null,
-         "obf_area_id__ofa_name": "CrmOppPrd-1",
-         "obf_area_id__ofa_position": 1,
+         "obf_area_id__ofa_name": "CrmOppPrd-2",
+         "obf_area_id__ofa_position": 2,
          "row_module_id__mdl_name": "Crm"
         },
         "links": [{
@@ -21645,7 +22010,7 @@
       "ofa_name": "CrmOpportunity-1",
       "ofa_position": 1,
       "ofa_title": false,
-      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmOppTitle\"><\/div>\n  <div class=\"field\" data-field=\"crmOppState\"><\/div>\n  <div class=\"field\" data-field=\"crmOppDirectStatus\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmOppTitle\"><\/div>\n  <div class=\"field\" data-field=\"crmOppState\"><\/div>\n  <div class=\"field\" data-field=\"crmOppDirectStatus\"><\/div>\n  <div class=\"field\" data-field=\"crmOppAmount\"><\/div>\n  <div class=\"field\" data-field=\"crmOppEstimatedAmount\"><\/div>\n<\/div>",
       "ofa_icon": "star",
       "row_module_id__mdl_name": "Crm"
      },
@@ -21771,7 +22136,7 @@
       "ofa_name": "CrmOppPrd-1",
       "ofa_position": 1,
       "ofa_title": true,
-      "ofa_ui": "<div class=\"field\" data-field=\"crmOppprdOppId__crmOppTitle\"><\/div>",
+      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmOppprdOppId\"><\/div>\n  <div class=\"field\" data-field=\"crmOppprdOppId__crmOppTitle\"><\/div>\n<\/div>",
       "ofa_icon": "star",
       "row_module_id__mdl_name": "Crm"
      },
@@ -21813,7 +22178,7 @@
       "ofa_name": "CrmOppPrd-2",
       "ofa_position": 2,
       "ofa_title": true,
-      "ofa_ui": "<div class=\"field\" data-field=\"crmOppprdPrdId__crmPrdLabel\"><\/div>",
+      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmOppprdPrdId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmOppprdPrdId__crmPrdLabel\"><\/div>\n    <\/div>\n    <div class=\"col-sm-3\">\n      <div class=\"field\" data-field=\"crmOppprdPrdId__crmPrdPrice\"><\/div>\n    <\/div>\n    <div class=\"col-sm-3\">\n      <div class=\"field\" data-field=\"crmOppprdPrdId__crmPrdBillingMethod\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\"><\/div>\n    <div class=\"col-sm-3\">\n      <div class=\"field\" data-field=\"crmOppprdQuantity\"><\/div>\n    <\/div>\n    <div class=\"col-sm-3\"><\/div>\n  <\/div>\n<\/div>",
       "ofa_icon": "products",
       "row_module_id__mdl_name": "Crm"
      },

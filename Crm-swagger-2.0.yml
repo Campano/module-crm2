@@ -420,8 +420,13 @@ paths:
         required: false
       - in: query
         name: crmOppAmount
-        description: Search filter for Crm opp amount
-        type: integer
+        description: Search filter for Amount
+        type: number
+        required: false
+      - in: query
+        name: crmOppEstimatedAmount
+        description: Search filter for Estimated Amount
+        type: number
         required: false
       tags:
       - CrmOpportunity
@@ -1420,6 +1425,27 @@ paths:
         description: Search filter for Label
         type: string
         required: false
+      - in: query
+        name: crmOppprdPrdId__crmPrdPrice
+        description: Search filter for Price
+        type: integer
+        required: false
+      - in: query
+        name: crmOppprdQuantity
+        description: Search filter for Quantity
+        type: integer
+        required: false
+      - in: query
+        name: crmOppprdPrdId__crmPrdBillingMethod
+        description: Search filter for Billing Method
+        type: string
+        required: false
+        enum:
+        - Unitary
+        - Daily
+        - Weekly
+        - Monthly
+        - Yearly
       tags:
       - CrmOppPrd
   /rest/CrmActCol:
@@ -4623,8 +4649,11 @@ definitions:
     type: object
     properties:
       crmOppAmount:
-        description: Crm opp amount
-        type: integer
+        description: Amount
+        type: number
+      crmOppEstimatedAmount:
+        description: Estimated Amount
+        type: number
       crmOppState:
         description: State
         type: string
@@ -4894,9 +4923,24 @@ definitions:
   CrmOppPrd:
     type: object
     properties:
+      crmOppprdPrdId__crmPrdBillingMethod:
+        description: Billing Method
+        type: string
+        enum:
+        - Unitary
+        - Daily
+        - Weekly
+        - Monthly
+        - Yearly
+      crmOppprdQuantity:
+        description: Quantity
+        type: integer
       crmOppprdPrdId__crmPrdLabel:
         description: Label
         type: string
+      crmOppprdPrdId__crmPrdPrice:
+        description: Price
+        type: integer
       crmOppprdOppId:
         description: Crm oppprd opp id
         type: string
