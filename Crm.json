@@ -2630,7 +2630,43 @@
           "obf_area_id__ofa_name": "CrmAccount-5",
           "obf_area_id__ofa_position": 5,
           "row_module_id__mdl_name": "Crm"
-         }
+         },
+         "links": [{
+          "object": "TranslateLink",
+          "label": "Object link translation",
+          "icon": "img/system/translation",
+          "field": "tsl_id",
+          "list": [
+           {
+            "object": "TranslateLink",
+            "userkey": "K~CrmAccount~crmAccId~200~ENU",
+            "item": {
+             "tsl_typeLink": "K",
+             "tsl_id__obf_object_id__obj_name": "CrmAccount",
+             "tsl_id__obf_field_id__fld_name": "crmAccId",
+             "tsl_id__obf_order": 200,
+             "tsl_lang": "ENU",
+             "tsl_value": "Subsidiary",
+             "tsl_simplehelp": null,
+             "row_module_id__mdl_name": "Crm"
+            }
+           },
+           {
+            "object": "TranslateLink",
+            "userkey": "K~CrmAccount~crmAccId~200~FRA",
+            "item": {
+             "tsl_typeLink": "K",
+             "tsl_id__obf_object_id__obj_name": "CrmAccount",
+             "tsl_id__obf_field_id__fld_name": "crmAccId",
+             "tsl_id__obf_order": 200,
+             "tsl_lang": "FRA",
+             "tsl_value": "Filiale",
+             "tsl_simplehelp": null,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }
+          ]
+         }]
         }
        ]
       },
@@ -8254,11 +8290,11 @@
           "obf_ref_export": true,
           "obf_copy": null,
           "obf_ref_order": null,
-          "obf_fld_visible": null,
+          "obf_fld_visible": "3",
           "obf_fld_required": null,
           "obf_fld_updatable": null,
           "obf_fld_research": null,
-          "obf_fld_more": null,
+          "obf_fld_more": "0",
           "obf_fld_listmore": null,
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
@@ -8266,7 +8302,30 @@
           "obf_area_id__ofa_name": "CrmContact-3",
           "obf_area_id__ofa_position": 3,
           "row_module_id__mdl_name": "Crm"
-         }
+         },
+         "links": [{
+          "object": "TranslateObjectField",
+          "label": "Object field translation",
+          "icon": "img/system/translation",
+          "field": "tsl_id",
+          "list": [{
+           "object": "TranslateObjectField",
+           "userkey": "L~CrmContact~crmCtcFunction~440~ENU",
+           "item": {
+            "tsl_typeObjectField": "L",
+            "tsl_id__obf_object_id__obo_name": "CrmContact",
+            "tsl_id__obf_field_id__fld_name": "crmCtcFunction",
+            "tsl_id__obf_order": 440,
+            "tsl_lang": "ENU",
+            "tsl_value": "Function",
+            "tsl_simplehelp": null,
+            "tsl_short_value": null,
+            "tsl_listhelp": null,
+            "tsl_placeholder": null,
+            "row_module_id__mdl_name": "Crm"
+           }
+          }]
+         }]
         },
         {
          "object": "ObjectFieldSystem",
@@ -8287,11 +8346,11 @@
           "obf_ref_export": true,
           "obf_copy": null,
           "obf_ref_order": null,
-          "obf_fld_visible": null,
+          "obf_fld_visible": "3",
           "obf_fld_required": null,
           "obf_fld_updatable": null,
           "obf_fld_research": null,
-          "obf_fld_more": null,
+          "obf_fld_more": "0",
           "obf_fld_listmore": null,
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
@@ -8299,7 +8358,30 @@
           "obf_area_id__ofa_name": "CrmContact-3",
           "obf_area_id__ofa_position": 3,
           "row_module_id__mdl_name": "Crm"
-         }
+         },
+         "links": [{
+          "object": "TranslateObjectField",
+          "label": "Object field translation",
+          "icon": "img/system/translation",
+          "field": "tsl_id",
+          "list": [{
+           "object": "TranslateObjectField",
+           "userkey": "L~CrmContact~crmCtcComment~450~ENU",
+           "item": {
+            "tsl_typeObjectField": "L",
+            "tsl_id__obf_object_id__obo_name": "CrmContact",
+            "tsl_id__obf_field_id__fld_name": "crmCtcComment",
+            "tsl_id__obf_order": 450,
+            "tsl_lang": "ENU",
+            "tsl_value": "Comment",
+            "tsl_simplehelp": null,
+            "tsl_short_value": null,
+            "tsl_listhelp": null,
+            "tsl_placeholder": null,
+            "row_module_id__mdl_name": "Crm"
+           }
+          }]
+         }]
         }
        ]
       },
@@ -10341,7 +10423,7 @@
           "obf_fld_listmore": null,
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
-          "obf_field_id__fld_dfault": null,
+          "obf_field_id__fld_dfault": "N",
           "obf_area_id__ofa_name": "CrmLead-1",
           "obf_area_id__ofa_position": 1,
           "row_module_id__mdl_name": "Crm"
@@ -10376,7 +10458,7 @@
             "fld_minsize": null,
             "fld_precision": null,
             "fld_fromdate_id__fld_name": null,
-            "fld_dfault": null,
+            "fld_dfault": "N",
             "fld_indexable": false,
             "fld_autocomp": "0",
             "fld_groupby": false,
@@ -11376,11 +11458,11 @@
           "obf_ref_export": true,
           "obf_copy": null,
           "obf_ref_order": null,
-          "obf_fld_visible": null,
+          "obf_fld_visible": "3",
           "obf_fld_required": null,
           "obf_fld_updatable": null,
           "obf_fld_research": null,
-          "obf_fld_more": null,
+          "obf_fld_more": "0",
           "obf_fld_listmore": null,
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
@@ -11388,7 +11470,30 @@
           "obf_area_id__ofa_name": "CrmLead-4",
           "obf_area_id__ofa_position": 4,
           "row_module_id__mdl_name": "Crm"
-         }
+         },
+         "links": [{
+          "object": "TranslateObjectField",
+          "label": "Object field translation",
+          "icon": "img/system/translation",
+          "field": "tsl_id",
+          "list": [{
+           "object": "TranslateObjectField",
+           "userkey": "L~CrmLead~crmOppTitle~210~ENU",
+           "item": {
+            "tsl_typeObjectField": "L",
+            "tsl_id__obf_object_id__obo_name": "CrmLead",
+            "tsl_id__obf_field_id__fld_name": "crmOppTitle",
+            "tsl_id__obf_order": 210,
+            "tsl_lang": "ENU",
+            "tsl_value": "Title",
+            "tsl_simplehelp": null,
+            "tsl_short_value": null,
+            "tsl_listhelp": null,
+            "tsl_placeholder": null,
+            "row_module_id__mdl_name": "Crm"
+           }
+          }]
+         }]
         },
         {
          "object": "ObjectFieldSystem",
@@ -11409,11 +11514,11 @@
           "obf_ref_export": true,
           "obf_copy": null,
           "obf_ref_order": null,
-          "obf_fld_visible": null,
+          "obf_fld_visible": "3",
           "obf_fld_required": null,
           "obf_fld_updatable": null,
           "obf_fld_research": null,
-          "obf_fld_more": null,
+          "obf_fld_more": "0",
           "obf_fld_listmore": null,
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
@@ -11422,93 +11527,118 @@
           "obf_area_id__ofa_position": 4,
           "row_module_id__mdl_name": "Crm"
          },
-         "links": [{
-          "object": "Field",
-          "label": "Field",
-          "icon": "img/system/field",
-          "field": "",
-          "list": [{
-           "object": "Field",
-           "userkey": "crmOppDirectStatus",
-           "item": {
-            "fld_name": {"value": "crmOppDirectStatus"},
-            "fld_dbname": "crm_opp_direct_status",
-            "fld_visible": "3",
-            "fld_updatable": "1",
-            "fld_required": true,
-            "fld_fonctid": false,
-            "fld_research": "3",
-            "fld_researchreq": "0",
-            "fld_sort": "C",
-            "fld_more": false,
-            "fld_listmore": false,
-            "fld_listsum": null,
-            "fld_tray": null,
-            "fld_type": "7",
-            "fld_type_id__flt_code": null,
-            "fld_list_id__lov_name": "CRM_OPP_DIRECT_STATUS",
-            "fld_copy": true,
-            "fld_size": 10,
-            "fld_minsize": null,
-            "fld_precision": null,
-            "fld_fromdate_id__fld_name": null,
-            "fld_dfault": null,
-            "fld_indexable": false,
-            "fld_autocomp": "0",
-            "fld_groupby": false,
-            "fld_updall": true,
-            "fld_case": null,
-            "fld_righttoleft": false,
-            "fld_rendering": "HCB",
-            "fld_speech": null,
-            "fld_calc": null,
-            "fld_objlist": null,
-            "fld_comment": null,
-            "fld_classification": null,
-            "row_module_id__mdl_name": "Crm"
-           },
-           "links": [{
-            "object": "TranslateField",
-            "label": "Field translation",
-            "icon": "img/system/translation",
-            "field": "tsl_id",
-            "list": [
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmOppDirectStatus~ENU",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmOppDirectStatus",
-               "tsl_lang": "ENU",
-               "tsl_value": "Ingoing / Outgoing",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             },
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmOppDirectStatus~FRA",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmOppDirectStatus",
-               "tsl_lang": "FRA",
-               "tsl_value": "Crm opp direct status",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             }
-            ]
+         "links": [
+          {
+           "object": "TranslateObjectField",
+           "label": "Object field translation",
+           "icon": "img/system/translation",
+           "field": "tsl_id",
+           "list": [{
+            "object": "TranslateObjectField",
+            "userkey": "L~CrmLead~crmOppDirectStatus~220~ENU",
+            "item": {
+             "tsl_typeObjectField": "L",
+             "tsl_id__obf_object_id__obo_name": "CrmLead",
+             "tsl_id__obf_field_id__fld_name": "crmOppDirectStatus",
+             "tsl_id__obf_order": 220,
+             "tsl_lang": "ENU",
+             "tsl_value": "Ingoing / Outgoing",
+             "tsl_simplehelp": null,
+             "tsl_short_value": null,
+             "tsl_listhelp": null,
+             "tsl_placeholder": null,
+             "row_module_id__mdl_name": "Crm"
+            }
            }]
-          }]
-         }]
+          },
+          {
+           "object": "Field",
+           "label": "Field",
+           "icon": "img/system/field",
+           "field": "",
+           "list": [{
+            "object": "Field",
+            "userkey": "crmOppDirectStatus",
+            "item": {
+             "fld_name": {"value": "crmOppDirectStatus"},
+             "fld_dbname": "crm_opp_direct_status",
+             "fld_visible": "3",
+             "fld_updatable": "1",
+             "fld_required": true,
+             "fld_fonctid": false,
+             "fld_research": "3",
+             "fld_researchreq": "0",
+             "fld_sort": "C",
+             "fld_more": false,
+             "fld_listmore": false,
+             "fld_listsum": null,
+             "fld_tray": null,
+             "fld_type": "7",
+             "fld_type_id__flt_code": null,
+             "fld_list_id__lov_name": "CRM_OPP_DIRECT_STATUS",
+             "fld_copy": true,
+             "fld_size": 10,
+             "fld_minsize": null,
+             "fld_precision": null,
+             "fld_fromdate_id__fld_name": null,
+             "fld_dfault": null,
+             "fld_indexable": false,
+             "fld_autocomp": "0",
+             "fld_groupby": false,
+             "fld_updall": true,
+             "fld_case": null,
+             "fld_righttoleft": false,
+             "fld_rendering": "HCB",
+             "fld_speech": null,
+             "fld_calc": null,
+             "fld_objlist": null,
+             "fld_comment": null,
+             "fld_classification": null,
+             "row_module_id__mdl_name": "Crm"
+            },
+            "links": [{
+             "object": "TranslateField",
+             "label": "Field translation",
+             "icon": "img/system/translation",
+             "field": "tsl_id",
+             "list": [
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmOppDirectStatus~ENU",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmOppDirectStatus",
+                "tsl_lang": "ENU",
+                "tsl_value": "Ingoing / Outgoing",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              },
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmOppDirectStatus~FRA",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmOppDirectStatus",
+                "tsl_lang": "FRA",
+                "tsl_value": "Crm opp direct status",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              }
+             ]
+            }]
+           }]
+          }
+         ]
         },
         {
          "object": "ObjectFieldSystem",
@@ -11649,11 +11779,11 @@
           "obf_ref_export": true,
           "obf_copy": null,
           "obf_ref_order": null,
-          "obf_fld_visible": null,
+          "obf_fld_visible": "3",
           "obf_fld_required": null,
           "obf_fld_updatable": null,
           "obf_fld_research": null,
-          "obf_fld_more": null,
+          "obf_fld_more": "0",
           "obf_fld_listmore": null,
           "obf_fld_researchreq": null,
           "obf_fld_dfault": null,
@@ -11661,7 +11791,30 @@
           "obf_area_id__ofa_name": "CrmLead-4",
           "obf_area_id__ofa_position": 4,
           "row_module_id__mdl_name": "Crm"
-         }
+         },
+         "links": [{
+          "object": "TranslateObjectField",
+          "label": "Object field translation",
+          "icon": "img/system/translation",
+          "field": "tsl_id",
+          "list": [{
+           "object": "TranslateObjectField",
+           "userkey": "L~CrmLead~usr_login~240~ENU",
+           "item": {
+            "tsl_typeObjectField": "L",
+            "tsl_id__obf_object_id__obo_name": "CrmLead",
+            "tsl_id__obf_field_id__fld_name": "usr_login",
+            "tsl_id__obf_order": 240,
+            "tsl_lang": "ENU",
+            "tsl_value": "Collaborator Login",
+            "tsl_simplehelp": null,
+            "tsl_short_value": null,
+            "tsl_listhelp": null,
+            "tsl_placeholder": null,
+            "row_module_id__mdl_name": "Crm"
+           }
+          }]
+         }]
         }
        ]
       },
@@ -12372,7 +12525,7 @@
           "obf_ref_export": true,
           "obf_copy": null,
           "obf_ref_order": null,
-          "obf_fld_visible": null,
+          "obf_fld_visible": "0",
           "obf_fld_required": null,
           "obf_fld_updatable": null,
           "obf_fld_research": null,
@@ -12383,6 +12536,39 @@
           "obf_field_id__fld_dfault": null,
           "obf_area_id__ofa_name": "CrmMeanOfContact-1",
           "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Crm"
+         }
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmMeanOfContact~crmCtcFirstName~120",
+         "item": {
+          "obf_object_id__obo_name": "CrmMeanOfContact",
+          "obf_field_id__fld_name": "crmCtcFirstName",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 120,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": "crmMocCtcId",
+          "obf_ref_object_id__obo_name": "CrmContact",
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": "0",
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": null,
+          "obf_area_id__ofa_position": null,
           "row_module_id__mdl_name": "Crm"
          }
         }
@@ -13924,39 +14110,6 @@
         },
         {
          "object": "ObjectFieldSystem",
-         "userkey": "CrmOpportunity~crmOppDirectStatus~30",
-         "item": {
-          "obf_object_id__obo_name": "CrmOpportunity",
-          "obf_field_id__fld_name": "crmOppDirectStatus",
-          "obf_field_id__fld_type": "7",
-          "obf_order": 30,
-          "obf_group_by": null,
-          "obf_dfault_order": null,
-          "obf_input": null,
-          "obf_ref_field_id__fld_name": null,
-          "obf_ref_object_id__obo_name": null,
-          "obf_cascad": null,
-          "obf_card": null,
-          "obf_visible": null,
-          "obf_ref_export": true,
-          "obf_copy": null,
-          "obf_ref_order": null,
-          "obf_fld_visible": null,
-          "obf_fld_required": null,
-          "obf_fld_updatable": null,
-          "obf_fld_research": null,
-          "obf_fld_more": null,
-          "obf_fld_listmore": null,
-          "obf_fld_researchreq": null,
-          "obf_fld_dfault": null,
-          "obf_field_id__fld_dfault": null,
-          "obf_area_id__ofa_name": "CrmOpportunity-1",
-          "obf_area_id__ofa_position": 1,
-          "row_module_id__mdl_name": "Crm"
-         }
-        },
-        {
-         "object": "ObjectFieldSystem",
          "userkey": "CrmOpportunity~crmOppColId~100",
          "item": {
           "obf_object_id__obo_name": "CrmOpportunity",
@@ -14536,6 +14689,126 @@
                "tsl_id__fld_name": "crmOppEstimatedAmount",
                "tsl_lang": "FRA",
                "tsl_value": "Crm opp estimated amount",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmOpportunity~crmOppDirect~180",
+         "item": {
+          "obf_object_id__obo_name": "CrmOpportunity",
+          "obf_field_id__fld_name": "crmOppDirect",
+          "obf_field_id__fld_type": "7",
+          "obf_order": 180,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": "D",
+          "obf_area_id__ofa_name": null,
+          "obf_area_id__ofa_position": null,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "crmOppDirect",
+           "item": {
+            "fld_name": {"value": "crmOppDirect"},
+            "fld_dbname": "crm_opp_direct",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": true,
+            "fld_fonctid": false,
+            "fld_research": null,
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "7",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": "CRM_OPP_DIRECT",
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": "D",
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Crm"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppDirect~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppDirect",
+               "tsl_lang": "ENU",
+               "tsl_value": "Crm opp direct",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppDirect~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppDirect",
+               "tsl_lang": "FRA",
+               "tsl_value": "Crm opp direct",
                "tsl_simplehelp": null,
                "tsl_short_value": null,
                "tsl_placeholder": null,
@@ -16967,6 +17240,16 @@
     },
     {
      "object": "FieldList",
+     "userkey": "CRM_OPP_DIRECT",
+     "item": {
+      "lov_name": "CRM_OPP_DIRECT",
+      "row_module_id__mdl_name": "Crm",
+      "lov_model_id__mod_name": null,
+      "lov_model_id__mod_image": null
+     }
+    },
+    {
+     "object": "FieldList",
      "userkey": "CRM_OPP_DIRECT_STATUS",
      "item": {
       "lov_name": "CRM_OPP_DIRECT_STATUS",
@@ -17655,51 +17938,6 @@
       "icon": "img/system/list_of_values",
       "field": "lov_list_id",
       "list": [
-       {
-        "object": "FieldListCode",
-        "userkey": "CRMLEADDIRECTION~N",
-        "item": {
-         "lov_list_id__lov_name": "CRMLEADDIRECTION",
-         "lov_code": "N",
-         "lov_order_by": 10,
-         "lov_label": "None",
-         "row_module_id__mdl_name": "Crm",
-         "lov_color": null,
-         "lov_color_bg": null,
-         "lov_icon": null,
-         "lov_display": ["L"]
-        },
-        "links": [{
-         "object": "FieldListValue",
-         "label": "Translated list value",
-         "icon": "img/system/translation",
-         "field": "lov_code_id",
-         "list": [
-          {
-           "object": "FieldListValue",
-           "userkey": "CRMLEADDIRECTION~N~ENU",
-           "item": {
-            "lov_code_id__lov_list_id__lov_name": "CRMLEADDIRECTION",
-            "lov_code_id__lov_code": "N",
-            "lov_lang": "ENU",
-            "lov_value": "None",
-            "row_module_id__mdl_name": "Crm"
-           }
-          },
-          {
-           "object": "FieldListValue",
-           "userkey": "CRMLEADDIRECTION~N~FRA",
-           "item": {
-            "lov_code_id__lov_list_id__lov_name": "CRMLEADDIRECTION",
-            "lov_code_id__lov_code": "N",
-            "lov_lang": "FRA",
-            "lov_value": "Aucun",
-            "row_module_id__mdl_name": "Crm"
-           }
-          }
-         ]
-        }]
-       },
        {
         "object": "FieldListCode",
         "userkey": "CRMLEADDIRECTION~I",
@@ -20396,7 +20634,7 @@
      "userkey": "CrmActivity",
      "item": {
       "tpl_name": "CrmActivity",
-      "tpl_ui": "<div class=\"area\" data-area=\"1:=\"><\/div>",
+      "tpl_ui": "<div class=\"area\" data-area=\"1\"><\/div>",
       "tpl_min": null,
       "tpl_image": null,
       "row_module_id__mdl_name": "Crm"
@@ -20495,7 +20733,7 @@
      "userkey": "CrmLead",
      "item": {
       "tpl_name": "CrmLead",
-      "tpl_ui": "<div>\n  <div class=\"area\" data-area=\"1\"><\/div>\n  <div class=\"area\" data-area=\"2\"><\/div>\n  <div class=\"area\" data-area=\"4\"><\/div>\n  <div class=\"field\" data-field=\"crmLeadDocuments\"><\/div>\n<\/div>",
+      "tpl_ui": "<div>\n  <div class=\"row\">\n    <div class=\"area col-sm-6\" data-area=\"1\"><\/div>\n    <div class=\"area col-sm-6\" data-area=\"2\"><\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"4:-\"><\/div>\n  <div class=\"field\" data-field=\"crmLeadDocuments\"><\/div>\n<\/div>",
       "tpl_min": null,
       "tpl_image": null,
       "row_module_id__mdl_name": "Crm"
@@ -20875,7 +21113,7 @@
      "item": {
       "ofa_name": "CrmActivity-1",
       "ofa_position": 1,
-      "ofa_title": true,
+      "ofa_title": false,
       "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmActId\"><\/div>\n  <div class=\"field\" data-field=\"crmActWhen\"><\/div>\n  <div class=\"field\" data-field=\"crmActTitle\"><\/div>\n  <div class=\"field\" data-field=\"crmActDocuments\"><\/div>\n<\/div>",
       "ofa_icon": "star",
       "row_module_id__mdl_name": "Crm"
@@ -21717,7 +21955,7 @@
       "ofa_position": 4,
       "ofa_title": true,
       "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmLeadOppId\"><\/div>\n  <div class=\"field\" data-field=\"crmLeadOppId__crmOppTitle\"><\/div>\n  <div class=\"field\" data-field=\"crmLeadOppId__crmOppDirectStatus\"><\/div>\n  <div class=\"field\" data-field=\"crmLeadOppId__crmOppColId\"><\/div>\n  <div class=\"field\" data-field=\"crmLeadOppId__crmOppColId__usr_login\"><\/div>\n<\/div>",
-      "ofa_icon": "star",
+      "ofa_icon": "img/color/storage",
       "row_module_id__mdl_name": "Crm"
      },
      "links": [{
@@ -21733,7 +21971,7 @@
          "tsl_typeFieldArea": "Z",
          "tsl_id__ofa_name": "CrmLead-4",
          "tsl_lang": "ENU",
-         "tsl_value": "CrmLead-4",
+         "tsl_value": "Opportunity",
          "row_module_id__mdl_name": "Crm"
         }
        },

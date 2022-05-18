@@ -225,7 +225,6 @@
 ### Lists
 
 * `CRMLEADDIRECTION`
-    - `N` None
     - `I` Ingoing
     - `O` Outgoing
 * `CRMLEADSTATE`
@@ -250,6 +249,7 @@
 | `crmMocContent`                                              | char(30)                                 | yes*     | yes       |          | -                                                                                |
 | `crmMocCtcId` link to **`CrmContact`**                       | id                                       | yes      | yes       |          | -                                                                                |
 | _Ref. `crmMocCtcId.crmCtcName`_                              | _char(30)_                               |          |           |          | -                                                                                |
+| _Ref. `crmMocCtcId.crmCtcFirstName`_                         | _char(40)_                               |          |           |          | -                                                                                |
 
 ### Lists
 
@@ -302,7 +302,6 @@
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `crmOppTitle`                                                | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `crmOppState`                                                | enum(15) using `CRM_OPP_STATE` list      | yes      | yes       |          | -                                                                                |
-| `crmOppDirectStatus`                                         | enum(10) using `CRM_OPP_DIRECT_STATUS` list | yes      | yes       |          | -                                                                                |
 | `crmOppColId` link to **`CrmCollaborator`**                  | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmOppColId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | _Ref. `crmOppColId.usr_first_name`_                          | _char(50)_                               |          |           | yes      | _First name_                                                                     |
@@ -310,15 +309,14 @@
 | `crmOppDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
 | `crmOppAmount`                                               | float(11, 2)                             |          | yes       |          | -                                                                                |
 | `crmOppEstimatedAmount`                                      | float(10, 2)                             |          | yes       |          | -                                                                                |
+| `crmOppDirect`                                               | enum(255) using `CRM_OPP_DIRECT` list    | yes      | yes       |          | -                                                                                |
 
 ### Lists
 
 * `CRM_OPP_STATE`
     - `Qualification` 
     - `Offer` 
-* `CRM_OPP_DIRECT_STATUS`
-    - `Ingoing` 
-    - `Outgoing` 
+* `CRM_OPP_DIRECT`
 
 `CrmOppPrd` business object definition
 --------------------------------------

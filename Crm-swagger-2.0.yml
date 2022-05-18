@@ -381,14 +381,6 @@ paths:
         - Qualification
         - Offer
       - in: query
-        name: crmOppDirectStatus
-        description: Search filter for Ingoing / Outgoing
-        type: string
-        required: false
-        enum:
-        - Ingoing
-        - Outgoing
-      - in: query
         name: crmOppColId
         description: Search filter for Collaborator
         type: string
@@ -427,6 +419,11 @@ paths:
         name: crmOppEstimatedAmount
         description: Search filter for Estimated Amount
         type: number
+        required: false
+      - in: query
+        name: crmOppDirect
+        description: Search filter for Crm opp direct
+        type: string
         required: false
       tags:
       - CrmOpportunity
@@ -836,7 +833,6 @@ paths:
         type: string
         required: false
         enum:
-        - N
         - I
         - O
       - in: query
@@ -900,12 +896,12 @@ paths:
         required: false
       - in: query
         name: crmLeadOppId__crmOppTitle
-        description: Search filter for Opportunity Title
+        description: Search filter for Title
         type: string
         required: false
       - in: query
         name: crmLeadOppId__crmOppDirectStatus
-        description: Search filter for Opportunity Ingoing / Outgoing
+        description: Search filter for Ingoing / Outgoing
         type: string
         required: false
         enum:
@@ -1742,6 +1738,11 @@ paths:
         description: Search filter for Contact Name
         type: string
         required: false
+      - in: query
+        name: crmMocCtcId__crmCtcFirstName
+        description: Search filter for Contact First name
+        type: string
+        required: false
       tags:
       - CrmMeanOfContact
   /rest/CrmContact:
@@ -1879,12 +1880,12 @@ paths:
         required: false
       - in: query
         name: crmCtcId__crmCtcComment
-        description: Search filter for Contact Comment
+        description: Search filter for Comment
         type: string
         required: false
       - in: query
         name: crmCtcId__crmCtcFunction
-        description: Search filter for Contact Function
+        description: Search filter for Function
         type: string
         required: false
       tags:
@@ -4322,7 +4323,7 @@ definitions:
         description: Collaborator Crm collaborator
         type: integer
       crmCtcId__crmCtcComment:
-        description: Contact Comment
+        description: Comment
         type: string
       crmCtcFirstName:
         description: First name
@@ -4349,7 +4350,7 @@ definitions:
         description: First name
         type: string
       crmCtcId__crmCtcFunction:
-        description: Contact Function
+        description: Function
         type: string
       crmCtcName:
         description: Name
@@ -4557,7 +4558,7 @@ definitions:
         description: Contact First name
         type: string
       crmLeadOppId__crmOppDirectStatus:
-        description: Opportunity Ingoing / Outgoing
+        description: Ingoing / Outgoing
         type: string
         enum:
         - Ingoing
@@ -4594,7 +4595,6 @@ definitions:
         description: Ingoing / Outgoing
         type: string
         enum:
-        - N
         - I
         - O
       crmLeadOppId:
@@ -4614,7 +4614,7 @@ definitions:
         description: Login
         type: string
       crmLeadOppId__crmOppTitle:
-        description: Opportunity Title
+        description: Title
         type: string
       row_id:
         description: Unique technical row ID
@@ -4666,18 +4666,16 @@ definitions:
       crmOppColId:
         description: Collaborator
         type: string
+      crmOppDirect:
+        description: Crm opp direct
+        type: string
+        enum: []
       crmOppColId__crmCollaborator:
         description: Collaborator Crm collaborator
         type: integer
       crmOppColId__usr_login:
         description: Login
         type: string
-      crmOppDirectStatus:
-        description: Ingoing / Outgoing
-        type: string
-        enum:
-        - Ingoing
-        - Outgoing
       crmOppColId__usr_last_name:
         description: Last name
         type: string
@@ -4852,6 +4850,9 @@ definitions:
         - '1'
         - '2'
         - '3'
+      crmMocCtcId__crmCtcFirstName:
+        description: Contact First name
+        type: string
       row_id:
         description: Unique technical row ID
         type: string
