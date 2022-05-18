@@ -39,7 +39,7 @@ components:
           description: Collaborator Crm collaborator
           type: integer
         crmCtcId__crmCtcComment:
-          description: Comment
+          description: Contact Comment
           type: string
         crmCtcFirstName:
           description: First name
@@ -64,6 +64,9 @@ components:
           type: string
         crmCtcId__crmCtcFirstName:
           description: First name
+          type: string
+        crmCtcId__crmCtcFunction:
+          description: Contact Function
           type: string
         crmCtcName:
           description: Name
@@ -113,6 +116,15 @@ components:
         crmPrdLabel:
           description: Label
           type: string
+        crmPrdBillingMethod:
+          description: Billing Method
+          type: string
+          enum:
+          - Unitary
+          - Daily
+          - Weekly
+          - Monthly
+          - Yearly
     PublicationResult:
       type: object
       properties:
@@ -353,6 +365,9 @@ components:
     CrmOpportunity:
       type: object
       properties:
+        crmOppAmount:
+          description: Crm opp amount
+          type: integer
         crmOppState:
           description: State
           type: string
@@ -1236,6 +1251,12 @@ paths:
         in: query
         name: crmOppDocuments
         description: Search filter for Documents
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: crmOppAmount
+        description: Search filter for Crm opp amount
         required: false
       tags:
       - CrmOpportunity
@@ -2944,7 +2965,13 @@ paths:
           type: string
         in: query
         name: crmCtcId__crmCtcComment
-        description: Search filter for Comment
+        description: Search filter for Contact Comment
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmCtcId__crmCtcFunction
+        description: Search filter for Contact Function
         required: false
       tags:
       - CrmContact
@@ -4904,6 +4931,18 @@ paths:
         in: query
         name: crmPrdDocuments
         description: Search filter for Documents
+        required: false
+      - schema:
+          type: string
+          enum:
+          - Unitary
+          - Daily
+          - Weekly
+          - Monthly
+          - Yearly
+        in: query
+        name: crmPrdBillingMethod
+        description: Search filter for Billing Method
         required: false
       tags:
       - CrmProduct

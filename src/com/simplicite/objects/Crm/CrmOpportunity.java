@@ -6,13 +6,9 @@ import com.simplicite.util.*;
 import com.simplicite.util.exceptions.*;
 import com.simplicite.util.tools.*;
 
-/** test  2
- * Business object CrmLead
- */ 
-public class CrmActivity extends ObjectDB {
+/**
+ * Business object CrmOpportunity
+ */
+public class CrmOpportunity extends ObjectDB {
 	private static final long serialVersionUID = 1L;
-	
-	
-	
-
 }

@@ -767,7 +767,7 @@
             "fld_updall": true,
             "fld_case": null,
             "fld_righttoleft": false,
-            "fld_rendering": null,
+            "fld_rendering": "EURO",
             "fld_speech": null,
             "fld_calc": null,
             "fld_objlist": null,
@@ -3739,13 +3739,13 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmActivity.java",
-       "size": 581,
+       "size": 313,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmLead.java",
        "id": "11075",
        "object": "ObjectInternal",
-       "rowid": "2025"
+       "rowid": "2027"
       },
       "obo_usets": "1",
       "obo_nosearch": "1",
@@ -4531,13 +4531,13 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 581,
+       "size": 313,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmLead.java",
        "id": "11075",
        "object": "ObjectInternal",
-       "rowid": "2025"
+       "rowid": "2027"
       },
       "obo_usets": "1",
       "obo_nosearch": "1",
@@ -8225,6 +8225,72 @@
            }
           }]
          }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmContact~crmCtcFunction~440",
+         "item": {
+          "obf_object_id__obo_name": "CrmContact",
+          "obf_field_id__fld_name": "crmCtcFunction",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 440,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": "crmCtcId",
+          "obf_ref_object_id__obo_name": "CrmContact",
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmContact-3",
+          "obf_area_id__ofa_position": 3,
+          "row_module_id__mdl_name": "Crm"
+         }
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmContact~crmCtcComment~450",
+         "item": {
+          "obf_object_id__obo_name": "CrmContact",
+          "obf_field_id__fld_name": "crmCtcComment",
+          "obf_field_id__fld_type": "13",
+          "obf_order": 450,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": "crmCtcId",
+          "obf_ref_object_id__obo_name": "CrmContact",
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmContact-3",
+          "obf_area_id__ofa_position": 3,
+          "row_module_id__mdl_name": "Crm"
+         }
         }
        ]
       },
@@ -9887,13 +9953,13 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmLead.java",
-       "size": 581,
+       "size": 313,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmLead.java",
        "id": "11075",
        "object": "ObjectInternal",
-       "rowid": "2025"
+       "rowid": "2027"
       },
       "obo_usets": "1",
       "obo_nosearch": "1",
@@ -13580,7 +13646,16 @@
       "obo_dbtable": "crm_opportunity",
       "obo_role": "OBJ",
       "obo_class": null,
-      "obo_script_id": null,
+      "obo_script_id": {
+       "path": "src/com/simplicite/objects/Crm/CrmOpportunity.java",
+       "size": 307,
+       "field": "obo_script_id",
+       "mime": "text/plain",
+       "name": "CrmOpportunity.java",
+       "id": "11625",
+       "object": "ObjectInternal",
+       "rowid": "2032"
+      },
       "obo_usets": "1",
       "obo_nosearch": "1",
       "obo_comment": null,
@@ -14212,6 +14287,126 @@
                "tsl_id__fld_name": "crmOppDocuments",
                "tsl_lang": "FRA",
                "tsl_value": "Crm opp documents",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmOpportunity~crmOppAmount~160",
+         "item": {
+          "obf_object_id__obo_name": "CrmOpportunity",
+          "obf_field_id__fld_name": "crmOppAmount",
+          "obf_field_id__fld_type": "1",
+          "obf_order": 160,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": null,
+          "obf_area_id__ofa_position": null,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "crmOppAmount",
+           "item": {
+            "fld_name": {"value": "crmOppAmount"},
+            "fld_dbname": "crm_opp_amount",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": null,
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "1",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 11,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": "EURO",
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Crm"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppAmount~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppAmount",
+               "tsl_lang": "ENU",
+               "tsl_value": "Crm opp amount",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmOppAmount~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmOppAmount",
+               "tsl_lang": "FRA",
+               "tsl_value": "Crm opp amount",
                "tsl_simplehelp": null,
                "tsl_short_value": null,
                "tsl_placeholder": null,
@@ -15417,7 +15612,7 @@
             "fld_updall": true,
             "fld_case": null,
             "fld_righttoleft": false,
-            "fld_rendering": null,
+            "fld_rendering": "EURO",
             "fld_speech": null,
             "fld_calc": null,
             "fld_objlist": null,
@@ -15575,6 +15770,126 @@
                "tsl_id__fld_name": "crmPrdDocuments",
                "tsl_lang": "FRA",
                "tsl_value": "Crm prd documents",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmProduct~crmPrdBillingMethod~40",
+         "item": {
+          "obf_object_id__obo_name": "CrmProduct",
+          "obf_field_id__fld_name": "crmPrdBillingMethod",
+          "obf_field_id__fld_type": "7",
+          "obf_order": 40,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmProduct-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "crmPrdBillingMethod",
+           "item": {
+            "fld_name": {"value": "crmPrdBillingMethod"},
+            "fld_dbname": "crm_prd_billing_method",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "7",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": "SB",
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Crm"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmPrdBillingMethod~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmPrdBillingMethod",
+               "tsl_lang": "ENU",
+               "tsl_value": "Billing Method",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmPrdBillingMethod~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmPrdBillingMethod",
+               "tsl_lang": "FRA",
+               "tsl_value": "Crm prd billing method",
                "tsl_simplehelp": null,
                "tsl_short_value": null,
                "tsl_placeholder": null,
@@ -17401,6 +17716,249 @@
             "lov_code_id__lov_code": "Fax",
             "lov_lang": "FRA",
             "lov_value": "Fax",
+            "row_module_id__mdl_name": "Crm"
+           }
+          }
+         ]
+        }]
+       }
+      ]
+     }]
+    },
+    {
+     "object": "FieldList",
+     "userkey": "CRMPRDBILLINGMETHOD",
+     "item": {
+      "lov_name": "CRMPRDBILLINGMETHOD",
+      "row_module_id__mdl_name": "Crm",
+      "lov_model_id__mod_name": null,
+      "lov_model_id__mod_image": null
+     },
+     "links": [{
+      "object": "FieldListCode",
+      "label": "List code",
+      "icon": "img/system/list_of_values",
+      "field": "lov_list_id",
+      "list": [
+       {
+        "object": "FieldListCode",
+        "userkey": "CRMPRDBILLINGMETHOD~Unitary",
+        "item": {
+         "lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+         "lov_code": "Unitary",
+         "lov_order_by": 10,
+         "lov_label": "UNI",
+         "row_module_id__mdl_name": "Crm",
+         "lov_color": null,
+         "lov_color_bg": null,
+         "lov_icon": null,
+         "lov_display": ["L"]
+        },
+        "links": [{
+         "object": "FieldListValue",
+         "label": "Translated list value",
+         "icon": "img/system/translation",
+         "field": "lov_code_id",
+         "list": [
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Unitary~ENU",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Unitary",
+            "lov_lang": "ENU",
+            "lov_value": "Unitary",
+            "row_module_id__mdl_name": "Crm"
+           }
+          },
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Unitary~FRA",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Unitary",
+            "lov_lang": "FRA",
+            "lov_value": "Unitaire",
+            "row_module_id__mdl_name": "Crm"
+           }
+          }
+         ]
+        }]
+       },
+       {
+        "object": "FieldListCode",
+        "userkey": "CRMPRDBILLINGMETHOD~Daily",
+        "item": {
+         "lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+         "lov_code": "Daily",
+         "lov_order_by": 20,
+         "lov_label": "DAY",
+         "row_module_id__mdl_name": "Crm",
+         "lov_color": null,
+         "lov_color_bg": null,
+         "lov_icon": null,
+         "lov_display": ["L"]
+        },
+        "links": [{
+         "object": "FieldListValue",
+         "label": "Translated list value",
+         "icon": "img/system/translation",
+         "field": "lov_code_id",
+         "list": [
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Daily~ENU",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Daily",
+            "lov_lang": "ENU",
+            "lov_value": "Daily",
+            "row_module_id__mdl_name": "Crm"
+           }
+          },
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Daily~FRA",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Daily",
+            "lov_lang": "FRA",
+            "lov_value": "Journalière",
+            "row_module_id__mdl_name": "Crm"
+           }
+          }
+         ]
+        }]
+       },
+       {
+        "object": "FieldListCode",
+        "userkey": "CRMPRDBILLINGMETHOD~Weekly",
+        "item": {
+         "lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+         "lov_code": "Weekly",
+         "lov_order_by": 30,
+         "lov_label": "WEE",
+         "row_module_id__mdl_name": "Crm",
+         "lov_color": null,
+         "lov_color_bg": null,
+         "lov_icon": null,
+         "lov_display": ["L"]
+        },
+        "links": [{
+         "object": "FieldListValue",
+         "label": "Translated list value",
+         "icon": "img/system/translation",
+         "field": "lov_code_id",
+         "list": [
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Weekly~ENU",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Weekly",
+            "lov_lang": "ENU",
+            "lov_value": "Weekly",
+            "row_module_id__mdl_name": "Crm"
+           }
+          },
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Weekly~FRA",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Weekly",
+            "lov_lang": "FRA",
+            "lov_value": "Hebdomadaire",
+            "row_module_id__mdl_name": "Crm"
+           }
+          }
+         ]
+        }]
+       },
+       {
+        "object": "FieldListCode",
+        "userkey": "CRMPRDBILLINGMETHOD~Monthly",
+        "item": {
+         "lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+         "lov_code": "Monthly",
+         "lov_order_by": 40,
+         "lov_label": "MON",
+         "row_module_id__mdl_name": "Crm",
+         "lov_color": null,
+         "lov_color_bg": null,
+         "lov_icon": null,
+         "lov_display": ["L"]
+        },
+        "links": [{
+         "object": "FieldListValue",
+         "label": "Translated list value",
+         "icon": "img/system/translation",
+         "field": "lov_code_id",
+         "list": [
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Monthly~ENU",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Monthly",
+            "lov_lang": "ENU",
+            "lov_value": "Monthly",
+            "row_module_id__mdl_name": "Crm"
+           }
+          },
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Monthly~FRA",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Monthly",
+            "lov_lang": "FRA",
+            "lov_value": "Mensuelle",
+            "row_module_id__mdl_name": "Crm"
+           }
+          }
+         ]
+        }]
+       },
+       {
+        "object": "FieldListCode",
+        "userkey": "CRMPRDBILLINGMETHOD~Yearly",
+        "item": {
+         "lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+         "lov_code": "Yearly",
+         "lov_order_by": 50,
+         "lov_label": "YEA",
+         "row_module_id__mdl_name": "Crm",
+         "lov_color": null,
+         "lov_color_bg": null,
+         "lov_icon": null,
+         "lov_display": ["L"]
+        },
+        "links": [{
+         "object": "FieldListValue",
+         "label": "Translated list value",
+         "icon": "img/system/translation",
+         "field": "lov_code_id",
+         "list": [
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Yearly~ENU",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Yearly",
+            "lov_lang": "ENU",
+            "lov_value": "Yearly",
+            "row_module_id__mdl_name": "Crm"
+           }
+          },
+          {
+           "object": "FieldListValue",
+           "userkey": "CRMPRDBILLINGMETHOD~Yearly~FRA",
+           "item": {
+            "lov_code_id__lov_list_id__lov_name": "CRMPRDBILLINGMETHOD",
+            "lov_code_id__lov_code": "Yearly",
+            "lov_lang": "FRA",
+            "lov_value": "Yearly",
             "row_module_id__mdl_name": "Crm"
            }
           }
@@ -20322,7 +20880,7 @@
       "ofa_name": "CrmContact-3",
       "ofa_position": 3,
       "ofa_title": true,
-      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmCtcId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmCtcId__crmCtcName\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmCtcId__crmCtcFirstName\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"crmCtcId__crmCtcComment\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"crmCtcId\"><\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmCtcId__crmCtcName\"><\/div>\n      <div class=\"field\" data-field=\"crmCtcId__crmCtcFunction\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmCtcId__crmCtcFirstName\"><\/div>\n      <div class=\"field\" data-field=\"crmCtcId__crmCtcComment\"><\/div>\n    <\/div>\n  <\/div>\n<\/div>",
       "ofa_icon": "img/color/woman_profile",
       "row_module_id__mdl_name": "Crm"
      },
@@ -21288,7 +21846,7 @@
       "ofa_name": "CrmProduct-1",
       "ofa_position": 1,
       "ofa_title": false,
-      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmPrdLabel\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmPrdPrice\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"crmPrdDocuments\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmPrdLabel\"><\/div>\n      <div class=\"field\" data-field=\"crmPrdBillingMethod\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmPrdPrice\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"crmPrdDocuments\"><\/div>\n<\/div>",
       "ofa_icon": "star",
       "row_module_id__mdl_name": "Crm"
      },

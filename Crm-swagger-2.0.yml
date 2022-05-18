@@ -418,6 +418,11 @@ paths:
         description: Search filter for Documents
         type: string
         required: false
+      - in: query
+        name: crmOppAmount
+        description: Search filter for Crm opp amount
+        type: integer
+        required: false
       tags:
       - CrmOpportunity
   /rest/CrmOpportunity/{row_id}:
@@ -1848,7 +1853,12 @@ paths:
         required: false
       - in: query
         name: crmCtcId__crmCtcComment
-        description: Search filter for Comment
+        description: Search filter for Contact Comment
+        type: string
+        required: false
+      - in: query
+        name: crmCtcId__crmCtcFunction
+        description: Search filter for Contact Function
         type: string
         required: false
       tags:
@@ -3489,6 +3499,17 @@ paths:
         description: Search filter for Documents
         type: string
         required: false
+      - in: query
+        name: crmPrdBillingMethod
+        description: Search filter for Billing Method
+        type: string
+        required: false
+        enum:
+        - Unitary
+        - Daily
+        - Weekly
+        - Monthly
+        - Yearly
       tags:
       - CrmProduct
   /rest/CrmCtcAct:
@@ -4275,7 +4296,7 @@ definitions:
         description: Collaborator Crm collaborator
         type: integer
       crmCtcId__crmCtcComment:
-        description: Comment
+        description: Contact Comment
         type: string
       crmCtcFirstName:
         description: First name
@@ -4300,6 +4321,9 @@ definitions:
         type: string
       crmCtcId__crmCtcFirstName:
         description: First name
+        type: string
+      crmCtcId__crmCtcFunction:
+        description: Contact Function
         type: string
       crmCtcName:
         description: Name
@@ -4349,6 +4373,15 @@ definitions:
       crmPrdLabel:
         description: Label
         type: string
+      crmPrdBillingMethod:
+        description: Billing Method
+        type: string
+        enum:
+        - Unitary
+        - Daily
+        - Weekly
+        - Monthly
+        - Yearly
   PublicationResult:
     type: object
     properties:
@@ -4589,6 +4622,9 @@ definitions:
   CrmOpportunity:
     type: object
     properties:
+      crmOppAmount:
+        description: Crm opp amount
+        type: integer
       crmOppState:
         description: State
         type: string

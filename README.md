@@ -157,6 +157,8 @@
 | _Ref. `crmCtcId.crmCtcName`_                                 | _char(30)_                               |          |           |          | -                                                                                |
 | _Ref. `crmCtcId.crmCtcFirstName`_                            | _char(40)_                               |          |           |          | -                                                                                |
 | _Ref. `crmCtcId.crmCtcComment`_                              | _text(1500)_                             |          |           |          | -                                                                                |
+| _Ref. `crmCtcId.crmCtcFunction`_                             | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmCtcId.crmCtcComment`_                              | _text(1500)_                             |          |           |          | -                                                                                |
 
 `CrmContactHistoric` business object definition
 -----------------------------------------------
@@ -306,6 +308,7 @@
 | _Ref. `crmOppColId.usr_first_name`_                          | _char(50)_                               |          |           | yes      | _First name_                                                                     |
 | _Ref. `crmOppColId.usr_last_name`_                           | _char(50)_                               |          |           | yes      | _Last name_                                                                      |
 | `crmOppDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
+| `crmOppAmount`                                               | int(11)                                  |          | yes       |          | -                                                                                |
 
 ### Lists
 
@@ -342,4 +345,14 @@
 | `crmPrdLabel`                                                | char(30)                                 | yes*     | yes       |          | -                                                                                |
 | `crmPrdPrice`                                                | int(11)                                  | yes      | yes       |          | -                                                                                |
 | `crmPrdDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
+| `crmPrdBillingMethod`                                        | enum(255) using `CRMPRDBILLINGMETHOD` list |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `CRMPRDBILLINGMETHOD`
+    - `Unitary` UNI
+    - `Daily` DAY
+    - `Weekly` WEE
+    - `Monthly` MON
+    - `Yearly` YEA
 
