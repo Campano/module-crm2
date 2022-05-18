@@ -1,30 +1,28 @@
 package com.simplicite.objects.Crm;
 
 import java.util.*;
+
 import com.simplicite.util.*;
+import com.simplicite.util.exceptions.*;
 import com.simplicite.util.tools.*;
 
-/**
- * Business object CrmCollaborator
- */
-public class CrmCollaborator extends com.simplicite.objects.System.SimpleUser {
+/** test  2
+ * Business object CrmLead
+ */ 
+public class CrmLead extends ObjectDB {
 	private static final long serialVersionUID = 1L;
-
+	
+	
+	// todo synchronize
 	@Override
-	public void postLoad() {
-		super.postLoad();
-		
-		final String moduleId = ModuleDB.getModuleId("CrmUser");
+	public List<String> preValidate() {
 
-		// default module value
-		ObjectField f = getField("row_module_id");
-		f.setDefaultValue(moduleId);
+		List<String> msgs = new ArrayList<>();
+		ObjectField f = getField("crmLeadNumber");
+		if (isNew()||isCopied())
+			f.setValue(getGrant().getNextIdForColumn(getTable(),f.getDBName()));
 
-		// hidding useless fields in field area
-		f = getField("mdl_name");
-		f.setVisibility(ObjectField.VIS_NOT);
-
-		f = getField("viw_name");
-		f.setVisibility(ObjectField.VIS_NOT);
+		return msgs;
 	}
+
 }

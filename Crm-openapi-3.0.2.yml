@@ -181,13 +181,12 @@ components:
         crmAccId__crmAccComment:
           description: Comment
           type: string
-        crmAccSector:
+        crmAccSecId__crmSecSector:
           description: Sector
           type: string
-          enum:
-          - PRI
-          - PUB
-          - ELSE
+        crmAccSecId:
+          description: Sector
+          type: string
         crmAccId__crmAccName:
           description: Name
           type: string
@@ -243,6 +242,15 @@ components:
         crmAccDocuments:
           description: Documents
           type: object
+    CrmAccSector:
+      type: object
+      properties:
+        crmSecSector:
+          description: Sector
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
     ArrayOfCrmOpportunity:
       type: array
       items:
@@ -607,6 +615,10 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/CrmLead'
+    ArrayOfCrmAccSector:
+      type: array
+      items:
+        $ref: '#/components/schemas/CrmAccSector'
     CrmOppPrd:
       type: object
       properties:
@@ -2151,6 +2163,201 @@ paths:
         required: false
       tags:
       - CrmActivity
+  /rest/CrmAccSector/{row_id}:
+    post:
+      summary: Create a new CrmAccSectorbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CrmAccSector'
+      operationId: obj-crmaccsector-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CrmAccSector'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - CrmAccSector
+    get:
+      summary: Get a CrmAccSector business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-crmaccsector-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CrmAccSector'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - CrmAccSector
+    delete:
+      summary: Delete a CrmAccSector business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-crmaccsector-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - CrmAccSector
+    put:
+      summary: Update a CrmAccSectorbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CrmAccSector'
+      operationId: obj-crmaccsector-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CrmAccSector'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - CrmAccSector
   /rest/CrmOppPrd:
     get:
       summary: Search CrmOppPrd business object records or get contextualized metadata
@@ -3258,6 +3465,65 @@ paths:
                 $ref: '#/components/schemas/Error401'
       tags:
       - session
+  /rest/CrmAccSector:
+    get:
+      summary: Search CrmAccSector business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-crmaccsector-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfCrmAccSector'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmSecSector
+        description: Search filter for Sector
+        required: false
+      tags:
+      - CrmAccSector
   /rest/CrmProduct/{row_id}:
     post:
       summary: Create a new CrmProductbusiness object record
@@ -3718,16 +3984,6 @@ paths:
         description: Search filter for Short label
         required: false
       - schema:
-          type: string
-          enum:
-          - PRI
-          - PUB
-          - ELSE
-        in: query
-        name: crmAccSector
-        description: Search filter for Sector
-        required: false
-      - schema:
           type: integer
         in: query
         name: crmAccTurnover
@@ -3742,6 +3998,18 @@ paths:
         in: query
         name: crmAccSource
         description: Search filter for Source
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmAccSecId
+        description: Search filter for Sector
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmAccSecId__crmSecSector
+        description: Search filter for Sector
         required: false
       - schema:
           type: string
@@ -5541,6 +5809,8 @@ info:
 tags:
 - name: CrmAccount
   description: Account
+- name: CrmAccSector
+  description: Sector
 - name: CrmActCol
   description: Activity / Collaborator
 - name: CrmActivity

@@ -261,7 +261,7 @@
             "fld_updatable": "1",
             "fld_required": true,
             "fld_fonctid": true,
-            "fld_research": "1",
+            "fld_research": "0",
             "fld_researchreq": "0",
             "fld_sort": "C",
             "fld_more": false,
@@ -700,126 +700,6 @@
         },
         {
          "object": "ObjectFieldSystem",
-         "userkey": "CrmAccount~crmAccSector~60",
-         "item": {
-          "obf_object_id__obo_name": "CrmAccount",
-          "obf_field_id__fld_name": "crmAccSector",
-          "obf_field_id__fld_type": "7",
-          "obf_order": 60,
-          "obf_group_by": null,
-          "obf_dfault_order": null,
-          "obf_input": null,
-          "obf_ref_field_id__fld_name": null,
-          "obf_ref_object_id__obo_name": null,
-          "obf_cascad": null,
-          "obf_card": null,
-          "obf_visible": null,
-          "obf_ref_export": true,
-          "obf_copy": null,
-          "obf_ref_order": null,
-          "obf_fld_visible": null,
-          "obf_fld_required": null,
-          "obf_fld_updatable": null,
-          "obf_fld_research": null,
-          "obf_fld_more": null,
-          "obf_fld_listmore": null,
-          "obf_fld_researchreq": null,
-          "obf_fld_dfault": null,
-          "obf_field_id__fld_dfault": "ELSE",
-          "obf_area_id__ofa_name": "CrmAccount-1",
-          "obf_area_id__ofa_position": 1,
-          "row_module_id__mdl_name": "Crm"
-         },
-         "links": [{
-          "object": "Field",
-          "label": "Field",
-          "icon": "img/system/field",
-          "field": "",
-          "list": [{
-           "object": "Field",
-           "userkey": "crmAccSector",
-           "item": {
-            "fld_name": {"value": "crmAccSector"},
-            "fld_dbname": "crm_acc_sector",
-            "fld_visible": "3",
-            "fld_updatable": "1",
-            "fld_required": true,
-            "fld_fonctid": false,
-            "fld_research": "2",
-            "fld_researchreq": "0",
-            "fld_sort": "C",
-            "fld_more": false,
-            "fld_listmore": false,
-            "fld_listsum": null,
-            "fld_tray": null,
-            "fld_type": "7",
-            "fld_type_id__flt_code": null,
-            "fld_list_id__lov_name": "CRMACCSECTOR",
-            "fld_copy": true,
-            "fld_size": 10,
-            "fld_minsize": null,
-            "fld_precision": null,
-            "fld_fromdate_id__fld_name": null,
-            "fld_dfault": "ELSE",
-            "fld_indexable": false,
-            "fld_autocomp": "0",
-            "fld_groupby": false,
-            "fld_updall": true,
-            "fld_case": null,
-            "fld_righttoleft": false,
-            "fld_rendering": "HCB",
-            "fld_speech": null,
-            "fld_calc": null,
-            "fld_objlist": null,
-            "fld_comment": null,
-            "fld_classification": null,
-            "row_module_id__mdl_name": "Crm"
-           },
-           "links": [{
-            "object": "TranslateField",
-            "label": "Field translation",
-            "icon": "img/system/translation",
-            "field": "tsl_id",
-            "list": [
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmAccSector~ENU",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmAccSector",
-               "tsl_lang": "ENU",
-               "tsl_value": "Sector",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             },
-             {
-              "object": "TranslateField",
-              "userkey": "F~crmAccSector~FRA",
-              "item": {
-               "tsl_typeField": "F",
-               "tsl_id__fld_name": "crmAccSector",
-               "tsl_lang": "FRA",
-               "tsl_value": "Crm acc sector",
-               "tsl_simplehelp": null,
-               "tsl_short_value": null,
-               "tsl_placeholder": null,
-               "tsl_listhelp": null,
-               "row_module_id__mdl_name": "Crm",
-               "tsl_tooltip": null
-              }
-             }
-            ]
-           }]
-          }]
-         }]
-        },
-        {
-         "object": "ObjectFieldSystem",
          "userkey": "CrmAccount~crmAccTurnover~70",
          "item": {
           "obf_object_id__obo_name": "CrmAccount",
@@ -1057,6 +937,271 @@
            }]
           }]
          }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmAccount~crmAccSecId~90",
+         "item": {
+          "obf_object_id__obo_name": "CrmAccount",
+          "obf_field_id__fld_name": "crmAccSecId",
+          "obf_field_id__fld_type": "0",
+          "obf_order": 90,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": "CrmAccSector",
+          "obf_cascad": "N",
+          "obf_card": "0,n",
+          "obf_visible": true,
+          "obf_ref_export": false,
+          "obf_copy": false,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmAccount-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "crmAccSecId",
+           "item": {
+            "fld_name": {"value": "crmAccSecId"},
+            "fld_dbname": "crm_acc_sec_id",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "0",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 11,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": "FKPS",
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Crm"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmAccSecId~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmAccSecId",
+               "tsl_lang": "ENU",
+               "tsl_value": "Sector",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~crmAccSecId~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "crmAccSecId",
+               "tsl_lang": "FRA",
+               "tsl_value": "Crm acc sec id",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Crm",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "CrmAccount~crmSecSector~100",
+         "item": {
+          "obf_object_id__obo_name": "CrmAccount",
+          "obf_field_id__fld_name": "crmSecSector",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 100,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": "crmAccSecId",
+          "obf_ref_object_id__obo_name": "CrmAccSector",
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": "3",
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": "0",
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "CrmAccount-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [
+          {
+           "object": "TranslateObjectField",
+           "label": "Object field translation",
+           "icon": "img/system/translation",
+           "field": "tsl_id",
+           "list": [{
+            "object": "TranslateObjectField",
+            "userkey": "L~CrmAccount~crmSecSector~100~ENU",
+            "item": {
+             "tsl_typeObjectField": "L",
+             "tsl_id__obf_object_id__obo_name": "CrmAccount",
+             "tsl_id__obf_field_id__fld_name": "crmSecSector",
+             "tsl_id__obf_order": 100,
+             "tsl_lang": "ENU",
+             "tsl_value": "Sector",
+             "tsl_simplehelp": null,
+             "tsl_short_value": null,
+             "tsl_listhelp": null,
+             "tsl_placeholder": null,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }]
+          },
+          {
+           "object": "Field",
+           "label": "Field",
+           "icon": "img/system/field",
+           "field": "",
+           "list": [{
+            "object": "Field",
+            "userkey": "crmSecSector",
+            "item": {
+             "fld_name": {"value": "crmSecSector"},
+             "fld_dbname": "crm_sec_sector",
+             "fld_visible": "3",
+             "fld_updatable": "1",
+             "fld_required": true,
+             "fld_fonctid": true,
+             "fld_research": "0",
+             "fld_researchreq": "0",
+             "fld_sort": "C",
+             "fld_more": false,
+             "fld_listmore": false,
+             "fld_listsum": null,
+             "fld_tray": null,
+             "fld_type": "3",
+             "fld_type_id__flt_code": null,
+             "fld_list_id__lov_name": null,
+             "fld_copy": true,
+             "fld_size": 255,
+             "fld_minsize": null,
+             "fld_precision": null,
+             "fld_fromdate_id__fld_name": null,
+             "fld_dfault": null,
+             "fld_indexable": true,
+             "fld_autocomp": "1",
+             "fld_groupby": false,
+             "fld_updall": true,
+             "fld_case": null,
+             "fld_righttoleft": false,
+             "fld_rendering": null,
+             "fld_speech": null,
+             "fld_calc": null,
+             "fld_objlist": null,
+             "fld_comment": null,
+             "fld_classification": null,
+             "row_module_id__mdl_name": "Crm"
+            },
+            "links": [{
+             "object": "TranslateField",
+             "label": "Field translation",
+             "icon": "img/system/translation",
+             "field": "tsl_id",
+             "list": [
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmSecSector~ENU",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmSecSector",
+                "tsl_lang": "ENU",
+                "tsl_value": "Sector",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              },
+              {
+               "object": "TranslateField",
+               "userkey": "F~crmSecSector~FRA",
+               "item": {
+                "tsl_typeField": "F",
+                "tsl_id__fld_name": "crmSecSector",
+                "tsl_lang": "FRA",
+                "tsl_value": "Crm sec sector",
+                "tsl_simplehelp": null,
+                "tsl_short_value": null,
+                "tsl_placeholder": null,
+                "tsl_listhelp": null,
+                "row_module_id__mdl_name": "Crm",
+                "tsl_tooltip": null
+               }
+              }
+             ]
+            }]
+           }]
+          }
+         ]
         },
         {
          "object": "ObjectFieldSystem",
@@ -2695,6 +2840,294 @@
     },
     {
      "object": "ObjectInternal",
+     "userkey": "CrmAccSector",
+     "item": {
+      "obo_name": {"value": "CrmAccSector"},
+      "obo_dbtable": "crm_acc_sector",
+      "obo_role": "OBJ",
+      "obo_class": null,
+      "obo_script_id": null,
+      "obo_usets": "1",
+      "obo_nosearch": "1",
+      "obo_comment": null,
+      "obo_type": "O",
+      "obo_searchspec": null,
+      "obo_delspec": null,
+      "obo_exportorder": null,
+      "obo_distinct": false,
+      "obo_indexable": true,
+      "obo_groupby": false,
+      "obo_dfltref": null,
+      "obo_template_id__tpl_name": "CrmAccSector",
+      "obo_cache": "D",
+      "obo_copy": true,
+      "obo_export": true,
+      "obo_pagine": true,
+      "obo_srh_predef": ["1"],
+      "obo_selrow": true,
+      "obo_updall": true,
+      "obo_delall": true,
+      "obo_listsearch": true,
+      "obo_list_edit": [
+       "N",
+       "L",
+       "E"
+      ],
+      "obo_useform": true,
+      "obo_title": null,
+      "obo_icon": null,
+      "obo_refcount": false,
+      "obo_tree": false,
+      "obo_viewmode": "T",
+      "obo_historic": null,
+      "obo_printable": true,
+      "obo_followlink": true,
+      "obo_mergeable": false,
+      "obo_social": ["1"],
+      "obo_rowid_id__fld_name": null,
+      "obo_extend_id__obj_name": null,
+      "row_module_id__mdl_name": "Crm",
+      "obo_btn_reload": "P",
+      "obo_btn_prefs": "P",
+      "obo_btn_del": "P",
+      "obo_btn_copy": "P",
+      "obo_btn_export": "P",
+      "obo_btn_listadd": "1",
+      "obo_btn_listedit": "1",
+      "obo_btn_listupsert": "1",
+      "obo_btn_updall": "P",
+      "obo_btn_delall": "P",
+      "obo_btn_merge": "P",
+      "obo_btn_save": true,
+      "obo_btn_saveclose": true,
+      "obo_btn_savenew": true,
+      "obo_btn_savecopy": true,
+      "obo_btn_close": true,
+      "obo_tray": true,
+      "obo_dashboard": true,
+      "obo_prefix": "sec",
+      "obo_search_ts": null,
+      "obo_minrows": null,
+      "obo_maxrows": null,
+      "obo_sortable": true,
+      "obo_list_areas": null
+     },
+     "links": [
+      {
+       "object": "TranslateObject",
+       "label": "Object translation",
+       "icon": "img/system/translation",
+       "field": "tsl_id",
+       "list": [
+        {
+         "object": "TranslateObject",
+         "userkey": "O~CrmAccSector~ENU",
+         "item": {
+          "tsl_typeObject": "O",
+          "tsl_id__obo_name": "CrmAccSector",
+          "tsl_lang": "ENU",
+          "tsl_value": "Sector",
+          "tsl_help": null,
+          "row_module_id__mdl_name": "Crm"
+         }
+        },
+        {
+         "object": "TranslateObject",
+         "userkey": "O~CrmAccSector~FRA",
+         "item": {
+          "tsl_typeObject": "O",
+          "tsl_id__obo_name": "CrmAccSector",
+          "tsl_lang": "FRA",
+          "tsl_value": "Secteur",
+          "tsl_help": null,
+          "row_module_id__mdl_name": "Crm"
+         }
+        }
+       ]
+      },
+      {
+       "object": "ObjectFieldSystem",
+       "label": "Object fields",
+       "icon": "img/system/object_field",
+       "field": "obf_object_id",
+       "list": [{
+        "object": "ObjectFieldSystem",
+        "userkey": "CrmAccSector~crmSecSector~10",
+        "item": {
+         "obf_object_id__obo_name": "CrmAccSector",
+         "obf_field_id__fld_name": "crmSecSector",
+         "obf_field_id__fld_type": "3",
+         "obf_order": 10,
+         "obf_group_by": null,
+         "obf_dfault_order": 1,
+         "obf_input": null,
+         "obf_ref_field_id__fld_name": null,
+         "obf_ref_object_id__obo_name": null,
+         "obf_cascad": null,
+         "obf_card": null,
+         "obf_visible": null,
+         "obf_ref_export": true,
+         "obf_copy": null,
+         "obf_ref_order": null,
+         "obf_fld_visible": null,
+         "obf_fld_required": null,
+         "obf_fld_updatable": null,
+         "obf_fld_research": null,
+         "obf_fld_more": null,
+         "obf_fld_listmore": null,
+         "obf_fld_researchreq": null,
+         "obf_fld_dfault": null,
+         "obf_field_id__fld_dfault": null,
+         "obf_area_id__ofa_name": "CrmAccSector-1",
+         "obf_area_id__ofa_position": 1,
+         "row_module_id__mdl_name": "Crm"
+        }
+       }]
+      },
+      {
+       "object": "Link",
+       "label": "Links",
+       "icon": "img/system/link",
+       "field": "obf_ref_object_id",
+       "list": [{
+        "object": "Link",
+        "userkey": "90~CrmAccount~crmAccSecId",
+        "item": {
+         "obf_ref_object_id__obo_name": "CrmAccSector",
+         "obf_order": 90,
+         "obf_ref_order": null,
+         "obf_object_id__obj_name": "CrmAccount",
+         "obf_field_id__fld_name": "crmAccSecId",
+         "obf_field_id__fld_dbname": "crm_acc_sec_id",
+         "obf_field_id__fld_updatable": "1",
+         "obf_field_id__fld_required": false,
+         "obf_field_id__fld_fonctid": false,
+         "obf_cascad": "N",
+         "obf_card": "0,n",
+         "obf_query": null,
+         "obf_visible": true,
+         "obf_ref_export": false,
+         "obf_copy": false,
+         "obf_associate": null,
+         "obf_inline": null,
+         "obf_rendering": null,
+         "obf_treedepth": null,
+         "obf_area_id__ofa_name": "CrmAccount-1",
+         "obf_area_id__ofa_position": 1,
+         "row_module_id__mdl_name": "Crm"
+        }
+       }]
+      },
+      {
+       "object": "Function",
+       "label": "Function",
+       "icon": "img/system/function",
+       "field": "fct_object_id",
+       "list": [
+        {
+         "object": "Function",
+         "userkey": "CRM_SEC_CRUD",
+         "item": {
+          "fct_name": "CRM_SEC_CRUD",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "CrmAccSector",
+          "fct_function": "CMS",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [
+           {
+            "object": "Grant",
+            "userkey": "CRM_GROUP~CRM_SEC_CRUD~CrmAccSector~",
+            "item": {
+             "grt_group_id__grp_name": "CRM_GROUP",
+             "grt_function_id__fct_name": "CRM_SEC_CRUD",
+             "grt_function_id__fct_object_id__obj_type": "O",
+             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "CMS",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
+           },
+           {
+            "object": "Grant",
+            "userkey": "DEMO_ADMIN~CRM_SEC_CRUD~CrmAccSector~",
+            "item": {
+             "grt_group_id__grp_name": "DEMO_ADMIN",
+             "grt_function_id__fct_name": "CRM_SEC_CRUD",
+             "grt_function_id__fct_object_id__obj_type": "O",
+             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "CMS",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }
+          ]
+         }]
+        },
+        {
+         "object": "Function",
+         "userkey": "CRM_SEC_R",
+         "item": {
+          "fct_name": "CRM_SEC_R",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "CrmAccSector",
+          "fct_function": "L",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [
+           {
+            "object": "Grant",
+            "userkey": "CRM_ADMIN~CRM_SEC_R~CrmAccSector~",
+            "item": {
+             "grt_group_id__grp_name": "CRM_ADMIN",
+             "grt_function_id__fct_name": "CRM_SEC_R",
+             "grt_function_id__fct_object_id__obj_type": "O",
+             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "L",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
+           },
+           {
+            "object": "Grant",
+            "userkey": "CRM_GROUP~CRM_SEC_R~CrmAccSector~",
+            "item": {
+             "grt_group_id__grp_name": "CRM_GROUP",
+             "grt_function_id__fct_name": "CRM_SEC_R",
+             "grt_function_id__fct_object_id__obj_type": "O",
+             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "L",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }
+          ]
+         }]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "object": "ObjectInternal",
      "userkey": "CrmActCol",
      "item": {
       "obo_name": {"value": "CrmActCol"},
@@ -3306,13 +3739,13 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmActivity.java",
-       "size": 555,
+       "size": 581,
        "field": "obo_script_id",
        "mime": "text/plain",
-       "name": "CrmActivity.java",
-       "id": "11073",
+       "name": "CrmLead.java",
+       "id": "11075",
        "object": "ObjectInternal",
-       "rowid": "2027"
+       "rowid": "2025"
       },
       "obo_usets": "1",
       "obo_nosearch": "1",
@@ -4098,11 +4531,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 705,
+       "size": 581,
        "field": "obo_script_id",
        "mime": "text/plain",
-       "name": "CrmCollaborator.java",
-       "id": "11074",
+       "name": "CrmLead.java",
+       "id": "11075",
        "object": "ObjectInternal",
        "rowid": "2025"
       },
@@ -5718,16 +6151,7 @@
       "obo_dbtable": "crm_contact",
       "obo_role": "OBJ",
       "obo_class": null,
-      "obo_script_id": {
-       "path": "src/com/simplicite/objects/Crm/CrmContact.java",
-       "size": 759,
-       "field": "obo_script_id",
-       "mime": "text/plain",
-       "name": "CrmContact.java",
-       "id": "11434",
-       "object": "ObjectInternal",
-       "rowid": "2020"
-      },
+      "obo_script_id": "11434",
       "obo_usets": "1",
       "obo_nosearch": "1",
       "obo_comment": null,
@@ -5737,7 +6161,7 @@
       "obo_exportorder": null,
       "obo_distinct": false,
       "obo_indexable": false,
-      "obo_groupby": false,
+      "obo_groupby": null,
       "obo_dfltref": null,
       "obo_template_id__tpl_name": "CrmContact",
       "obo_cache": "D",
@@ -5757,13 +6181,13 @@
       "obo_useform": true,
       "obo_title": null,
       "obo_icon": "icon/color/task/group_24",
-      "obo_refcount": false,
-      "obo_tree": false,
+      "obo_refcount": null,
+      "obo_tree": null,
       "obo_viewmode": "T",
       "obo_historic": ["1"],
       "obo_printable": true,
       "obo_followlink": true,
-      "obo_mergeable": false,
+      "obo_mergeable": null,
       "obo_social": ["1"],
       "obo_rowid_id__fld_name": null,
       "obo_extend_id__obj_name": null,
@@ -9463,13 +9887,13 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmLead.java",
-       "size": 580,
+       "size": 581,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmLead.java",
        "id": "11075",
        "object": "ObjectInternal",
-       "rowid": "2023"
+       "rowid": "2025"
       },
       "obo_usets": "1",
       "obo_nosearch": "1",
@@ -15331,6 +15755,117 @@
     },
     "links": [
      {
+      "object": "Domain",
+      "label": "Sub-domain",
+      "icon": "img/system/domain",
+      "list": [{
+       "object": "Domain",
+       "userkey": "CrmAdmin",
+       "item": {
+        "obd_name": "CrmAdmin",
+        "obd_comment": null,
+        "obd_type": "D",
+        "obd_view_id__viw_name": null,
+        "obd_nohome": true,
+        "obd_icon": "key",
+        "obd_order": 100,
+        "obd_domain_id__obd_name": "CrmDomain",
+        "row_module_id__mdl_name": "Crm"
+       },
+       "links": [
+        {
+         "object": "TranslateDomain",
+         "label": "Domain translation",
+         "icon": "img/system/translation",
+         "field": "tsl_id",
+         "list": [
+          {
+           "object": "TranslateDomain",
+           "userkey": "O~CrmAdmin~ENU",
+           "item": {
+            "tsl_typeObject": "O",
+            "tsl_id__obd_name": "CrmAdmin",
+            "tsl_lang": "ENU",
+            "tsl_value": "Admin",
+            "tsl_help": null,
+            "row_module_id__mdl_name": "Crm"
+           }
+          },
+          {
+           "object": "TranslateDomain",
+           "userkey": "O~CrmAdmin~FRA",
+           "item": {
+            "tsl_typeObject": "O",
+            "tsl_id__obd_name": "CrmAdmin",
+            "tsl_lang": "FRA",
+            "tsl_value": "Admin",
+            "tsl_help": null,
+            "row_module_id__mdl_name": "Crm"
+           }
+          }
+         ]
+        },
+        {
+         "object": "Function",
+         "label": "Function",
+         "icon": "img/system/function",
+         "field": "fct_object_id",
+         "list": [{
+          "object": "Function",
+          "userkey": "CRM_ADMIN_D",
+          "item": {
+           "fct_name": "CRM_ADMIN_D",
+           "fct_object_id__obj_type": "D",
+           "fct_object_id__obj_name": "CrmAdmin",
+           "fct_function": "L",
+           "fct_action_id__act_name": null,
+           "fct_view_id__viw_name": null,
+           "row_module_id__mdl_name": "Crm"
+          },
+          "links": [{
+           "object": "Grant",
+           "label": "Grant",
+           "icon": "img/system/grant",
+           "field": "grt_function_id",
+           "list": [{
+            "object": "Grant",
+            "userkey": "CRM_ADMIN~CRM_ADMIN_D~CrmAdmin~",
+            "item": {
+             "grt_group_id__grp_name": "CRM_ADMIN",
+             "grt_function_id__fct_name": "CRM_ADMIN_D",
+             "grt_function_id__fct_object_id__obj_type": "D",
+             "grt_function_id__fct_object_id__obj_name": "CrmAdmin",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "L",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "Map",
+         "label": "Main menu",
+         "icon": "img/system/main_menu",
+         "field": "map_domain_id",
+         "list": [{
+          "object": "Map",
+          "userkey": "CrmAdmin~1000",
+          "item": {
+           "map_domain_id__obd_name": "CrmAdmin",
+           "map_object_id__obj_name": "CrmAccSector",
+           "map_process_id__pcs_name": null,
+           "map_order": 1000,
+           "map_ext": false,
+           "row_module_id__mdl_name": "Crm"
+          }
+         }]
+        }
+       ]
+      }]
+     },
+     {
       "object": "TranslateDomain",
       "label": "Domain translation",
       "icon": "img/system/translation",
@@ -17084,6 +17619,87 @@
    "list": [
     {
      "object": "Field",
+     "userkey": "crmAccSector",
+     "item": {
+      "fld_name": {"value": "crmAccSector"},
+      "fld_dbname": "crm_acc_sector",
+      "fld_visible": "3",
+      "fld_updatable": "1",
+      "fld_required": true,
+      "fld_fonctid": false,
+      "fld_research": "2",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": false,
+      "fld_listsum": null,
+      "fld_tray": null,
+      "fld_type": "7",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": "CRMACCSECTOR",
+      "fld_copy": true,
+      "fld_size": 10,
+      "fld_minsize": null,
+      "fld_precision": null,
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": "ELSE",
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": "HCB",
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Crm"
+     },
+     "links": [{
+      "object": "TranslateField",
+      "label": "Field translation",
+      "icon": "img/system/translation",
+      "field": "tsl_id",
+      "list": [
+       {
+        "object": "TranslateField",
+        "userkey": "F~crmAccSector~ENU",
+        "item": {
+         "tsl_typeField": "F",
+         "tsl_id__fld_name": "crmAccSector",
+         "tsl_lang": "ENU",
+         "tsl_value": "Sector",
+         "tsl_simplehelp": null,
+         "tsl_short_value": null,
+         "tsl_placeholder": null,
+         "tsl_listhelp": null,
+         "row_module_id__mdl_name": "Crm",
+         "tsl_tooltip": null
+        }
+       },
+       {
+        "object": "TranslateField",
+        "userkey": "F~crmAccSector~FRA",
+        "item": {
+         "tsl_typeField": "F",
+         "tsl_id__fld_name": "crmAccSector",
+         "tsl_lang": "FRA",
+         "tsl_value": "Crm acc sector",
+         "tsl_simplehelp": null,
+         "tsl_short_value": null,
+         "tsl_placeholder": null,
+         "tsl_listhelp": null,
+         "row_module_id__mdl_name": "Crm",
+         "tsl_tooltip": null
+        }
+       }
+      ]
+     }]
+    },
+    {
+     "object": "Field",
      "userkey": "crmActActctcId",
      "item": {
       "fld_name": {"value": "crmActActctcId"},
@@ -18812,6 +19428,17 @@
     },
     {
      "object": "Template",
+     "userkey": "CrmAccSector",
+     "item": {
+      "tpl_name": "CrmAccSector",
+      "tpl_ui": "<div class=\"area\" data-area=\"1:=\"><\/div>",
+      "tpl_min": null,
+      "tpl_image": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "Template",
      "userkey": "CrmActCol",
      "item": {
       "tpl_name": "CrmActCol",
@@ -19023,7 +19650,7 @@
       "ofa_name": "CrmAccount-1",
       "ofa_position": 1,
       "ofa_title": false,
-      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"row\">\n        <div class=\"col-sm-6\">\n          <div class=\"field\" data-field=\"crmAccName\"><\/div>\n        <\/div>\n        <div class=\"col-sm-6\">\n          <div class=\"field\" data-field=\"crmAccShortLabel\"><\/div>\n        <\/div>\n      <\/div>\n      <div class=\"field\" data-field=\"crmAccSource\"><\/div>\n      <div class=\"field\" data-field=\"crmAccColId\"><\/div>\n      <div class=\"field\" data-field=\"crmAccColId__crmCollaborator\"><\/div>\n      <div class=\"field\" data-field=\"crmAccColId__usr_login\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmAccEmployee\"><\/div>\n      <div class=\"field\" data-field=\"crmAccSector\"><\/div>\n      <div class=\"field\" data-field=\"crmAccTurnover\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"crmAccComment\"><\/div>\n  <div class=\"field\" data-field=\"crmAccDocuments\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"row\">\n        <div class=\"col-sm-6\">\n          <div class=\"field\" data-field=\"crmAccName\"><\/div>\n        <\/div>\n        <div class=\"col-sm-6\">\n          <div class=\"field\" data-field=\"crmAccShortLabel\"><\/div>\n        <\/div>\n      <\/div>\n      <div class=\"field\" data-field=\"crmAccSource\"><\/div>\n      <div class=\"field\" data-field=\"crmAccColId\"><\/div>\n      <div class=\"field\" data-field=\"crmAccColId__crmCollaborator\"><\/div>\n      <div class=\"field\" data-field=\"crmAccColId__usr_login\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"crmAccEmployee\"><\/div>\n      <div class=\"field\" data-field=\"crmAccSecId\"><\/div>\n      <div class=\"field\" data-field=\"crmAccSecId__crmSecSector\"><\/div>\n      <div class=\"field\" data-field=\"crmAccTurnover\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"crmAccComment\"><\/div>\n  <div class=\"field\" data-field=\"crmAccDocuments\"><\/div>\n<\/div>",
       "ofa_icon": "building",
       "row_module_id__mdl_name": "Crm"
      },
@@ -19178,6 +19805,48 @@
          "tsl_id__ofa_name": "CrmAccount-5",
          "tsl_lang": "FRA",
          "tsl_value": "Account -5",
+         "row_module_id__mdl_name": "Crm"
+        }
+       }
+      ]
+     }]
+    },
+    {
+     "object": "ObjectFieldArea",
+     "userkey": "CrmAccSector-1",
+     "item": {
+      "ofa_name": "CrmAccSector-1",
+      "ofa_position": 1,
+      "ofa_title": true,
+      "ofa_ui": "<div class=\"field\" data-field=\"crmSecSector\"><\/div>",
+      "ofa_icon": "star",
+      "row_module_id__mdl_name": "Crm"
+     },
+     "links": [{
+      "object": "TranslateFieldArea",
+      "label": "Field area translation",
+      "icon": "img/system/translation",
+      "field": "tsl_id",
+      "list": [
+       {
+        "object": "TranslateFieldArea",
+        "userkey": "Z~CrmAccSector-1~ENU",
+        "item": {
+         "tsl_typeFieldArea": "Z",
+         "tsl_id__ofa_name": "CrmAccSector-1",
+         "tsl_lang": "ENU",
+         "tsl_value": "CrmAccSector-1",
+         "row_module_id__mdl_name": "Crm"
+        }
+       },
+       {
+        "object": "TranslateFieldArea",
+        "userkey": "Z~CrmAccSector-1~FRA",
+        "item": {
+         "tsl_typeFieldArea": "Z",
+         "tsl_id__ofa_name": "CrmAccSector-1",
+         "tsl_lang": "FRA",
+         "tsl_value": "Acc sector -1",
          "row_module_id__mdl_name": "Crm"
         }
        }
@@ -21692,34 +22361,6 @@
      "userkey": "CRM_ADMIN~~~",
      "item": {
       "grt_group_id__grp_name": "CRM_ADMIN",
-      "grt_function_id__fct_name": null,
-      "grt_function_id__fct_object_id__obj_type": null,
-      "grt_function_id__fct_object_id__obj_name": null,
-      "grt_function_id__fct_action_id__act_name": null,
-      "grt_function_id__fct_function": null,
-      "grt_activ": true,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "Grant",
-     "userkey": "CRM_ADMIN~~~",
-     "item": {
-      "grt_group_id__grp_name": "CRM_ADMIN",
-      "grt_function_id__fct_name": null,
-      "grt_function_id__fct_object_id__obj_type": null,
-      "grt_function_id__fct_object_id__obj_name": null,
-      "grt_function_id__fct_action_id__act_name": null,
-      "grt_function_id__fct_function": null,
-      "grt_activ": true,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "Grant",
-     "userkey": "CRM_GROUP~~~",
-     "item": {
-      "grt_group_id__grp_name": "CRM_GROUP",
       "grt_function_id__fct_name": null,
       "grt_function_id__fct_object_id__obj_type": null,
       "grt_function_id__fct_object_id__obj_name": null,

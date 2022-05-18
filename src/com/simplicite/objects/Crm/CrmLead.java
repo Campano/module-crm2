@@ -6,7 +6,7 @@ import com.simplicite.util.*;
 import com.simplicite.util.exceptions.*;
 import com.simplicite.util.tools.*;
 
-/** test  
+/** test  2
  * Business object CrmLead
  */ 
 public class CrmLead extends ObjectDB {

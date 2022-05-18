@@ -26,9 +26,10 @@
 | `crmAccEmployee`                                             | int(10)                                  |          | yes       |          | -                                                                                |
 | `crmAccComment`                                              | text(1500)                               |          | yes       |          | -                                                                                |
 | `crmAccShortLabel`                                           | char(10)                                 |          | yes       |          | -                                                                                |
-| `crmAccSector`                                               | enum(10) using `CRMACCSECTOR` list       | yes      | yes       |          | -                                                                                |
 | `crmAccTurnover`                                             | int(11)                                  |          | yes       |          | -                                                                                |
 | `crmAccSource`                                               | enum(12) using `CRMACCSOURCE` list       |          | yes       |          | -                                                                                |
+| `crmAccSecId` link to **`CrmAccSector`**                     | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `crmAccSecId.crmSecSector`_                            | _char(255)_                              |          |           |          | -                                                                                |
 | `crmAccStreet`                                               | char(255)                                |          | yes       |          | -                                                                                |
 | `crmAccPostalcode`                                           | int(5)                                   |          | yes       |          | -                                                                                |
 | `crmAccCity`                                                 | char(255)                                |          | yes       |          | -                                                                                |
@@ -45,14 +46,21 @@
 
 ### Lists
 
-* `CRMACCSECTOR`
-    - `PRI` Private
-    - `PUB` Public
-    - `ELSE` Else
 * `CRMACCSOURCE`
     - `EXHI` Salon
     - `WEB` Website
     - `NET` Réseau
+
+`CrmAccSector` business object definition
+-----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `crmSecSector`                                               | char(255)                                | yes*     | yes       |          | -                                                                                |
 
 `CrmActCol` business object definition
 --------------------------------------
