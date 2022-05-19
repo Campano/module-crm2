@@ -49,7 +49,7 @@
        "N"
       ],
       "grp_parent_id__grp_name": null,
-      "grp_home_id__viw_name": null,
+      "grp_home_id__viw_name": "CrmAdminScope",
       "row_module_id__mdl_name": "Crm"
      },
      "links": [{
@@ -84,7 +84,7 @@
        "N"
       ],
       "grp_parent_id__grp_name": null,
-      "grp_home_id__viw_name": "CrmAppStoreScope",
+      "grp_home_id__viw_name": "CrmUserScope",
       "row_module_id__mdl_name": "Crm"
      }
     }
@@ -5862,39 +5862,6 @@
        "icon": "img/system/function",
        "field": "fct_object_id",
        "list": [
-        {
-         "object": "Function",
-         "userkey": "CRM_COL_ACTIVATE",
-         "item": {
-          "fct_name": "CRM_COL_ACTIVATE",
-          "fct_object_id__obj_type": "O",
-          "fct_object_id__obj_name": "CrmCollaborator",
-          "fct_function": "A",
-          "fct_action_id__act_name": "UserStatusActivate",
-          "fct_view_id__viw_name": null,
-          "row_module_id__mdl_name": "Crm"
-         },
-         "links": [{
-          "object": "Grant",
-          "label": "Grant",
-          "icon": "img/system/grant",
-          "field": "grt_function_id",
-          "list": [{
-           "object": "Grant",
-           "userkey": "CRM_ADMIN~CRM_COL_ACTIVATE~CrmCollaborator~UserStatusActivate",
-           "item": {
-            "grt_group_id__grp_name": "CRM_ADMIN",
-            "grt_function_id__fct_name": "CRM_COL_ACTIVATE",
-            "grt_function_id__fct_object_id__obj_type": "O",
-            "grt_function_id__fct_object_id__obj_name": "CrmCollaborator",
-            "grt_function_id__fct_action_id__act_name": "UserStatusActivate",
-            "grt_function_id__fct_function": "A",
-            "grt_activ": true,
-            "row_module_id__mdl_name": "Crm"
-           }
-          }]
-         }]
-        },
         {
          "object": "Function",
          "userkey": "CRM_COL_CRUD",
@@ -22668,110 +22635,202 @@
    "label": "Views",
    "icon": "img/system/view",
    "field": "row_module_id",
-   "list": [{
-    "object": "View",
-    "userkey": "CrmAppStoreScope",
-    "item": {
-     "viw_name": "CrmAppStoreScope",
-     "viw_ui": "<div>Welcome<\/div>",
-     "viw_order": 1,
-     "viw_icon": "wkfform",
-     "viw_disp_id__dis_code": null,
-     "viw_scope": "CrmAppStoreScope",
-     "row_module_id__mdl_name": "Crm",
-     "viw_theme_id__thm_name": null,
-     "viw_lang": null
-    },
-    "links": [
-     {
-      "object": "TranslateView",
-      "label": "View translation",
-      "icon": "img/system/translation",
-      "field": "tsl_id",
-      "list": [
-       {
-        "object": "TranslateView",
-        "userkey": "V~CrmAppStoreScope~ENU",
-        "item": {
-         "tsl_typeView": "V",
-         "tsl_id__viw_name": "CrmAppStoreScope",
-         "tsl_lang": "ENU",
-         "tsl_value": "App store",
-         "tsl_help": null,
-         "row_module_id__mdl_name": "Crm"
-        }
-       },
-       {
-        "object": "TranslateView",
-        "userkey": "V~CrmAppStoreScope~FRA",
-        "item": {
-         "tsl_typeView": "V",
-         "tsl_id__viw_name": "CrmAppStoreScope",
-         "tsl_lang": "FRA",
-         "tsl_value": "App store",
-         "tsl_help": null,
-         "row_module_id__mdl_name": "Crm"
-        }
-       }
+   "list": [
+    {
+     "object": "View",
+     "userkey": "CrmUserScope",
+     "item": {
+      "viw_name": "CrmUserScope",
+      "viw_ui": "<h3>Hello World<\/h3>",
+      "viw_order": 10,
+      "viw_icon": "img/color/user_avatar",
+      "viw_disp_id__dis_code": null,
+      "viw_scope": "Crm user",
+      "row_module_id__mdl_name": "Crm",
+      "viw_theme_id__thm_name": null,
+      "viw_lang": [
+       "ENU",
+       "FRA"
       ]
      },
-     {
-      "object": "ViewGroup",
-      "label": "Active group",
-      "icon": "object",
-      "field": "vig_view_id",
-      "list": [{
-       "object": "ViewGroup",
-       "userkey": "CrmAppStoreScope~CRM_GROUP",
-       "item": {
-        "vig_view_id__viw_name": "CrmAppStoreScope",
-        "vig_group_id__grp_name": "CRM_GROUP",
-        "vig_group_id__grp_comment": null,
-        "row_module_id__mdl_name": "Crm"
-       }
-      }]
-     },
-     {
-      "object": "Function",
-      "label": "Functions",
-      "icon": "img/system/function",
-      "field": "fct_view_id",
-      "list": [{
-       "object": "Function",
-       "userkey": "_CRM_APP_STORE_SCOPE_V",
-       "item": {
-        "fct_name": "_CRM_APP_STORE_SCOPE_V",
-        "fct_object_id__obj_type": null,
-        "fct_object_id__obj_name": null,
-        "fct_function": "V",
-        "fct_action_id__act_name": null,
-        "fct_view_id__viw_name": "CrmAppStoreScope",
-        "row_module_id__mdl_name": "Crm"
-       },
-       "links": [{
-        "object": "Grant",
-        "label": "Grant",
-        "icon": "img/system/grant",
-        "field": "grt_function_id",
-        "list": [{
-         "object": "Grant",
-         "userkey": "CRM_ADMIN~_CRM_APP_STORE_SCOPE_V~~",
+     "links": [
+      {
+       "object": "TranslateView",
+       "label": "View translation",
+       "icon": "img/system/translation",
+       "field": "tsl_id",
+       "list": [
+        {
+         "object": "TranslateView",
+         "userkey": "V~CrmUserScope~ENU",
          "item": {
-          "grt_group_id__grp_name": "CRM_ADMIN",
-          "grt_function_id__fct_name": "_CRM_APP_STORE_SCOPE_V",
-          "grt_function_id__fct_object_id__obj_type": null,
-          "grt_function_id__fct_object_id__obj_name": null,
-          "grt_function_id__fct_action_id__act_name": null,
-          "grt_function_id__fct_function": "V",
-          "grt_activ": true,
+          "tsl_typeView": "V",
+          "tsl_id__viw_name": "CrmUserScope",
+          "tsl_lang": "ENU",
+          "tsl_value": "Crm User",
+          "tsl_help": null,
           "row_module_id__mdl_name": "Crm"
          }
+        },
+        {
+         "object": "TranslateView",
+         "userkey": "V~CrmUserScope~FRA",
+         "item": {
+          "tsl_typeView": "V",
+          "tsl_id__viw_name": "CrmUserScope",
+          "tsl_lang": "FRA",
+          "tsl_value": "Utilisateur Crm",
+          "tsl_help": null,
+          "row_module_id__mdl_name": "Crm"
+         }
+        }
+       ]
+      },
+      {
+       "object": "ViewGroup",
+       "label": "Active group",
+       "icon": "object",
+       "field": "vig_view_id",
+       "list": [{
+        "object": "ViewGroup",
+        "userkey": "CrmUserScope~CRM_GROUP",
+        "item": {
+         "vig_view_id__viw_name": "CrmUserScope",
+         "vig_group_id__grp_name": "CRM_GROUP",
+         "vig_group_id__grp_comment": null,
+         "row_module_id__mdl_name": "Crm"
+        }
+       }]
+      },
+      {
+       "object": "Function",
+       "label": "Functions",
+       "icon": "img/system/function",
+       "field": "fct_view_id",
+       "list": [{
+        "object": "Function",
+        "userkey": "_CRM_USER_SCOPE_V",
+        "item": {
+         "fct_name": "_CRM_USER_SCOPE_V",
+         "fct_object_id__obj_type": null,
+         "fct_object_id__obj_name": null,
+         "fct_function": "V",
+         "fct_action_id__act_name": null,
+         "fct_view_id__viw_name": "CrmUserScope",
+         "row_module_id__mdl_name": "Crm"
+        },
+        "links": [{
+         "object": "Grant",
+         "label": "Grant",
+         "icon": "img/system/grant",
+         "field": "grt_function_id",
+         "list": [{
+          "object": "Grant",
+          "userkey": "CRM_GROUP~_CRM_USER_SCOPE_V~~",
+          "item": {
+           "grt_group_id__grp_name": "CRM_GROUP",
+           "grt_function_id__fct_name": "_CRM_USER_SCOPE_V",
+           "grt_function_id__fct_object_id__obj_type": null,
+           "grt_function_id__fct_object_id__obj_name": null,
+           "grt_function_id__fct_action_id__act_name": null,
+           "grt_function_id__fct_function": "V",
+           "grt_activ": true,
+           "row_module_id__mdl_name": "Crm"
+          }
+         }]
         }]
        }]
-      }]
-     }
-    ]
-   }]
+      }
+     ]
+    },
+    {
+     "object": "View",
+     "userkey": "CrmAdminScope",
+     "item": {
+      "viw_name": "CrmAdminScope",
+      "viw_ui": null,
+      "viw_order": 20,
+      "viw_icon": "img/color/woman_profile",
+      "viw_disp_id__dis_code": null,
+      "viw_scope": "Crm admin",
+      "row_module_id__mdl_name": "Crm",
+      "viw_theme_id__thm_name": null,
+      "viw_lang": [
+       "ENU",
+       "FRA"
+      ]
+     },
+     "links": [
+      {
+       "object": "TranslateView",
+       "label": "View translation",
+       "icon": "img/system/translation",
+       "field": "tsl_id",
+       "list": [
+        {
+         "object": "TranslateView",
+         "userkey": "V~CrmAdminScope~ENU",
+         "item": {
+          "tsl_typeView": "V",
+          "tsl_id__viw_name": "CrmAdminScope",
+          "tsl_lang": "ENU",
+          "tsl_value": "Crm Admin",
+          "tsl_help": null,
+          "row_module_id__mdl_name": "Crm"
+         }
+        },
+        {
+         "object": "TranslateView",
+         "userkey": "V~CrmAdminScope~FRA",
+         "item": {
+          "tsl_typeView": "V",
+          "tsl_id__viw_name": "CrmAdminScope",
+          "tsl_lang": "FRA",
+          "tsl_value": "Admin Crm",
+          "tsl_help": null,
+          "row_module_id__mdl_name": "Crm"
+         }
+        }
+       ]
+      },
+      {
+       "object": "ViewGroup",
+       "label": "Active group",
+       "icon": "object",
+       "field": "vig_view_id",
+       "list": [{
+        "object": "ViewGroup",
+        "userkey": "CrmAdminScope~CRM_ADMIN",
+        "item": {
+         "vig_view_id__viw_name": "CrmAdminScope",
+         "vig_group_id__grp_name": "CRM_ADMIN",
+         "vig_group_id__grp_comment": null,
+         "row_module_id__mdl_name": "Crm"
+        }
+       }]
+      },
+      {
+       "object": "Function",
+       "label": "Functions",
+       "icon": "img/system/function",
+       "field": "fct_view_id",
+       "list": [{
+        "object": "Function",
+        "userkey": "_CRM_ADMIN_SCOPE_V",
+        "item": {
+         "fct_name": "_CRM_ADMIN_SCOPE_V",
+         "fct_object_id__obj_type": null,
+         "fct_object_id__obj_name": null,
+         "fct_function": "V",
+         "fct_action_id__act_name": null,
+         "fct_view_id__viw_name": "CrmAdminScope",
+         "row_module_id__mdl_name": "Crm"
+        }
+       }]
+      }
+     ]
+    }
+   ]
   },
   {
    "object": "Template",
