@@ -223,7 +223,6 @@
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `crmLeadCreation`                                            | date                                     | yes      | yes       |          | -                                                                                |
-| `crmLeadDirection`                                           | enum(15) using `CRMLEADDIRECTION` list   |          | yes       |          | -                                                                                |
 | `crmLeadTitle`                                               | char(30)                                 | yes      | yes       |          | -                                                                                |
 | `crmLeadState`                                               | enum(15) using `CRMLEADSTATE` list       | yes      | yes       |          | -                                                                                |
 | `crmLeadDocuments`                                           | document                                 |          | yes       |          | -                                                                                |
@@ -231,29 +230,22 @@
 | _Ref. `crmLeadCtcId.crmCtcFirstName`_                        | _char(40)_                               |          |           |          | -                                                                                |
 | _Ref. `crmLeadCtcId.crmCtcName`_                             | _char(30)_                               |          |           |          | -                                                                                |
 | _Ref. `crmLeadCtcId.crmCtcFunction`_                         | _char(255)_                              |          |           |          | -                                                                                |
-| `crmLeadOppId` link to **`CrmOpportunity`**                  | id                                       |          | yes       |          | -                                                                                |
-| _Ref. `crmLeadOppId.crmOppTitle`_                            | _char(50)_                               |          |           |          | -                                                                                |
-| _Ref. `crmLeadOppId.crmOppDirectStatus`_                     | _enum(10) using `CRM_OPP_DIRECT_STATUS` list_ |          |           |          | -                                                                                |
-| _Ref. `crmLeadOppId.crmOppColId`_                            | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `crmOppColId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| _Ref. `crmLeadCtcId.crmCtcMobile`_                           | _phone(100)_                             |          |           |          | -                                                                                |
+| _Ref. `crmLeadCtcId.crmCtcEmail`_                            | _email(100)_                             |          |           |          | -                                                                                |
 | `crmLeadAccId` link to **`CrmAccount`**                      | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmLeadAccId.crmAccName`_                             | _char(255)_                              |          |           |          | -                                                                                |
 | _Ref. `crmLeadAccId.crmAccComment`_                          | _text(1500)_                             |          |           |          | -                                                                                |
 | _Ref. `crmLeadAccId.crmAccSecId`_                            | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `crmAccSecId.crmSecSector`_                            | _char(255)_                              |          |           |          | -                                                                                |
+| `crmLeadColId` link to **`CrmCollaborator`**                 | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `crmLeadColId.usr_login`_                              | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 
 ### Lists
 
-* `CRMLEADDIRECTION`
-    - `I` Ingoing
-    - `O` Outgoing
 * `CRMLEADSTATE`
     - `TBQ` To be qualified
     - `OK` OK
     - `KO` KO
-* `CRM_OPP_DIRECT_STATUS`
-    - `Ingoing` 
-    - `Outgoing` 
 
 `CrmMeanOfContact` business object definition
 ---------------------------------------------
@@ -329,7 +321,15 @@
 | `crmOppDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
 | `crmOppAmount`                                               | float(11, 2)                             |          |           |          | -                                                                                |
 | `crmOppEstimatedAmount`                                      | float(10, 2)                             |          |           |          | -                                                                                |
-| `crmOppDirect`                                               | enum(255) using `CRM_OPP_DIRECT` list    | yes      | yes       |          | -                                                                                |
+| `crmOppLeadId` link to **`CrmLead`**                         | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `crmOppLeadId.crmLeadCreation`_                        | _date_                                   |          |           |          | -                                                                                |
+| _Ref. `crmOppLeadId.crmLeadTitle`_                           | _char(30)_                               |          |           |          | -                                                                                |
+| _Ref. `crmOppLeadId.crmLeadCtcId`_                           | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmLeadCtcId.crmCtcFirstName`_                        | _char(40)_                               |          |           |          | -                                                                                |
+| _Ref. `crmLeadCtcId.crmCtcName`_                             | _char(30)_                               |          |           |          | -                                                                                |
+| _Ref. `crmLeadCtcId.crmCtcMobile`_                           | _phone(100)_                             |          |           |          | -                                                                                |
+| _Ref. `crmLeadCtcId.crmCtcEmail`_                            | _email(100)_                             |          |           |          | -                                                                                |
+| _Ref. `crmLeadCtcId.crmCtcFunction`_                         | _char(255)_                              |          |           |          | -                                                                                |
 
 ### Lists
 
@@ -342,9 +342,6 @@
     - `W` Won
     - `LO` Lost
     - `AB` Abandonned
-* `CRM_OPP_DIRECT`
-    - `D` Direct
-    - `I` Indirect
 
 `CrmOppPrd` business object definition
 --------------------------------------

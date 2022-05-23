@@ -294,26 +294,20 @@ components:
         crmLeadCtcId__crmCtcFirstName:
           description: First name
           type: string
-        crmLeadOppId__crmOppDirectStatus:
-          description: Ingoing / Outgoing
-          type: string
-          enum:
-          - Ingoing
-          - Outgoing
         crmLeadId:
           description: Crm lead id
           type: integer
         crmLeadCtcId__crmCtcFunction:
           description: Function
           type: string
-        crmLeadCtcId__crmCtcName:
-          description: Name
+        crmLeadCtcId__crmCtcEmail:
+          description: Email
           type: string
-        crmLeadOppId__crmOppColId__usr_login:
+        crmLeadColId__usr_login:
           description: Login
           type: string
-        crmLeadOppId__crmOppColId:
-          description: Opportunity Collaborator
+        crmLeadCtcId__crmCtcName:
+          description: Name
           type: string
         crmLeadCtcId:
           description: Contact
@@ -328,15 +322,6 @@ components:
           description: Creation
           type: string
           example: yyyy-MM-dd
-        crmLeadDirection:
-          description: Ingoing / Outgoing
-          type: string
-          enum:
-          - I
-          - O
-        crmLeadOppId:
-          description: Opportunity
-          type: string
         crmLeadTitle:
           description: Title
           type: string
@@ -347,15 +332,15 @@ components:
           - TBQ
           - OK
           - KO
-        crmLeadOppId__crmOppTitle:
-          description: Title
-          type: string
         crmLeadAccId__crmAccName:
           description: Name
           type: string
         crmLeadAccId:
           description: Account
           type: string
+        crmLeadColId__crmCollaborator:
+          description: Collaborator Crm collaborator
+          type: integer
         crmLeadAccId__crmAccSecId:
           description: Account Sector
           type: string
@@ -364,6 +349,12 @@ components:
           type: string
         crmLeadAccId__crmAccComment:
           description: Comment
+          type: string
+        crmLeadColId:
+          description: Collaborator
+          type: string
+        crmLeadCtcId__crmCtcMobile:
+          description: Mobile
           type: string
     ArrayOfCrmActivity:
       type: array
@@ -415,17 +406,35 @@ components:
         crmOppColId:
           description: Collaborator
           type: string
-        crmOppDirect:
-          description: Direct / Indirect
+        crmOppLeadId__crmLeadCtcId__crmCtcFunction:
+          description: Lead Contact Function
           type: string
-          enum:
-          - D
-          - I
         crmOppColId__crmCollaborator:
           description: Collaborator Crm collaborator
           type: integer
+        crmOppLeadId__crmLeadCtcId:
+          description: Lead Contact
+          type: string
+        crmOppLeadId:
+          description: Lead
+          type: string
+        crmOppLeadId__crmLeadId:
+          description: Lead Crm lead id
+          type: integer
         crmOppColId__usr_login:
           description: Login
+          type: string
+        crmOppLeadId__crmLeadCtcId__crmCtcName:
+          description: Contact Name
+          type: string
+        crmOppLeadId__crmLeadCtcId__crmCtcMobile:
+          description: Lead Contact Mobile
+          type: string
+        crmOppLeadId__crmLeadTitle:
+          description: Title
+          type: string
+        crmOppLeadId__crmLeadCtcId__crmCtcFirstName:
+          description: Contact First name
           type: string
         crmOppColId__usr_last_name:
           description: Last name
@@ -435,6 +444,13 @@ components:
           type: string
         crmOppColId__usr_first_name:
           description: First name
+          type: string
+        crmOppLeadId__crmLeadCreation:
+          description: Creation
+          type: string
+          example: yyyy-MM-dd
+        crmOppLeadId__crmLeadCtcId__crmCtcEmail:
+          description: Lead Contact Email
           type: string
         crmOppDocuments:
           description: Documents
@@ -1326,12 +1342,63 @@ paths:
         required: false
       - schema:
           type: string
-          enum:
-          - D
-          - I
         in: query
-        name: crmOppDirect
-        description: Search filter for Direct / Indirect
+        name: crmOppLeadId
+        description: Search filter for Lead
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: crmOppLeadId__crmLeadId
+        description: Search filter for Lead Crm lead id
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCreation
+        description: Search filter for Creation
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadTitle
+        description: Search filter for Title
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCtcId
+        description: Search filter for Lead Contact
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCtcId__crmCtcFirstName
+        description: Search filter for Contact First name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCtcId__crmCtcName
+        description: Search filter for Contact Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCtcId__crmCtcMobile
+        description: Search filter for Lead Contact Mobile
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCtcId__crmCtcEmail
+        description: Search filter for Lead Contact Email
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmOppLeadId__crmLeadCtcId__crmCtcFunction
+        description: Search filter for Lead Contact Function
         required: false
       tags:
       - CrmOpportunity
@@ -1815,15 +1882,6 @@ paths:
         required: false
       - schema:
           type: string
-          enum:
-          - I
-          - O
-        in: query
-        name: crmLeadDirection
-        description: Search filter for Ingoing / Outgoing
-        required: false
-      - schema:
-          type: string
         in: query
         name: crmLeadTitle
         description: Search filter for Title
@@ -1871,35 +1929,14 @@ paths:
       - schema:
           type: string
         in: query
-        name: crmLeadOppId
-        description: Search filter for Opportunity
+        name: crmLeadCtcId__crmCtcMobile
+        description: Search filter for Mobile
         required: false
       - schema:
           type: string
         in: query
-        name: crmLeadOppId__crmOppTitle
-        description: Search filter for Title
-        required: false
-      - schema:
-          type: string
-          enum:
-          - Ingoing
-          - Outgoing
-        in: query
-        name: crmLeadOppId__crmOppDirectStatus
-        description: Search filter for Ingoing / Outgoing
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: crmLeadOppId__crmOppColId
-        description: Search filter for Opportunity Collaborator
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: crmLeadOppId__crmOppColId__usr_login
-        description: Search filter for Login
+        name: crmLeadCtcId__crmCtcEmail
+        description: Search filter for Email
         required: false
       - schema:
           type: string
@@ -1930,6 +1967,24 @@ paths:
         in: query
         name: crmLeadAccId__crmAccSecId__crmSecSector
         description: Search filter for Sector
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmLeadColId
+        description: Search filter for Collaborator
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: crmLeadColId__crmCollaborator
+        description: Search filter for Collaborator Crm collaborator
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: crmLeadColId__usr_login
+        description: Search filter for Login
         required: false
       tags:
       - CrmLead

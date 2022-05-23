@@ -12,7 +12,6 @@ import com.simplicite.util.tools.*;
 public class CrmLead extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 	
-	
 	// todo, synchronize ? 
 	@Override
 	public List<String> preValidate() {
@@ -24,4 +23,5 @@ public class CrmLead extends ObjectDB {
 
 		return msgs;
 	}
+
 }
