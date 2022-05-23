@@ -11,18 +11,16 @@ import com.simplicite.util.tools.*;
  */
 public class CrmContact extends ObjectDB {
 	private static final long serialVersionUID = 1L;
-	//private static final String INIT_FILTER_FLAG="contact_init_filter";
 
+	// reset filter when the ref object is not CrmLead
+	// not working
 	@Override
 	public void initRefSelect(ObjectDB parent) {
-		Grant g = getGrant();
-
-		String accId = parent.getFieldValue("crmAccName");
-		AppLog.info(accId.toString(), g);
-
-    // if () {
-		// 	g.setParameter(INIT_FILTER_FLAG, false);
-		// 	setFieldFilter("", );
-    // }
+		if(parent == null) return;
+		String name = parent.getName();
+		if(name != "CrmLead") {
+			ObjectDB o = getGrant().getTmpObject("CrmContact");
+			o.resetFilters();
+		}
 	}
 }

@@ -11,7 +11,6 @@
 				p.form.onload = function(ctn, obj) {
 					var f = ui.getUIField(ctn, obj, "crmLeadAccId");
 					f.ui.on("change", function() {
-						console.log('CRM LEAD SCRIPT IS YELING ANGRILY');
 						if(f.ui.val()) {
 							console.log(f.ui.val());
 							var o = $ui.getApp().getBusinessObject('CrmContact', 'ref_ajax_CrmContact');
@@ -21,7 +20,6 @@
 				});
 				};
 			}
-			//...
 		} catch (e) {
 			app.error("Error in Simplicite.UI.hooks.CrmLead: " + e.message);
 		} finally {
