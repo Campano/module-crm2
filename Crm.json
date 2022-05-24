@@ -32943,42 +32943,6 @@
      "row_module_id__mdl_name": "Crm"
     }
    }]
-  },
-  {
-   "object": "TranslateLink",
-   "label": "Object link translation",
-   "icon": "img/system/translation",
-   "field": "row_module_id",
-   "list": [
-    {
-     "object": "TranslateLink",
-     "userkey": "K~~~~ENU",
-     "item": {
-      "tsl_typeLink": "K",
-      "tsl_id__obf_object_id__obj_name": null,
-      "tsl_id__obf_field_id__fld_name": null,
-      "tsl_id__obf_order": null,
-      "tsl_lang": "ENU",
-      "tsl_value": "Client account",
-      "tsl_simplehelp": null,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "TranslateLink",
-     "userkey": "K~~~~FRA",
-     "item": {
-      "tsl_typeLink": "K",
-      "tsl_id__obf_object_id__obj_name": null,
-      "tsl_id__obf_field_id__fld_name": null,
-      "tsl_id__obf_order": null,
-      "tsl_lang": "FRA",
-      "tsl_value": "Compte client",
-      "tsl_simplehelp": null,
-      "row_module_id__mdl_name": "Crm"
-     }
-    }
-   ]
   }
  ]
 }
