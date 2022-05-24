@@ -6514,11 +6514,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 940,
+       "size": 787,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmCollaborator.java",
-       "id": "11662",
+       "id": "13297",
        "object": "ObjectInternal",
        "rowid": "2025"
       },
