@@ -11,6 +11,241 @@
  },
  "links": [
   {
+   "object": "User",
+   "label": "Users",
+   "icon": "img/system/user",
+   "field": "row_module_id",
+   "list": [
+    {
+     "object": "User",
+     "userkey": "allison_martin",
+     "item": {
+      "usr_image_id": {
+       "path": "files/User/allison_martin.png",
+       "size": 28775,
+       "field": "usr_image_id",
+       "mime": "image/png",
+       "name": "user_enu.png",
+       "id": "13074",
+       "object": "CrmCollaborator",
+       "rowid": "42"
+      },
+      "usr_login": "allison_martin",
+      "usr_timezone": null,
+      "usr_minrows": 20,
+      "usr_maxrows": 50,
+      "usr_title": null,
+      "usr_first_name": "Allison",
+      "usr_last_name": "Martin",
+      "usr_lang": "ENU",
+      "usr_email": "allisonmartin@simplicite.fr",
+      "usr_work_num": null,
+      "usr_home_num": null,
+      "usr_cell_num": "0629485732",
+      "usr_active": "0",
+      "usr_home_id__viw_name": null,
+      "usr_address1": null,
+      "usr_address2": null,
+      "usr_zipcode": null,
+      "usr_city": null,
+      "usr_state": null,
+      "usr_country": null,
+      "row_module_id__mdl_name": "Crm",
+      "usr_menu": true,
+      "usr_menu_defcollapsed": null,
+      "usr_menu_defdomain_id__obd_name": null,
+      "usr_last_logon": null,
+      "usr_dateformat": null,
+      "usr_lang_pref": null,
+      "usr_mfa_method": null,
+      "usr_mfa_settings": null
+     }
+    },
+    {
+     "object": "User",
+     "userkey": "crm_admin",
+     "item": {
+      "usr_image_id": {
+       "path": "files/User/crm_admin.png",
+       "size": 11165,
+       "field": "usr_image_id",
+       "mime": "image/png",
+       "name": "padlock-lock-shape_icon-icons.com_56915.png",
+       "id": "13075",
+       "object": "CrmCollaborator",
+       "rowid": "40"
+      },
+      "usr_login": "crm_admin",
+      "usr_timezone": null,
+      "usr_minrows": 20,
+      "usr_maxrows": 50,
+      "usr_title": null,
+      "usr_first_name": null,
+      "usr_last_name": null,
+      "usr_lang": "ENU",
+      "usr_email": null,
+      "usr_work_num": null,
+      "usr_home_num": null,
+      "usr_cell_num": null,
+      "usr_active": "1",
+      "usr_home_id__viw_name": "CrmAdminScope",
+      "usr_address1": null,
+      "usr_address2": null,
+      "usr_zipcode": null,
+      "usr_city": null,
+      "usr_state": null,
+      "usr_country": null,
+      "row_module_id__mdl_name": "Crm",
+      "usr_menu": true,
+      "usr_menu_defcollapsed": null,
+      "usr_menu_defdomain_id__obd_name": null,
+      "usr_last_logon": "2022-05-23 14:34:26",
+      "usr_dateformat": null,
+      "usr_lang_pref": "ENU",
+      "usr_mfa_method": null,
+      "usr_mfa_settings": null
+     }
+    },
+    {
+     "object": "User",
+     "userkey": "pierre_dupond",
+     "item": {
+      "usr_image_id": {
+       "path": "files/User/pierre_dupond.png",
+       "size": 24835,
+       "field": "usr_image_id",
+       "mime": "image/png",
+       "name": "user_fra.png",
+       "id": "13073",
+       "object": "CrmCollaborator",
+       "rowid": "41"
+      },
+      "usr_login": "pierre_dupond",
+      "usr_timezone": null,
+      "usr_minrows": 20,
+      "usr_maxrows": 50,
+      "usr_title": null,
+      "usr_first_name": "Pierre",
+      "usr_last_name": "Dupond",
+      "usr_lang": "FRA",
+      "usr_email": "pierredupond@simplicite.fr",
+      "usr_work_num": null,
+      "usr_home_num": null,
+      "usr_cell_num": "0640387246",
+      "usr_active": "0",
+      "usr_home_id__viw_name": null,
+      "usr_address1": null,
+      "usr_address2": null,
+      "usr_zipcode": null,
+      "usr_city": null,
+      "usr_state": null,
+      "usr_country": null,
+      "row_module_id__mdl_name": "Crm",
+      "usr_menu": true,
+      "usr_menu_defcollapsed": null,
+      "usr_menu_defdomain_id__obd_name": null,
+      "usr_last_logon": null,
+      "usr_dateformat": null,
+      "usr_lang_pref": null,
+      "usr_mfa_method": null,
+      "usr_mfa_settings": null
+     }
+    }
+   ]
+  },
+  {
+   "object": "UserSysParam",
+   "label": "User parameter",
+   "icon": "img/system/system_param",
+   "field": "row_module_id",
+   "list": [
+    {
+     "object": "UserSysParam",
+     "userkey": "allison_martin~FORCE_CHANGE_PASSWORD",
+     "item": {
+      "usp_user_id__usr_login": "allison_martin",
+      "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
+      "usp_value": "yes",
+      "usp_param_id__sys_type": "PRV",
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": "Force password change (set at user level)",
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "UserSysParam",
+     "userkey": "crm_admin~CLIENT_ID",
+     "item": {
+      "usp_user_id__usr_login": "crm_admin",
+      "usp_param_id__sys_code": "CLIENT_ID",
+      "usp_value": "[{\n \"dt\": \"2022-05-23 14:26:41\",\n \"ag\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0\",\n \"id\": \"1PpYBWnFxGQlRIWlQIWrY7lwIq54e4011Azsyx2JO6Wo2xXbE8fpdiLF5ZYxvVVS1640081370616\"\n}]",
+      "usp_param_id__sys_type": null,
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "UserSysParam",
+     "userkey": "crm_admin~HISTORY CrmAdminScope",
+     "item": {
+      "usp_user_id__usr_login": "crm_admin",
+      "usp_param_id__sys_code": "HISTORY CrmAdminScope",
+      "usp_value": "[{\"object\":\"CrmProduct\",\"rowId\":\"1\",\"label\":\"Product : Ship engine\"},\n{\"object\":\"CrmContact\",\"rowId\":\"1\",\"label\":\"Contact : Matthieu Paquette\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"2\",\"label\":\"Account : Musashi Industrial & Starflight Concern\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"4\",\"label\":\"Account : Consolidated Outland\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"3\",\"label\":\"Account : Drake Interplanetary\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"1\",\"label\":\"Account : Origin\"},\n{\"object\":\"CrmContact\",\"rowId\":\"10\",\"label\":\"Contact : Slainie Lamontagne\"},\n{\"object\":\"CrmContact\",\"rowId\":\"5\",\"label\":\"Contact : Pinabel Ratté\"},\n{\"object\":\"CrmContact\",\"rowId\":\"6\",\"label\":\"Contact : Aimé Lamy\"},\n{\"object\":\"CrmContact\",\"rowId\":\"4\",\"label\":\"Contact : Eloise Lajeunesse\"},\n{\"object\":\"CrmContact\",\"rowId\":\"3\",\"label\":\"Contact : Blanchefle Fournier\"},\n{\"object\":\"CrmContact\",\"rowId\":\"2\",\"label\":\"Contact : Fabien Meunier\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"40\",\"label\":\"Collaborator : crm_admin\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"42\",\"label\":\"Collaborator : Allison Martin\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"41\",\"label\":\"Collaborator : Pierre Dupond\"}]",
+      "usp_param_id__sys_type": null,
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "UserSysParam",
+     "userkey": "crm_admin~HISTORY CrmUserScope",
+     "item": {
+      "usp_user_id__usr_login": "crm_admin",
+      "usp_param_id__sys_code": "HISTORY CrmUserScope",
+      "usp_value": "[]",
+      "usp_param_id__sys_type": null,
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "UserSysParam",
+     "userkey": "crm_admin~SCOPE_PREFS",
+     "item": {
+      "usp_user_id__usr_login": "crm_admin",
+      "usp_param_id__sys_code": "SCOPE_PREFS",
+      "usp_value": "CrmUserScope",
+      "usp_param_id__sys_type": "LFL",
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": "Technical, do not change/remove, needed in user's parameters",
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "UserSysParam",
+     "userkey": "pierre_dupond~FORCE_CHANGE_PASSWORD",
+     "item": {
+      "usp_user_id__usr_login": "pierre_dupond",
+      "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
+      "usp_value": "yes",
+      "usp_param_id__sys_type": "PRV",
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": "Force password change (set at user level)",
+      "row_module_id__mdl_name": "Crm"
+     }
+    }
+   ]
+  },
+  {
    "object": "Group",
    "label": "Groups",
    "icon": "img/system/group",
@@ -2419,10 +2654,7 @@
            "object": "Field",
            "userkey": "crmCollaborator",
            "item": {
-            "fld_name": {
-             "value": "crmCollaborator",
-             "oldvalue": "crmCollaborator"
-            },
+            "fld_name": {"value": "crmCollaborator"},
             "fld_dbname": "crm_collaborator",
             "fld_visible": "4",
             "fld_updatable": "1",
@@ -6918,11 +7150,7 @@
            "object": "Field",
            "userkey": "crmCompName",
            "item": {
-            "fld_name": {
-             "value": "crmCompName",
-             "oldvalue": "crmCompName",
-             "oldvalue1": "CrmCompName"
-            },
+            "fld_name": {"value": "crmCompName"},
             "fld_dbname": "crm_comp_name",
             "fld_visible": "3",
             "fld_updatable": "1",
@@ -13759,10 +13987,7 @@
            "object": "Field",
            "userkey": "crmLeadDescription",
            "item": {
-            "fld_name": {
-             "value": "crmLeadDescription",
-             "oldvalue": "crmLeadDescription"
-            },
+            "fld_name": {"value": "crmLeadDescription"},
             "fld_dbname": "crm_lead_description",
             "fld_visible": "3",
             "fld_updatable": "1",
@@ -20561,10 +20786,7 @@
             "object": "Field",
             "userkey": "crmPrdLabel",
             "item": {
-             "fld_name": {
-              "value": "crmPrdLabel",
-              "oldvalue": "crmPrdTitle"
-             },
+             "fld_name": {"value": "crmPrdLabel"},
              "fld_dbname": "crm_prd_label",
              "fld_visible": "3",
              "fld_updatable": "1",
@@ -25881,10 +26103,7 @@
      "object": "Field",
      "userkey": "crmAccSectorActivity",
      "item": {
-      "fld_name": {
-       "value": "crmAccSectorActivity",
-       "oldvalue": "crmAccSectorActivity"
-      },
+      "fld_name": {"value": "crmAccSectorActivity"},
       "fld_dbname": "crm_acc_sector_activity",
       "fld_visible": "3",
       "fld_updatable": "1",
@@ -27716,10 +27935,7 @@
      "object": "Field",
      "userkey": "crmOppLeadTitle",
      "item": {
-      "fld_name": {
-       "value": "crmOppLeadTitle",
-       "oldvalue": "crmOppLeadTitle"
-      },
+      "fld_name": {"value": "crmOppLeadTitle"},
       "fld_dbname": "crm_opp_lead_title",
       "fld_visible": "3",
       "fld_updatable": "1",
@@ -31392,7 +31608,7 @@
       "field": "res_file_compiled",
       "mime": "text/javascript",
       "name": "script.min.js",
-      "id": "13262",
+      "id": "13290",
       "object": "Resource",
       "rowid": "324"
      },
