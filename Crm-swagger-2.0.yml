@@ -453,27 +453,27 @@ paths:
         required: false
       - in: query
         name: crmOppLeadId__crmLeadCtcId__crmCtcFirstName
-        description: Search filter for Contact First name
+        description: Search filter for First name
         type: string
         required: false
       - in: query
         name: crmOppLeadId__crmLeadCtcId__crmCtcName
-        description: Search filter for Contact Name
+        description: Search filter for Name
         type: string
         required: false
       - in: query
         name: crmOppLeadId__crmLeadCtcId__crmCtcMobile
-        description: Search filter for Lead Contact Mobile
+        description: Search filter for Mobile
         type: string
         required: false
       - in: query
         name: crmOppLeadId__crmLeadCtcId__crmCtcEmail
-        description: Search filter for Lead Contact Email
+        description: Search filter for Email
         type: string
         required: false
       - in: query
         name: crmOppLeadId__crmLeadCtcId__crmCtcFunction
-        description: Search filter for Lead Contact Function
+        description: Search filter for Function
         type: string
         required: false
       - in: query
@@ -905,7 +905,7 @@ paths:
         required: false
       - in: query
         name: crmLeadState
-        description: Search filter for Etat
+        description: Search filter for Status
         type: string
         required: false
         enum:
@@ -1134,7 +1134,7 @@ paths:
         required: false
       - in: query
         name: crmActTypeLabel
-        description: Search filter for Label
+        description: Search filter for Type
         type: string
         required: false
       tags:
@@ -1372,6 +1372,11 @@ paths:
       - in: query
         name: crmActDescription
         description: Search filter for Description
+        type: string
+        required: false
+      - in: query
+        name: crmAccAct
+        description: Search filter for Crm acc act
         type: string
         required: false
       tags:
@@ -1617,6 +1622,16 @@ paths:
         - Weekly
         - Monthly
         - Yearly
+      - in: query
+        name: crmOppprdPrdId__crmPrdReference
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: crmOppprdPrdId__crmPrdDocuments
+        description: Search filter for Documents
+        type: string
+        required: false
       tags:
       - CrmOppPrd
   /rest/CrmActCol:
@@ -1668,13 +1683,63 @@ paths:
         type: integer
         required: false
       - in: query
+        name: crmActcolActId__crmActWhen
+        description: Search filter for When
+        type: string
+        required: false
+      - in: query
+        name: crmActcolActId__crmActTitle
+        description: Search filter for Title
+        type: string
+        required: false
+      - in: query
+        name: crmActcolActId__crmActivityCrmActTypefk
+        description: Search filter for Crm actcol act id Activity type
+        type: string
+        required: false
+      - in: query
+        name: crmActcolActId__crmActDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      - in: query
+        name: crmActcolActId__crmActivityCrmActTypefk__crmActTypeLabel
+        description: Search filter for Type
+        type: string
+        required: false
+      - in: query
         name: crmActcolColId
         description: Search filter for Crm actcol col id
         type: string
         required: false
       - in: query
+        name: crmActcolColId__crmCollaborator
+        description: Search filter for Crm actcol col id Crm collaborator
+        type: integer
+        required: false
+      - in: query
         name: crmActcolColId__usr_login
         description: Search filter for Login
+        type: string
+        required: false
+      - in: query
+        name: crmActcolColId__usr_first_name
+        description: Search filter for First name
+        type: string
+        required: false
+      - in: query
+        name: crmActcolColId__usr_last_name
+        description: Search filter for Last name
+        type: string
+        required: false
+      - in: query
+        name: crmActcolColId__usr_email
+        description: Search filter for Email address
+        type: string
+        required: false
+      - in: query
+        name: crmActcolColId__usr_cell_num
+        description: Search filter for Mobile/cellular phone number
         type: string
         required: false
       tags:
@@ -2637,7 +2702,7 @@ paths:
         required: false
       - in: query
         name: crmCtcAccId__crmAccName
-        description: Search filter for Account Account name
+        description: Search filter for Account name
         type: string
         required: false
       - in: query
@@ -3875,6 +3940,11 @@ paths:
         - Weekly
         - Monthly
         - Yearly
+      - in: query
+        name: crmPrdReference
+        description: Search filter for Reference
+        type: string
+        required: false
       tags:
       - CrmProduct
   /rest/CrmActType/{row_id}:
@@ -5001,6 +5071,9 @@ definitions:
       crmPrdDocuments:
         description: Documents
         type: object
+      crmPrdReference:
+        description: Reference
+        type: string
       crmPrdPrice:
         description: Price
         type: number
@@ -5080,7 +5153,7 @@ definitions:
     type: object
     properties:
       crmActTypeLabel:
-        description: Label
+        description: Type
         type: string
       row_id:
         description: Unique technical row ID
@@ -5217,7 +5290,7 @@ definitions:
         description: Title
         type: string
       crmLeadState:
-        description: Etat
+        description: Status
         type: string
         enum:
         - TBQ
@@ -5301,7 +5374,7 @@ definitions:
         description: Collaborator
         type: string
       crmOppLeadId__crmLeadCtcId__crmCtcFunction:
-        description: Lead Contact Function
+        description: Function
         type: string
       crmOppColId__crmCollaborator:
         description: Collaborator Crm collaborator
@@ -5313,7 +5386,7 @@ definitions:
         description: Comment
         type: string
       crmOppLeadId__crmLeadCtcId__crmCtcMobile:
-        description: Lead Contact Mobile
+        description: Mobile
         type: string
       crmOppLeadId__crmLeadTitle:
         description: Title
@@ -5350,10 +5423,10 @@ definitions:
         description: Login
         type: string
       crmOppLeadId__crmLeadCtcId__crmCtcName:
-        description: Contact Name
+        description: Name
         type: string
       crmOppLeadId__crmLeadCtcId__crmCtcFirstName:
-        description: Contact First name
+        description: First name
         type: string
       row_id:
         description: Unique technical row ID
@@ -5362,7 +5435,7 @@ definitions:
         description: First name
         type: string
       crmOppLeadId__crmLeadCtcId__crmCtcEmail:
-        description: Lead Contact Email
+        description: Email
         type: string
   Error400:
     type: object
@@ -5522,17 +5595,48 @@ definitions:
   CrmActCol:
     type: object
     properties:
-      crmActcolActId:
-        description: Crm actcol act id
+      crmActcolColId__usr_first_name:
+        description: First name
+        type: string
+      crmActcolActId__crmActTitle:
+        description: Title
+        type: string
+      crmActcolActId__crmActivityCrmActTypefk__crmActTypeLabel:
+        description: Type
         type: string
       crmActcolActId__crmActId:
         description: Crm actcol act id Crm act id
         type: integer
+      crmActcolColId__usr_last_name:
+        description: Last name
+        type: string
+      crmActcolActId:
+        description: Crm actcol act id
+        type: string
+      crmActcolColId__usr_email:
+        description: Email address
+        type: string
+      crmActcolColId__usr_cell_num:
+        description: Mobile/cellular phone number
+        type: string
+      crmActcolActId__crmActWhen:
+        description: When
+        type: string
+        example: yyyy-MM-dd HH:mm:ss
       crmActcolColId__usr_login:
         description: Login
         type: string
+      crmActcolActId__crmActivityCrmActTypefk:
+        description: Crm actcol act id Activity type
+        type: string
+      crmActcolColId__crmCollaborator:
+        description: Crm actcol col id Crm collaborator
+        type: integer
       row_id:
         description: Unique technical row ID
+        type: string
+      crmActcolActId__crmActDescription:
+        description: Description
         type: string
       crmActcolColId:
         description: Crm actcol col id
@@ -5641,6 +5745,9 @@ definitions:
   CrmOppPrd:
     type: object
     properties:
+      crmOppprdPrdId__crmPrdReference:
+        description: Reference
+        type: string
       crmOppprdPrdId__crmPrdBillingMethod:
         description: Billing Method
         type: string
@@ -5656,6 +5763,9 @@ definitions:
       crmOppprdPrdId__crmPrdLabel:
         description: Label
         type: string
+      crmOppprdPrdId__crmPrdDocuments:
+        description: Documents
+        type: object
       crmOppprdPrdId__crmPrdPrice:
         description: Price
         type: number
@@ -5738,6 +5848,9 @@ definitions:
       crmActDocuments:
         description: Documents
         type: object
+      crmAccAct:
+        description: Crm acc act
+        type: string
   TreeviewData:
     type: object
     properties:
@@ -5757,7 +5870,7 @@ definitions:
         description: Account
         type: string
       crmCtcAccId__crmAccName:
-        description: Account Account name
+        description: Account name
         type: string
       crmCtcColId:
         description: Collaborator

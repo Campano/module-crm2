@@ -43,17 +43,6 @@
 | _Ref. `crmAccColId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | `crmAccDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
 
-`CrmAccSector` business object definition
------------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `crmSecSector`                                               | char(255)                                | yes*     | yes       |          | -                                                                                |
-
 `CrmActCol` business object definition
 --------------------------------------
 
@@ -64,8 +53,17 @@
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `crmActcolActId` link to **`CrmActivity`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `crmActcolActId.crmActWhen`_                           | _datetime_                               |          |           |          | -                                                                                |
+| _Ref. `crmActcolActId.crmActTitle`_                          | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmActcolActId.crmActivityCrmActTypefk`_              | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmActivityCrmActTypefk.crmActTypeLabel`_             | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmActcolActId.crmActDescription`_                    | _text(2000)_                             |          |           |          | -                                                                                |
 | `crmActcolColId` link to **`CrmCollaborator`**               | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `crmActcolColId.usr_login`_                            | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| _Ref. `crmActcolColId.usr_first_name`_                       | _char(50)_                               |          |           | yes      | _First name_                                                                     |
+| _Ref. `crmActcolColId.usr_last_name`_                        | _char(50)_                               |          |           | yes      | _Last name_                                                                      |
+| _Ref. `crmActcolColId.usr_email`_                            | _email(100)_                             |          |           | yes      | _Email address_                                                                  |
+| _Ref. `crmActcolColId.usr_cell_num`_                         | _phone(20)_                              |          |           | yes      | _Mobile/cellular phone number_                                                   |
 
 `CrmActivity` business object definition
 ----------------------------------------
@@ -82,44 +80,7 @@
 | `crmActivityCrmActTypefk` link to **`CrmActType`**           | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmActivityCrmActTypefk.crmActTypeLabel`_             | _char(255)_                              |          |           |          | -                                                                                |
 | `crmActDescription`                                          | text(2000)                               |          | yes       |          | -                                                                                |
-
-`CrmActType` business object definition
----------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `crmActTypeLabel`                                            | char(255)                                | yes*     | yes       |          | -                                                                                |
-
-`CrmCollaborator` business object definition
---------------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-
-### Custom actions
-
-* `resetPassword`: 
-
-`CrmCompetitor` business object definition
-------------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `crmCompName`                                                | char(50)                                 | yes*     | yes       |          | -                                                                                |
-| `crmCompComment`                                             | text(1000)                               |          | yes       |          | -                                                                                |
-| `crmCompDocuments`                                           | document                                 |          | yes       |          | -                                                                                |
+| `crmAccAct` link to **`CrmAccount`**                         | id                                       |          | yes       |          | -                                                                                |
 
 `CrmCompOpp` business object definition
 ---------------------------------------
@@ -382,6 +343,8 @@
 | _Ref. `crmOppprdPrdId.crmPrdPrice`_                          | _float(11, 2)_                           |          |           |          | -                                                                                |
 | `crmOppprdQuantity`                                          | int(11)                                  |          | yes       |          | -                                                                                |
 | _Ref. `crmOppprdPrdId.crmPrdBillingMethod`_                  | _enum(255) using `CRMPRDBILLINGMETHOD` list_ |          |           |          | -                                                                                |
+| _Ref. `crmOppprdPrdId.crmPrdReference`_                      | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmOppprdPrdId.crmPrdDocuments`_                      | _document_                               |          |           |          | -                                                                                |
 
 ### Lists
 
@@ -405,6 +368,7 @@
 | `crmPrdPrice`                                                | float(11, 2)                             | yes      | yes       |          | -                                                                                |
 | `crmPrdDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
 | `crmPrdBillingMethod`                                        | enum(255) using `CRMPRDBILLINGMETHOD` list |          | yes       |          | -                                                                                |
+| `crmPrdReference`                                            | char(255)                                |          | yes       |          | -                                                                                |
 
 ### Lists
 
@@ -414,6 +378,31 @@
     - `Weekly` WEE
     - `Monthly` MON
     - `Yearly` YEA
+
+`CrmAccSector` business object definition
+-----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `crmSecSector`                                               | char(255)                                | yes*     | yes       |          | -                                                                                |
+
+`CrmCollaborator` business object definition
+--------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+
+### Custom actions
+
+* `resetPassword`: 
 
 `CrmSource` business object definition
 --------------------------------------
@@ -425,4 +414,28 @@
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `crmSrcLabel`                                                | char(255)                                | yes*     | yes       |          | -                                                                                |
+
+`CrmActType` business object definition
+---------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `crmActTypeLabel`                                            | char(255)                                | yes*     | yes       |          | -                                                                                |
+
+`CrmCompetitor` business object definition
+------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `crmCompName`                                                | char(50)                                 | yes*     | yes       |          | -                                                                                |
+| `crmCompComment`                                             | text(1000)                               |          | yes       |          | -                                                                                |
+| `crmCompDocuments`                                           | document                                 |          | yes       |          | -                                                                                |
 
