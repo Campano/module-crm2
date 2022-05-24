@@ -6,30 +6,10 @@
   "mdl_prefix": "crm",
   "mdl_version": "0.1",
   "mdl_type": "A",
-  "mdl_url": null,
+  "mdl_url": "{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"https://github.com/simplicitesoftware/module-crm2.git\"\n\t}\n}",
   "mdl_comment": null
  },
  "links": [
-  {
-   "object": "UserSysParam",
-   "label": "User parameter",
-   "icon": "img/system/system_param",
-   "field": "row_module_id",
-   "list": [{
-    "object": "UserSysParam",
-    "userkey": "FORCE_CHANGE_PASSWORD",
-    "item": {
-     "usp_user_id__usr_login": null,
-     "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
-     "usp_value": "yes",
-     "usp_param_id__sys_type": "PRV",
-     "usp_param_id__sys_value": "empty",
-     "usp_param_id__sys_value2": null,
-     "usp_param_id__sys_desc": "Force password change (set at user level)",
-     "row_module_id__mdl_name": "Crm"
-    }
-   }]
-  },
   {
    "object": "Group",
    "label": "Groups",
@@ -22277,7 +22257,7 @@
      "obd_type": "D",
      "obd_view_id__viw_name": null,
      "obd_nohome": true,
-     "obd_icon": "graph",
+     "obd_icon": "img/color/graph_clique",
      "obd_order": 1000,
      "obd_domain_id__obd_name": null,
      "row_module_id__mdl_name": "Crm"
