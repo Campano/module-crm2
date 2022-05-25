@@ -18,63 +18,9 @@
    "list": [
     {
      "object": "User",
-     "userkey": "allison_martin",
-     "item": {
-      "usr_image_id": {
-       "path": "files/User/allison_martin.png",
-       "size": 28775,
-       "field": "usr_image_id",
-       "mime": "image/png",
-       "name": "user_enu.png",
-       "id": "13074",
-       "object": "CrmCollaborator",
-       "rowid": "42"
-      },
-      "usr_login": "allison_martin",
-      "usr_timezone": null,
-      "usr_minrows": 20,
-      "usr_maxrows": 50,
-      "usr_title": null,
-      "usr_first_name": "Allison",
-      "usr_last_name": "Martin",
-      "usr_lang": "ENU",
-      "usr_email": "allisonmartin@simplicite.fr",
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": "0629485732",
-      "usr_active": "0",
-      "usr_home_id__viw_name": null,
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": true,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": null,
-      "usr_dateformat": null,
-      "usr_lang_pref": null,
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    },
-    {
-     "object": "User",
      "userkey": "crm_admin",
      "item": {
-      "usr_image_id": {
-       "path": "files/User/crm_admin.png",
-       "size": 11165,
-       "field": "usr_image_id",
-       "mime": "image/png",
-       "name": "padlock-lock-shape_icon-icons.com_56915.png",
-       "id": "13075",
-       "object": "CrmCollaborator",
-       "rowid": "40"
-      },
+      "usr_image_id": null,
       "usr_login": "crm_admin",
       "usr_timezone": null,
       "usr_minrows": 20,
@@ -99,7 +45,7 @@
       "usr_menu": true,
       "usr_menu_defcollapsed": null,
       "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": "2022-05-23 14:34:26",
+      "usr_last_logon": "2022-05-25 10:05:05",
       "usr_dateformat": null,
       "usr_lang_pref": "ENU",
       "usr_mfa_method": null,
@@ -108,31 +54,31 @@
     },
     {
      "object": "User",
-     "userkey": "pierre_dupond",
+     "userkey": "golan_trevize",
      "item": {
       "usr_image_id": {
-       "path": "files/User/pierre_dupond.png",
+       "path": "files/User/golan_trevize.png",
        "size": 24835,
        "field": "usr_image_id",
        "mime": "image/png",
        "name": "user_fra.png",
-       "id": "13073",
+       "id": "13304",
        "object": "CrmCollaborator",
-       "rowid": "41"
+       "rowid": "47"
       },
-      "usr_login": "pierre_dupond",
+      "usr_login": "golan_trevize",
       "usr_timezone": null,
-      "usr_minrows": 20,
-      "usr_maxrows": 50,
+      "usr_minrows": null,
+      "usr_maxrows": null,
       "usr_title": null,
-      "usr_first_name": "Pierre",
-      "usr_last_name": "Dupond",
-      "usr_lang": "FRA",
-      "usr_email": "pierredupond@simplicite.fr",
+      "usr_first_name": "Golan",
+      "usr_last_name": "Trevize",
+      "usr_lang": "ENU",
+      "usr_email": null,
       "usr_work_num": null,
       "usr_home_num": null,
-      "usr_cell_num": "0640387246",
-      "usr_active": "0",
+      "usr_cell_num": null,
+      "usr_active": "1",
       "usr_home_id__viw_name": null,
       "usr_address1": null,
       "usr_address2": null,
@@ -141,7 +87,52 @@
       "usr_state": null,
       "usr_country": null,
       "row_module_id__mdl_name": "Crm",
-      "usr_menu": true,
+      "usr_menu": null,
+      "usr_menu_defcollapsed": null,
+      "usr_menu_defdomain_id__obd_name": null,
+      "usr_last_logon": null,
+      "usr_dateformat": null,
+      "usr_lang_pref": null,
+      "usr_mfa_method": null,
+      "usr_mfa_settings": null
+     }
+    },
+    {
+     "object": "User",
+     "userkey": "hari_sheldon",
+     "item": {
+      "usr_image_id": {
+       "path": "files/User/hari_sheldon.png",
+       "size": 31069,
+       "field": "usr_image_id",
+       "mime": "image/png",
+       "name": "admin.png",
+       "id": "13305",
+       "object": "CrmCollaborator",
+       "rowid": "46"
+      },
+      "usr_login": "hari_sheldon",
+      "usr_timezone": null,
+      "usr_minrows": null,
+      "usr_maxrows": null,
+      "usr_title": null,
+      "usr_first_name": "Hari",
+      "usr_last_name": "Sheldon",
+      "usr_lang": "ENU",
+      "usr_email": null,
+      "usr_work_num": null,
+      "usr_home_num": null,
+      "usr_cell_num": null,
+      "usr_active": "1",
+      "usr_home_id__viw_name": null,
+      "usr_address1": null,
+      "usr_address2": null,
+      "usr_zipcode": null,
+      "usr_city": null,
+      "usr_state": null,
+      "usr_country": null,
+      "row_module_id__mdl_name": "Crm",
+      "usr_menu": null,
       "usr_menu_defcollapsed": null,
       "usr_menu_defdomain_id__obd_name": null,
       "usr_last_logon": null,
@@ -161,25 +152,11 @@
    "list": [
     {
      "object": "UserSysParam",
-     "userkey": "allison_martin~FORCE_CHANGE_PASSWORD",
-     "item": {
-      "usp_user_id__usr_login": "allison_martin",
-      "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
-      "usp_value": "yes",
-      "usp_param_id__sys_type": "PRV",
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": "Force password change (set at user level)",
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "UserSysParam",
      "userkey": "crm_admin~CLIENT_ID",
      "item": {
       "usp_user_id__usr_login": "crm_admin",
       "usp_param_id__sys_code": "CLIENT_ID",
-      "usp_value": "[{\n \"dt\": \"2022-05-23 14:26:41\",\n \"ag\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0\",\n \"id\": \"1PpYBWnFxGQlRIWlQIWrY7lwIq54e4011Azsyx2JO6Wo2xXbE8fpdiLF5ZYxvVVS1640081370616\"\n}]",
+      "usp_value": "[{\n \"dt\": \"2022-05-25 10:02:51\",\n \"ag\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0\",\n \"id\": \"1PpYBWnFxGQlRIWlQIWrY7lwIq54e4011Azsyx2JO6Wo2xXbE8fpdiLF5ZYxvVVS1640081370616\"\n}]",
       "usp_param_id__sys_type": null,
       "usp_param_id__sys_value": "empty",
       "usp_param_id__sys_value2": null,
@@ -193,7 +170,7 @@
      "item": {
       "usp_user_id__usr_login": "crm_admin",
       "usp_param_id__sys_code": "HISTORY CrmAdminScope",
-      "usp_value": "[{\"object\":\"CrmProduct\",\"rowId\":\"1\",\"label\":\"Product : Ship engine\"},\n{\"object\":\"CrmContact\",\"rowId\":\"1\",\"label\":\"Contact : Matthieu Paquette\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"2\",\"label\":\"Account : Musashi Industrial & Starflight Concern\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"4\",\"label\":\"Account : Consolidated Outland\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"3\",\"label\":\"Account : Drake Interplanetary\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"1\",\"label\":\"Account : Origin\"},\n{\"object\":\"CrmContact\",\"rowId\":\"10\",\"label\":\"Contact : Slainie Lamontagne\"},\n{\"object\":\"CrmContact\",\"rowId\":\"5\",\"label\":\"Contact : Pinabel Ratté\"},\n{\"object\":\"CrmContact\",\"rowId\":\"6\",\"label\":\"Contact : Aimé Lamy\"},\n{\"object\":\"CrmContact\",\"rowId\":\"4\",\"label\":\"Contact : Eloise Lajeunesse\"},\n{\"object\":\"CrmContact\",\"rowId\":\"3\",\"label\":\"Contact : Blanchefle Fournier\"},\n{\"object\":\"CrmContact\",\"rowId\":\"2\",\"label\":\"Contact : Fabien Meunier\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"40\",\"label\":\"Collaborator : crm_admin\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"42\",\"label\":\"Collaborator : Allison Martin\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"41\",\"label\":\"Collaborator : Pierre Dupond\"}]",
+      "usp_value": "[{\"object\":\"CrmOpportunity\",\"rowId\":\"1\",\"label\":\"Opportunity : Contract for multiple engines\"},\n{\"object\":\"CrmOpportunity\",\"rowId\":\"2\",\"label\":\"Opportunity : Technical inspection on 5 vehicules\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"1\",\"label\":\"Account : Origin\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"3\",\"label\":\"Account : Drake Interplanetary\"},\n{\"object\":\"CrmActivity\",\"rowId\":\"1\",\"label\":\"Activity\"},\n{\"object\":\"CrmActCol\",\"rowId\":\"1\",\"label\":\"Activity / Collaborator : Meeting hari_sheldon\"},\n{\"object\":\"CrmContact\",\"rowId\":\"3\",\"label\":\"Contact : Blanchefle Fournier\"},\n{\"object\":\"CrmCtcAct\",\"rowId\":\"1\",\"label\":\"Activity / Contact : Blanchefle Fournier\"},\n{\"object\":\"CrmLead\",\"rowId\":\"1\",\"label\":\"Lead\"},\n{\"object\":\"CrmContact\",\"rowId\":\"6\",\"label\":\"Contact : Aimé Lamy\"},\n{\"object\":\"CrmContact\",\"rowId\":\"10\",\"label\":\"Contact : Slainie Lamontagne\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"4\",\"label\":\"Account : Consolidated Outland\"},\n{\"object\":\"CrmContact\",\"rowId\":\"2\",\"label\":\"Contact : Fabien Meunier\"},\n{\"object\":\"CrmContact\",\"rowId\":\"1\",\"label\":\"Contact : Matthieu Paquette\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"2\",\"label\":\"Account : Musashi Industrial & Starflight Concern\"},\n{\"object\":\"CrmContact\",\"rowId\":\"5\",\"label\":\"Contact : Pinabel Ratté\"},\n{\"object\":\"CrmContact\",\"rowId\":\"4\",\"label\":\"Contact : Eloise Lajeunesse\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"46\",\"label\":\"Collaborator : Hari Sheldon\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"47\",\"label\":\"Collaborator : Golan Trevize\"}]",
       "usp_param_id__sys_type": null,
       "usp_param_id__sys_value": "empty",
       "usp_param_id__sys_value2": null,
@@ -221,7 +198,7 @@
      "item": {
       "usp_user_id__usr_login": "crm_admin",
       "usp_param_id__sys_code": "SCOPE_PREFS",
-      "usp_value": "CrmUserScope",
+      "usp_value": "CrmAdminScope,CrmUserScope",
       "usp_param_id__sys_type": "LFL",
       "usp_param_id__sys_value": "empty",
       "usp_param_id__sys_value2": null,
@@ -231,9 +208,23 @@
     },
     {
      "object": "UserSysParam",
-     "userkey": "pierre_dupond~FORCE_CHANGE_PASSWORD",
+     "userkey": "golan_trevize~FORCE_CHANGE_PASSWORD",
      "item": {
-      "usp_user_id__usr_login": "pierre_dupond",
+      "usp_user_id__usr_login": "golan_trevize",
+      "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
+      "usp_value": "yes",
+      "usp_param_id__sys_type": "PRV",
+      "usp_param_id__sys_value": "empty",
+      "usp_param_id__sys_value2": null,
+      "usp_param_id__sys_desc": "Force password change (set at user level)",
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "UserSysParam",
+     "userkey": "hari_sheldon~FORCE_CHANGE_PASSWORD",
+     "item": {
+      "usp_user_id__usr_login": "hari_sheldon",
       "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
       "usp_value": "yes",
       "usp_param_id__sys_type": "PRV",
@@ -288,32 +279,18 @@
        "label": "Responsibilities",
        "icon": "img/system/responsability",
        "field": "rsp_group_id",
-       "list": [
-        {
-         "object": "Responsability",
-         "userkey": "crm_admin~CRM_ADMIN~2022-05-23",
-         "item": {
-          "rsp_login_id__usr_login": "crm_admin",
-          "rsp_group_id__grp_name": "CRM_ADMIN",
-          "rsp_start_dt": "2022-05-23",
-          "rsp_end_dt": null,
-          "rsp_activ": true,
-          "row_module_id__mdl_name": "Crm"
-         }
-        },
-        {
-         "object": "Responsability",
-         "userkey": "designer~CRM_ADMIN~2022-03-29",
-         "item": {
-          "rsp_login_id__usr_login": "designer",
-          "rsp_group_id__grp_name": "CRM_ADMIN",
-          "rsp_start_dt": "2022-03-29",
-          "rsp_end_dt": null,
-          "rsp_activ": true,
-          "row_module_id__mdl_name": "Crm"
-         }
+       "list": [{
+        "object": "Responsability",
+        "userkey": "designer~CRM_ADMIN~2022-03-29",
+        "item": {
+         "rsp_login_id__usr_login": "designer",
+         "rsp_group_id__grp_name": "CRM_ADMIN",
+         "rsp_start_dt": "2022-03-29",
+         "rsp_end_dt": null,
+         "rsp_activ": true,
+         "row_module_id__mdl_name": "Crm"
         }
-       ]
+       }]
       }
      ]
     },
@@ -341,37 +318,13 @@
       "list": [
        {
         "object": "Responsability",
-        "userkey": "allison_martin~CRM_GROUP~2022-05-19",
-        "item": {
-         "rsp_login_id__usr_login": "allison_martin",
-         "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-19",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
-        }
-       },
-       {
-        "object": "Responsability",
-        "userkey": "allison_martin~CRM_GROUP~2022-05-23",
-        "item": {
-         "rsp_login_id__usr_login": "allison_martin",
-         "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-23",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
-        }
-       },
-       {
-        "object": "Responsability",
-        "userkey": "crm_admin~CRM_GROUP~2022-05-19",
+        "userkey": "crm_admin~CRM_GROUP~2022-05-25",
         "item": {
          "rsp_login_id__usr_login": "crm_admin",
          "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-19",
+         "rsp_start_dt": "2022-05-25",
          "rsp_end_dt": null,
-         "rsp_activ": true,
+         "rsp_activ": false,
          "row_module_id__mdl_name": "Crm"
         }
        },
@@ -389,11 +342,11 @@
        },
        {
         "object": "Responsability",
-        "userkey": "pierre_dupond~CRM_GROUP~2022-05-19",
+        "userkey": "golan_trevize~CRM_GROUP~2022-05-25",
         "item": {
-         "rsp_login_id__usr_login": "pierre_dupond",
+         "rsp_login_id__usr_login": "golan_trevize",
          "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-19",
+         "rsp_start_dt": "2022-05-25",
          "rsp_end_dt": null,
          "rsp_activ": true,
          "row_module_id__mdl_name": "Crm"
@@ -401,11 +354,11 @@
        },
        {
         "object": "Responsability",
-        "userkey": "pierre_dupond~CRM_GROUP~2022-05-23",
+        "userkey": "hari_sheldon~CRM_GROUP~2022-05-25",
         "item": {
-         "rsp_login_id__usr_login": "pierre_dupond",
+         "rsp_login_id__usr_login": "hari_sheldon",
          "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-23",
+         "rsp_start_dt": "2022-05-25",
          "rsp_end_dt": null,
          "rsp_activ": true,
          "row_module_id__mdl_name": "Crm"
@@ -2659,7 +2612,7 @@
             "fld_visible": "4",
             "fld_updatable": "1",
             "fld_required": true,
-            "fld_fonctid": true,
+            "fld_fonctid": false,
             "fld_research": null,
             "fld_researchreq": "0",
             "fld_sort": "C",
@@ -6514,11 +6467,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 787,
+       "size": 935,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmCollaborator.java",
-       "id": "13297",
+       "id": "13303",
        "object": "ObjectInternal",
        "rowid": "2025"
       },
@@ -32573,21 +32526,21 @@
    "field": "row_module_id",
    "list": [{
     "object": "Dataset",
-    "userkey": "Crm~Crm-data-20220525090306",
+    "userkey": "Crm~Crm-data-20220525101501",
     "item": {
      "row_module_id__mdl_name": "Crm",
-     "dt_name": "Crm-data-20220525090306",
+     "dt_name": "Crm-data-20220525101501",
      "dt_file": {
-      "path": "data/Crm-data-20220525090306.zip",
-      "size": 65703,
+      "path": "data/Crm-data-20220525101501.zip",
+      "size": 57083,
       "field": "dt_file",
       "mime": "application/zip",
-      "name": "Crm-data-20220525090306.zip",
-      "id": "13298",
+      "name": "Crm-data-20220525101501.zip",
+      "id": "13306",
       "object": "Dataset",
-      "rowid": "5"
+      "rowid": "6"
      },
-     "dt_desc": "Created by module's data export on 2022-05-25 09:03:06"
+     "dt_desc": "Created by module's data export on 2022-05-25 10:15:01"
     }
    }]
   },

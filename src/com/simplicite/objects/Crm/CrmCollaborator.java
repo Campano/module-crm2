@@ -13,9 +13,15 @@ public class CrmCollaborator extends com.simplicite.objects.System.SimpleUser {
 	@Override
 	public void postLoad() {
 		super.postLoad();
+		
+		final String moduleId = ModuleDB.getModuleId("Crm");
+
+		// default module value
+		ObjectField f = getField("row_module_id");
+		f.setDefaultValue(moduleId);
 
 		// hidding useless fields in field area
-		ObjectField f = getField("mdl_name");
+		f = getField("mdl_name");
 		f.setVisibility(ObjectField.VIS_NOT);
 
 		f = getField("viw_name");
@@ -32,5 +38,4 @@ public class CrmCollaborator extends com.simplicite.objects.System.SimpleUser {
 
 		return null;
 	}
-
 }
