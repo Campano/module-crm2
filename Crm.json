@@ -6203,11 +6203,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 786,
+       "size": 952,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmCollaborator.java",
-       "id": "13338",
+       "id": "13353",
        "object": "ObjectInternal",
        "rowid": "2025"
       },
