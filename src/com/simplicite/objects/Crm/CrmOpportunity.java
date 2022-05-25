@@ -11,4 +11,11 @@ import com.simplicite.util.tools.*;
  */
 public class CrmOpportunity extends ObjectDB {
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public void initCreate() {
+		String accId = getFieldValue("crmOppLeadId.crmLeadAccId");
+		ObjectField f = getField("crmOppAccId.crmAccName");
+		String name = getFieldValue("crmOppLeadId.crmLeadAccId.crmAccName");
+	}
 }
