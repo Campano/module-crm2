@@ -6225,7 +6225,7 @@
       "obo_template_id__tpl_name": "CrmCollaborator",
       "obo_cache": "D",
       "obo_copy": true,
-      "obo_export": false,
+      "obo_export": true,
       "obo_pagine": true,
       "obo_srh_predef": ["1"],
       "obo_selrow": true,
@@ -32268,13 +32268,13 @@
       "dt_name": "Users",
       "dt_file": {
        "path": "data/Users.xml",
-       "size": 83528,
+       "size": 82146,
        "field": "dt_file",
        "mime": "text/xml",
        "name": "ApplicationUsers-0.1.xml",
-       "id": "13346",
+       "id": "13347",
        "object": "Dataset",
-       "rowid": "13"
+       "rowid": "14"
       },
       "dt_desc": null
      }
