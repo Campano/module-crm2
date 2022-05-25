@@ -29436,7 +29436,7 @@
      "userkey": "CrmCollaborator",
      "item": {
       "tpl_name": "CrmCollaborator",
-      "tpl_ui": "<div class=\"area\" data-area=\"1:=\"><\/div>",
+      "tpl_ui": "<div class=\"area\" data-area=\"1\"><\/div>",
       "tpl_min": null,
       "tpl_image": null,
       "row_module_id__mdl_name": "Crm"
@@ -30072,7 +30072,7 @@
      "item": {
       "ofa_name": "CrmCollaborator-1",
       "ofa_position": 1,
-      "ofa_title": true,
+      "ofa_title": false,
       "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"usr_login\"><\/div>\n  <div class=\"field\" data-field=\"usr_first_name\"><\/div>\n  <div class=\"field\" data-field=\"usr_last_name\"><\/div>\n  <div class=\"field\" data-field=\"usr_lang\"><\/div>\n  <div class=\"field\" data-field=\"usr_email\"><\/div>\n  <div class=\"field\" data-field=\"usr_cell_num\"><\/div>\n<\/div>",
       "ofa_icon": "star",
       "row_module_id__mdl_name": "Crm"
