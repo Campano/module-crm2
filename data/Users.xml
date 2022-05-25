@@ -265,5 +265,23 @@
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
 	</data>
+		<data>
+		<fct_name>_CRM_USER_SCOPE_V</fct_name>
+		<fct_object_id.obj_type/>
+		<fct_object_id.obj_name/>
+		<fct_function>V</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name>CrmUserScope</fct_view_id.viw_name>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>CRM_ADMIN_SCOPE_V</fct_name>
+		<fct_object_id.obj_type/>
+		<fct_object_id.obj_name/>
+		<fct_function>V</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name>CrmAdminScope</fct_view_id.viw_name>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
 </object>
 </simplicite>
