@@ -23,6 +23,7 @@
 		<usr_last_name/>
 		<usr_lang>ENU</usr_lang>
 		<usr_email/>
+		<usr_password><![CDATA[Crm_admin@psw]]>]></usr_password>
 		<usr_cell_num/>
 		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>CrmAdminScope</usr_home_id.viw_name>
@@ -38,6 +39,7 @@
 		<usr_last_name>Trevize</usr_last_name>
 		<usr_lang>ENU</usr_lang>
 		<usr_email/>
+		<usr_password><![CDATA[Crm_user@psw]]>]></usr_password>
 		<usr_cell_num/>
 		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>CrmUserScope</usr_home_id.viw_name>
@@ -53,6 +55,7 @@
 		<usr_last_name>Sheldon</usr_last_name>
 		<usr_lang>ENU</usr_lang>
 		<usr_email/>
+		<usr_password><![CDATA[Crm_user@psw]]>]></usr_password>
 		<usr_cell_num/>
 		<usr_active>1</usr_active>
 		<usr_home_id.viw_name>CrmUserScope</usr_home_id.viw_name>
