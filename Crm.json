@@ -11,140 +11,6 @@
  },
  "links": [
   {
-   "object": "User",
-   "label": "Users",
-   "icon": "img/system/user",
-   "field": "row_module_id",
-   "list": [
-    {
-     "object": "User",
-     "userkey": "crm_admin",
-     "item": {
-      "usr_image_id": null,
-      "usr_login": "crm_admin",
-      "usr_timezone": null,
-      "usr_minrows": 20,
-      "usr_maxrows": 50,
-      "usr_title": null,
-      "usr_first_name": null,
-      "usr_last_name": null,
-      "usr_lang": "ENU",
-      "usr_email": null,
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": null,
-      "usr_active": "1",
-      "usr_home_id__viw_name": "CrmAdminScope",
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": true,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": "2022-05-25 10:22:20",
-      "usr_dateformat": null,
-      "usr_lang_pref": "ENU",
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    },
-    {
-     "object": "User",
-     "userkey": "golan_trevize",
-     "item": {
-      "usr_image_id": {
-       "path": "files/User/golan_trevize.png",
-       "size": 24835,
-       "field": "usr_image_id",
-       "mime": "image/png",
-       "name": "user_fra.png",
-       "id": "13304",
-       "object": "CrmCollaborator",
-       "rowid": "47"
-      },
-      "usr_login": "golan_trevize",
-      "usr_timezone": null,
-      "usr_minrows": 20,
-      "usr_maxrows": 50,
-      "usr_title": null,
-      "usr_first_name": "Golan",
-      "usr_last_name": "Trevize",
-      "usr_lang": "ENU",
-      "usr_email": null,
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": null,
-      "usr_active": "1",
-      "usr_home_id__viw_name": null,
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": true,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": null,
-      "usr_dateformat": null,
-      "usr_lang_pref": null,
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    },
-    {
-     "object": "User",
-     "userkey": "hari_sheldon",
-     "item": {
-      "usr_image_id": {
-       "path": "files/User/hari_sheldon.png",
-       "size": 31069,
-       "field": "usr_image_id",
-       "mime": "image/png",
-       "name": "admin.png",
-       "id": "13305",
-       "object": "CrmCollaborator",
-       "rowid": "46"
-      },
-      "usr_login": "hari_sheldon",
-      "usr_timezone": null,
-      "usr_minrows": 20,
-      "usr_maxrows": 50,
-      "usr_title": null,
-      "usr_first_name": "Hari",
-      "usr_last_name": "Sheldon",
-      "usr_lang": "ENU",
-      "usr_email": null,
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": null,
-      "usr_active": "1",
-      "usr_home_id__viw_name": null,
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": true,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": null,
-      "usr_dateformat": null,
-      "usr_lang_pref": null,
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    }
-   ]
-  },
-  {
    "object": "UserSysParam",
    "label": "User parameter",
    "icon": "img/system/system_param",
@@ -279,32 +145,18 @@
        "label": "Responsibilities",
        "icon": "img/system/responsability",
        "field": "rsp_group_id",
-       "list": [
-        {
-         "object": "Responsability",
-         "userkey": "crm_admin~CRM_ADMIN~2022-05-25",
-         "item": {
-          "rsp_login_id__usr_login": "crm_admin",
-          "rsp_group_id__grp_name": "CRM_ADMIN",
-          "rsp_start_dt": "2022-05-25",
-          "rsp_end_dt": null,
-          "rsp_activ": true,
-          "row_module_id__mdl_name": "Crm"
-         }
-        },
-        {
-         "object": "Responsability",
-         "userkey": "designer~CRM_ADMIN~2022-03-29",
-         "item": {
-          "rsp_login_id__usr_login": "designer",
-          "rsp_group_id__grp_name": "CRM_ADMIN",
-          "rsp_start_dt": "2022-03-29",
-          "rsp_end_dt": null,
-          "rsp_activ": true,
-          "row_module_id__mdl_name": "Crm"
-         }
+       "list": [{
+        "object": "Responsability",
+        "userkey": "designer~CRM_ADMIN~2022-03-29",
+        "item": {
+         "rsp_login_id__usr_login": "designer",
+         "rsp_group_id__grp_name": "CRM_ADMIN",
+         "rsp_start_dt": "2022-03-29",
+         "rsp_end_dt": null,
+         "rsp_activ": true,
+         "row_module_id__mdl_name": "Crm"
         }
-       ]
+       }]
       }
      ]
     },
@@ -329,56 +181,18 @@
       "label": "Responsibilities",
       "icon": "img/system/responsability",
       "field": "rsp_group_id",
-      "list": [
-       {
-        "object": "Responsability",
-        "userkey": "crm_admin~CRM_GROUP~2022-05-25",
-        "item": {
-         "rsp_login_id__usr_login": "crm_admin",
-         "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-25",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
-        }
-       },
-       {
-        "object": "Responsability",
-        "userkey": "designer~CRM_GROUP~2022-05-24",
-        "item": {
-         "rsp_login_id__usr_login": "designer",
-         "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-24",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
-        }
-       },
-       {
-        "object": "Responsability",
-        "userkey": "golan_trevize~CRM_GROUP~2022-05-25",
-        "item": {
-         "rsp_login_id__usr_login": "golan_trevize",
-         "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-25",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
-        }
-       },
-       {
-        "object": "Responsability",
-        "userkey": "hari_sheldon~CRM_GROUP~2022-05-25",
-        "item": {
-         "rsp_login_id__usr_login": "hari_sheldon",
-         "rsp_group_id__grp_name": "CRM_GROUP",
-         "rsp_start_dt": "2022-05-25",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
-        }
+      "list": [{
+       "object": "Responsability",
+       "userkey": "designer~CRM_GROUP~2022-05-24",
+       "item": {
+        "rsp_login_id__usr_login": "designer",
+        "rsp_group_id__grp_name": "CRM_GROUP",
+        "rsp_start_dt": "2022-05-24",
+        "rsp_end_dt": null,
+        "rsp_activ": true,
+        "row_module_id__mdl_name": "Crm"
        }
-      ]
+      }]
      }]
     }
    ]
@@ -29147,208 +28961,6 @@
    ]
   },
   {
-   "object": "View",
-   "label": "Views",
-   "icon": "img/system/view",
-   "field": "row_module_id",
-   "list": [
-    {
-     "object": "View",
-     "userkey": "CrmUserScope",
-     "item": {
-      "viw_name": "CrmUserScope",
-      "viw_ui": null,
-      "viw_order": 10,
-      "viw_icon": "img/color/user_avatar",
-      "viw_disp_id__dis_code": null,
-      "viw_scope": "Crm user",
-      "row_module_id__mdl_name": "Crm",
-      "viw_theme_id__thm_name": "ThemeLight",
-      "viw_lang": [
-       "ENU",
-       "FRA"
-      ]
-     },
-     "links": [
-      {
-       "object": "TranslateView",
-       "label": "View translation",
-       "icon": "img/system/translation",
-       "field": "tsl_id",
-       "list": [
-        {
-         "object": "TranslateView",
-         "userkey": "V~CrmUserScope~ENU",
-         "item": {
-          "tsl_typeView": "V",
-          "tsl_id__viw_name": "CrmUserScope",
-          "tsl_lang": "ENU",
-          "tsl_value": "Crm User",
-          "tsl_help": null,
-          "row_module_id__mdl_name": "Crm"
-         }
-        },
-        {
-         "object": "TranslateView",
-         "userkey": "V~CrmUserScope~FRA",
-         "item": {
-          "tsl_typeView": "V",
-          "tsl_id__viw_name": "CrmUserScope",
-          "tsl_lang": "FRA",
-          "tsl_value": "Utilisateur Crm",
-          "tsl_help": null,
-          "row_module_id__mdl_name": "Crm"
-         }
-        }
-       ]
-      },
-      {
-       "object": "ViewGroup",
-       "label": "Active group",
-       "icon": "object",
-       "field": "vig_view_id",
-       "list": [{
-        "object": "ViewGroup",
-        "userkey": "CrmUserScope~CRM_GROUP",
-        "item": {
-         "vig_view_id__viw_name": "CrmUserScope",
-         "vig_group_id__grp_name": "CRM_GROUP",
-         "vig_group_id__grp_comment": null,
-         "row_module_id__mdl_name": "Crm"
-        }
-       }]
-      },
-      {
-       "object": "Function",
-       "label": "Functions",
-       "icon": "img/system/function",
-       "field": "fct_view_id",
-       "list": [{
-        "object": "Function",
-        "userkey": "_CRM_USER_SCOPE_V",
-        "item": {
-         "fct_name": "_CRM_USER_SCOPE_V",
-         "fct_object_id__obj_type": null,
-         "fct_object_id__obj_name": null,
-         "fct_function": "V",
-         "fct_action_id__act_name": null,
-         "fct_view_id__viw_name": "CrmUserScope",
-         "row_module_id__mdl_name": "Crm"
-        },
-        "links": [{
-         "object": "Grant",
-         "label": "Grant",
-         "icon": "img/system/grant",
-         "field": "grt_function_id",
-         "list": [{
-          "object": "Grant",
-          "userkey": "CRM_GROUP~_CRM_USER_SCOPE_V~~",
-          "item": {
-           "grt_group_id__grp_name": "CRM_GROUP",
-           "grt_function_id__fct_name": "_CRM_USER_SCOPE_V",
-           "grt_function_id__fct_object_id__obj_type": null,
-           "grt_function_id__fct_object_id__obj_name": null,
-           "grt_function_id__fct_action_id__act_name": null,
-           "grt_function_id__fct_function": "V",
-           "grt_activ": true,
-           "row_module_id__mdl_name": "Crm"
-          }
-         }]
-        }]
-       }]
-      }
-     ]
-    },
-    {
-     "object": "View",
-     "userkey": "CrmAdminScope",
-     "item": {
-      "viw_name": "CrmAdminScope",
-      "viw_ui": null,
-      "viw_order": 20,
-      "viw_icon": "img/color/woman_profile",
-      "viw_disp_id__dis_code": null,
-      "viw_scope": "Crm admin",
-      "row_module_id__mdl_name": "Crm",
-      "viw_theme_id__thm_name": null,
-      "viw_lang": [
-       "ENU",
-       "FRA"
-      ]
-     },
-     "links": [
-      {
-       "object": "TranslateView",
-       "label": "View translation",
-       "icon": "img/system/translation",
-       "field": "tsl_id",
-       "list": [
-        {
-         "object": "TranslateView",
-         "userkey": "V~CrmAdminScope~ENU",
-         "item": {
-          "tsl_typeView": "V",
-          "tsl_id__viw_name": "CrmAdminScope",
-          "tsl_lang": "ENU",
-          "tsl_value": "Crm Admin",
-          "tsl_help": null,
-          "row_module_id__mdl_name": "Crm"
-         }
-        },
-        {
-         "object": "TranslateView",
-         "userkey": "V~CrmAdminScope~FRA",
-         "item": {
-          "tsl_typeView": "V",
-          "tsl_id__viw_name": "CrmAdminScope",
-          "tsl_lang": "FRA",
-          "tsl_value": "Admin Crm",
-          "tsl_help": null,
-          "row_module_id__mdl_name": "Crm"
-         }
-        }
-       ]
-      },
-      {
-       "object": "ViewGroup",
-       "label": "Active group",
-       "icon": "object",
-       "field": "vig_view_id",
-       "list": [{
-        "object": "ViewGroup",
-        "userkey": "CrmAdminScope~CRM_ADMIN",
-        "item": {
-         "vig_view_id__viw_name": "CrmAdminScope",
-         "vig_group_id__grp_name": "CRM_ADMIN",
-         "vig_group_id__grp_comment": null,
-         "row_module_id__mdl_name": "Crm"
-        }
-       }]
-      },
-      {
-       "object": "Function",
-       "label": "Functions",
-       "icon": "img/system/function",
-       "field": "fct_view_id",
-       "list": [{
-        "object": "Function",
-        "userkey": "CRM_ADMIN_SCOPE_V",
-        "item": {
-         "fct_name": "CRM_ADMIN_SCOPE_V",
-         "fct_object_id__obj_type": null,
-         "fct_object_id__obj_name": null,
-         "fct_function": "V",
-         "fct_action_id__act_name": null,
-         "fct_view_id__viw_name": "CrmAdminScope",
-         "row_module_id__mdl_name": "Crm"
-        }
-       }]
-      }
-     ]
-    }
-   ]
-  },
-  {
    "object": "Template",
    "label": "Templates",
    "icon": "img/system/template",
@@ -32538,25 +32150,46 @@
    "label": "Datasets",
    "icon": "img/color/file",
    "field": "row_module_id",
-   "list": [{
-    "object": "Dataset",
-    "userkey": "Crm~Crm-data-20220525112835",
-    "item": {
-     "row_module_id__mdl_name": "Crm",
-     "dt_name": "Crm-data-20220525112835",
-     "dt_file": {
-      "path": "data/Crm-data-20220525112835.zip",
-      "size": 3408,
-      "field": "dt_file",
-      "mime": "application/zip",
-      "name": "Crm-data-20220525112835.zip",
-      "id": "13340",
-      "object": "Dataset",
-      "rowid": "8"
-     },
-     "dt_desc": "Created by module's data export on 2022-05-25 11:28:35"
+   "list": [
+    {
+     "object": "Dataset",
+     "userkey": "Crm~Crm-data-20220525120500",
+     "item": {
+      "row_module_id__mdl_name": "Crm",
+      "dt_name": "Crm-data-20220525120500",
+      "dt_file": {
+       "path": "data/Crm-data-20220525120500.zip",
+       "size": 3408,
+       "field": "dt_file",
+       "mime": "application/zip",
+       "name": "Crm-data-20220525120500.zip",
+       "id": "13343",
+       "object": "Dataset",
+       "rowid": "10"
+      },
+      "dt_desc": "Created by module's data export on 2022-05-25 12:05:00"
+     }
+    },
+    {
+     "object": "Dataset",
+     "userkey": "Crm~Users",
+     "item": {
+      "row_module_id__mdl_name": "Crm",
+      "dt_name": "Users",
+      "dt_file": {
+       "path": "data/Users.xml",
+       "size": 79741,
+       "field": "dt_file",
+       "mime": "text/xml",
+       "name": "ApplicationUsers-0.1.xml",
+       "id": "13342",
+       "object": "Dataset",
+       "rowid": "9"
+      },
+      "dt_desc": "Collaborators + resp\nScopes"
+     }
     }
-   }]
+   ]
   },
   {
    "object": "Function",
@@ -32564,6 +32197,19 @@
    "icon": "img/system/function",
    "field": "row_module_id",
    "list": [
+    {
+     "object": "Function",
+     "userkey": "_CRM_USER_SCOPE_V",
+     "item": {
+      "fct_name": "_CRM_USER_SCOPE_V",
+      "fct_object_id__obj_type": null,
+      "fct_object_id__obj_name": null,
+      "fct_function": "V",
+      "fct_action_id__act_name": null,
+      "fct_view_id__viw_name": "CrmUserScope",
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
     {
      "object": "Function",
      "userkey": "_PROSPECTION_A",
@@ -32574,6 +32220,19 @@
       "fct_function": "A",
       "fct_action_id__act_name": "Prospection",
       "fct_view_id__viw_name": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "Function",
+     "userkey": "CRM_ADMIN_SCOPE_V",
+     "item": {
+      "fct_name": "CRM_ADMIN_SCOPE_V",
+      "fct_object_id__obj_type": null,
+      "fct_object_id__obj_name": null,
+      "fct_function": "V",
+      "fct_action_id__act_name": null,
+      "fct_view_id__viw_name": "CrmAdminScope",
       "row_module_id__mdl_name": "Crm"
      }
     },
@@ -32896,20 +32555,120 @@
    "label": "Grant",
    "icon": "img/system/grant",
    "field": "row_module_id",
-   "list": [{
-    "object": "Grant",
-    "userkey": "CRM_ADMIN~CRM_SIMPLE_USER_CRUD~SimpleUser~",
-    "item": {
-     "grt_group_id__grp_name": "CRM_ADMIN",
-     "grt_function_id__fct_name": "CRM_SIMPLE_USER_CRUD",
-     "grt_function_id__fct_object_id__obj_type": "O",
-     "grt_function_id__fct_object_id__obj_name": "SimpleUser",
-     "grt_function_id__fct_action_id__act_name": null,
-     "grt_function_id__fct_function": "CMS",
-     "grt_activ": true,
-     "row_module_id__mdl_name": "Crm"
+   "list": [
+    {
+     "object": "Grant",
+     "userkey": "CRM_ADMIN~CRM_SIMPLE_USER_CRUD~SimpleUser~",
+     "item": {
+      "grt_group_id__grp_name": "CRM_ADMIN",
+      "grt_function_id__fct_name": "CRM_SIMPLE_USER_CRUD",
+      "grt_function_id__fct_object_id__obj_type": "O",
+      "grt_function_id__fct_object_id__obj_name": "SimpleUser",
+      "grt_function_id__fct_action_id__act_name": null,
+      "grt_function_id__fct_function": "CMS",
+      "grt_activ": true,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "Grant",
+     "userkey": "CRM_GROUP~_CRM_USER_SCOPE_V~~",
+     "item": {
+      "grt_group_id__grp_name": "CRM_GROUP",
+      "grt_function_id__fct_name": "_CRM_USER_SCOPE_V",
+      "grt_function_id__fct_object_id__obj_type": null,
+      "grt_function_id__fct_object_id__obj_name": null,
+      "grt_function_id__fct_action_id__act_name": null,
+      "grt_function_id__fct_function": "V",
+      "grt_activ": true,
+      "row_module_id__mdl_name": "Crm"
+     }
     }
-   }]
+   ]
+  },
+  {
+   "object": "ViewGroup",
+   "label": "Active group",
+   "icon": "object",
+   "field": "row_module_id",
+   "list": [
+    {
+     "object": "ViewGroup",
+     "userkey": "CrmAdminScope~CRM_ADMIN",
+     "item": {
+      "vig_view_id__viw_name": "CrmAdminScope",
+      "vig_group_id__grp_name": "CRM_ADMIN",
+      "vig_group_id__grp_comment": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "ViewGroup",
+     "userkey": "CrmUserScope~CRM_GROUP",
+     "item": {
+      "vig_view_id__viw_name": "CrmUserScope",
+      "vig_group_id__grp_name": "CRM_GROUP",
+      "vig_group_id__grp_comment": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    }
+   ]
+  },
+  {
+   "object": "TranslateView",
+   "label": "View translation",
+   "icon": "img/system/translation",
+   "field": "row_module_id",
+   "list": [
+    {
+     "object": "TranslateView",
+     "userkey": "V~CrmAdminScope~ENU",
+     "item": {
+      "tsl_typeView": "V",
+      "tsl_id__viw_name": "CrmAdminScope",
+      "tsl_lang": "ENU",
+      "tsl_value": "Crm Admin",
+      "tsl_help": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "TranslateView",
+     "userkey": "V~CrmUserScope~ENU",
+     "item": {
+      "tsl_typeView": "V",
+      "tsl_id__viw_name": "CrmUserScope",
+      "tsl_lang": "ENU",
+      "tsl_value": "Crm User",
+      "tsl_help": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "TranslateView",
+     "userkey": "V~CrmAdminScope~FRA",
+     "item": {
+      "tsl_typeView": "V",
+      "tsl_id__viw_name": "CrmAdminScope",
+      "tsl_lang": "FRA",
+      "tsl_value": "Admin Crm",
+      "tsl_help": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    },
+    {
+     "object": "TranslateView",
+     "userkey": "V~CrmUserScope~FRA",
+     "item": {
+      "tsl_typeView": "V",
+      "tsl_id__viw_name": "CrmUserScope",
+      "tsl_lang": "FRA",
+      "tsl_value": "Utilisateur Crm",
+      "tsl_help": null,
+      "row_module_id__mdl_name": "Crm"
+     }
+    }
+   ]
   }
  ]
 }
