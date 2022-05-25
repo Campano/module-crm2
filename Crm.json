@@ -45,7 +45,7 @@
       "usr_menu": true,
       "usr_menu_defcollapsed": null,
       "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": "2022-05-25 10:05:05",
+      "usr_last_logon": "2022-05-25 10:22:20",
       "usr_dateformat": null,
       "usr_lang_pref": "ENU",
       "usr_mfa_method": null,
@@ -279,18 +279,32 @@
        "label": "Responsibilities",
        "icon": "img/system/responsability",
        "field": "rsp_group_id",
-       "list": [{
-        "object": "Responsability",
-        "userkey": "designer~CRM_ADMIN~2022-03-29",
-        "item": {
-         "rsp_login_id__usr_login": "designer",
-         "rsp_group_id__grp_name": "CRM_ADMIN",
-         "rsp_start_dt": "2022-03-29",
-         "rsp_end_dt": null,
-         "rsp_activ": true,
-         "row_module_id__mdl_name": "Crm"
+       "list": [
+        {
+         "object": "Responsability",
+         "userkey": "crm_admin~CRM_ADMIN~2022-05-25",
+         "item": {
+          "rsp_login_id__usr_login": "crm_admin",
+          "rsp_group_id__grp_name": "CRM_ADMIN",
+          "rsp_start_dt": "2022-05-25",
+          "rsp_end_dt": null,
+          "rsp_activ": true,
+          "row_module_id__mdl_name": "Crm"
+         }
+        },
+        {
+         "object": "Responsability",
+         "userkey": "designer~CRM_ADMIN~2022-03-29",
+         "item": {
+          "rsp_login_id__usr_login": "designer",
+          "rsp_group_id__grp_name": "CRM_ADMIN",
+          "rsp_start_dt": "2022-03-29",
+          "rsp_end_dt": null,
+          "rsp_activ": true,
+          "row_module_id__mdl_name": "Crm"
+         }
         }
-       }]
+       ]
       }
      ]
     },
@@ -324,7 +338,7 @@
          "rsp_group_id__grp_name": "CRM_GROUP",
          "rsp_start_dt": "2022-05-25",
          "rsp_end_dt": null,
-         "rsp_activ": false,
+         "rsp_activ": true,
          "row_module_id__mdl_name": "Crm"
         }
        },
@@ -390,7 +404,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 60,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -3602,7 +3616,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 180,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": true,
@@ -5346,7 +5360,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 100,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": null,
@@ -6481,7 +6495,7 @@
       "obo_type": "O",
       "obo_searchspec": "crm_collaborator=1",
       "obo_delspec": null,
-      "obo_exportorder": 10,
+      "obo_exportorder": 50,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": null,
@@ -7581,7 +7595,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 170,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -8899,7 +8913,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 70,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": null,
@@ -11913,7 +11927,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 75,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -12507,7 +12521,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 120,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": true,
@@ -13201,7 +13215,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 80,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": null,
@@ -15445,7 +15459,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 130,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -16201,7 +16215,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 160,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -17580,7 +17594,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 150,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -18241,7 +18255,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 90,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": null,
@@ -20242,7 +20256,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 140,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -21720,7 +21734,7 @@
       "obo_type": "O",
       "obo_searchspec": null,
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 110,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -31561,7 +31575,7 @@
       "field": "res_file_compiled",
       "mime": "text/javascript",
       "name": "script.min.js",
-      "id": "13290",
+      "id": "13330",
       "object": "Resource",
       "rowid": "324"
      },
@@ -32526,21 +32540,21 @@
    "field": "row_module_id",
    "list": [{
     "object": "Dataset",
-    "userkey": "Crm~Crm-data-20220525101501",
+    "userkey": "Crm~Crm-data-20220525103025",
     "item": {
      "row_module_id__mdl_name": "Crm",
-     "dt_name": "Crm-data-20220525101501",
+     "dt_name": "Crm-data-20220525103025",
      "dt_file": {
-      "path": "data/Crm-data-20220525101501.zip",
-      "size": 57083,
+      "path": "data/Crm-data-20220525103025.zip",
+      "size": 59866,
       "field": "dt_file",
       "mime": "application/zip",
-      "name": "Crm-data-20220525101501.zip",
-      "id": "13306",
+      "name": "Crm-data-20220525103025.zip",
+      "id": "13335",
       "object": "Dataset",
-      "rowid": "6"
+      "rowid": "5"
      },
-     "dt_desc": "Created by module's data export on 2022-05-25 10:15:01"
+     "dt_desc": "Created by module's data export on 2022-05-25 10:30:25"
     }
    }]
   },
