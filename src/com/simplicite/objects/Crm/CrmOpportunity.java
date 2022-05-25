@@ -14,7 +14,9 @@ public class CrmOpportunity extends ObjectDB {
 
 	@Override
 	public void initCreate() {
-		String accId = getFieldValue("crmOppLeadId.crmLeadAccId");
+		Grant g = getGrant();
+		ObjectDB o = g.getTmpObject("CrmOpportunity");
+		String accId = o.getFieldValue("crmOppLeadId.crmLeadAccId");
 		ObjectField f = getField("crmOppAccId.crmAccName");
 		String name = getFieldValue("crmOppLeadId.crmLeadAccId.crmAccName");
 	}
