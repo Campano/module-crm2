@@ -3287,36 +3287,20 @@
           "label": "Grant",
           "icon": "img/system/grant",
           "field": "grt_function_id",
-          "list": [
-           {
-            "object": "Grant",
-            "userkey": "CRM_ADMIN~CRM_SEC_R~CrmAccSector~",
-            "item": {
-             "grt_group_id__grp_name": "CRM_ADMIN",
-             "grt_function_id__fct_name": "CRM_SEC_R",
-             "grt_function_id__fct_object_id__obj_type": "O",
-             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
-             "grt_function_id__fct_action_id__act_name": null,
-             "grt_function_id__fct_function": "L",
-             "grt_activ": true,
-             "row_module_id__mdl_name": "Crm"
-            }
-           },
-           {
-            "object": "Grant",
-            "userkey": "CRM_GROUP~CRM_SEC_R~CrmAccSector~",
-            "item": {
-             "grt_group_id__grp_name": "CRM_GROUP",
-             "grt_function_id__fct_name": "CRM_SEC_R",
-             "grt_function_id__fct_object_id__obj_type": "O",
-             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
-             "grt_function_id__fct_action_id__act_name": null,
-             "grt_function_id__fct_function": "L",
-             "grt_activ": true,
-             "row_module_id__mdl_name": "Crm"
-            }
+          "list": [{
+           "object": "Grant",
+           "userkey": "CRM_ADMIN~CRM_SEC_R~CrmAccSector~",
+           "item": {
+            "grt_group_id__grp_name": "CRM_ADMIN",
+            "grt_function_id__fct_name": "CRM_SEC_R",
+            "grt_function_id__fct_object_id__obj_type": "O",
+            "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
+            "grt_function_id__fct_action_id__act_name": null,
+            "grt_function_id__fct_function": "L",
+            "grt_activ": true,
+            "row_module_id__mdl_name": "Crm"
            }
-          ]
+          }]
          }]
         }
        ]
@@ -32574,50 +32558,20 @@
    "label": "Grant",
    "icon": "img/system/grant",
    "field": "row_module_id",
-   "list": [
-    {
-     "object": "Grant",
-     "userkey": "CRM_ADMIN~~~",
-     "item": {
-      "grt_group_id__grp_name": "CRM_ADMIN",
-      "grt_function_id__fct_name": null,
-      "grt_function_id__fct_object_id__obj_type": null,
-      "grt_function_id__fct_object_id__obj_name": null,
-      "grt_function_id__fct_action_id__act_name": null,
-      "grt_function_id__fct_function": null,
-      "grt_activ": true,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "Grant",
-     "userkey": "CRM_ADMIN~CRM_SIMPLE_USER_CRUD~SimpleUser~",
-     "item": {
-      "grt_group_id__grp_name": "CRM_ADMIN",
-      "grt_function_id__fct_name": "CRM_SIMPLE_USER_CRUD",
-      "grt_function_id__fct_object_id__obj_type": "O",
-      "grt_function_id__fct_object_id__obj_name": "SimpleUser",
-      "grt_function_id__fct_action_id__act_name": null,
-      "grt_function_id__fct_function": "CMS",
-      "grt_activ": true,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "Grant",
-     "userkey": "CRM_GROUP~~~",
-     "item": {
-      "grt_group_id__grp_name": "CRM_GROUP",
-      "grt_function_id__fct_name": null,
-      "grt_function_id__fct_object_id__obj_type": null,
-      "grt_function_id__fct_object_id__obj_name": null,
-      "grt_function_id__fct_action_id__act_name": null,
-      "grt_function_id__fct_function": null,
-      "grt_activ": true,
-      "row_module_id__mdl_name": "Crm"
-     }
+   "list": [{
+    "object": "Grant",
+    "userkey": "CRM_ADMIN~CRM_SIMPLE_USER_CRUD~SimpleUser~",
+    "item": {
+     "grt_group_id__grp_name": "CRM_ADMIN",
+     "grt_function_id__fct_name": "CRM_SIMPLE_USER_CRUD",
+     "grt_function_id__fct_object_id__obj_type": "O",
+     "grt_function_id__fct_object_id__obj_name": "SimpleUser",
+     "grt_function_id__fct_action_id__act_name": null,
+     "grt_function_id__fct_function": "CMS",
+     "grt_activ": true,
+     "row_module_id__mdl_name": "Crm"
     }
-   ]
+   }]
   },
   {
    "object": "TranslateObjectField",
