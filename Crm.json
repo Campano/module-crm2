@@ -12845,55 +12845,90 @@
        "label": "Function",
        "icon": "img/system/function",
        "field": "fct_object_id",
-       "list": [{
-        "object": "Function",
-        "userkey": "CRM_CTC_HIST_R",
-        "item": {
-         "fct_name": "CRM_CTC_HIST_R",
-         "fct_object_id__obj_type": "O",
-         "fct_object_id__obj_name": "CrmContactHistoric",
-         "fct_function": "L",
-         "fct_action_id__act_name": null,
-         "fct_view_id__viw_name": null,
-         "row_module_id__mdl_name": "Crm"
-        },
-        "links": [{
-         "object": "Grant",
-         "label": "Grant",
-         "icon": "img/system/grant",
-         "field": "grt_function_id",
-         "list": [
-          {
+       "list": [
+        {
+         "object": "Function",
+         "userkey": "CRM_CTC_HIST_CRUD",
+         "item": {
+          "fct_name": "CRM_CTC_HIST_CRUD",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "CrmContactHistoric",
+          "fct_function": "CMS",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [{
            "object": "Grant",
-           "userkey": "CRM_ADMIN~CRM_CTC_HIST_R~CrmContactHistoric~",
+           "userkey": "CRM_ADMIN~CRM_CTC_HIST_CRUD~CrmContactHistoric~",
            "item": {
             "grt_group_id__grp_name": "CRM_ADMIN",
-            "grt_function_id__fct_name": "CRM_CTC_HIST_R",
+            "grt_function_id__fct_name": "CRM_CTC_HIST_CRUD",
             "grt_function_id__fct_object_id__obj_type": "O",
             "grt_function_id__fct_object_id__obj_name": "CrmContactHistoric",
             "grt_function_id__fct_action_id__act_name": null,
-            "grt_function_id__fct_function": "L",
+            "grt_function_id__fct_function": "CMS",
             "grt_activ": true,
             "row_module_id__mdl_name": "Crm"
            }
-          },
-          {
-           "object": "Grant",
-           "userkey": "CRM_GROUP~CRM_CTC_HIST_R~CrmContactHistoric~",
-           "item": {
-            "grt_group_id__grp_name": "CRM_GROUP",
-            "grt_function_id__fct_name": "CRM_CTC_HIST_R",
-            "grt_function_id__fct_object_id__obj_type": "O",
-            "grt_function_id__fct_object_id__obj_name": "CrmContactHistoric",
-            "grt_function_id__fct_action_id__act_name": null,
-            "grt_function_id__fct_function": "L",
-            "grt_activ": true,
-            "row_module_id__mdl_name": "Crm"
+          }]
+         }]
+        },
+        {
+         "object": "Function",
+         "userkey": "CRM_CTC_HIST_R",
+         "item": {
+          "fct_name": "CRM_CTC_HIST_R",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "CrmContactHistoric",
+          "fct_function": "L",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Crm"
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [
+           {
+            "object": "Grant",
+            "userkey": "CRM_ADMIN~CRM_CTC_HIST_R~CrmContactHistoric~",
+            "item": {
+             "grt_group_id__grp_name": "CRM_ADMIN",
+             "grt_function_id__fct_name": "CRM_CTC_HIST_R",
+             "grt_function_id__fct_object_id__obj_type": "O",
+             "grt_function_id__fct_object_id__obj_name": "CrmContactHistoric",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "L",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
+           },
+           {
+            "object": "Grant",
+            "userkey": "CRM_GROUP~CRM_CTC_HIST_R~CrmContactHistoric~",
+            "item": {
+             "grt_group_id__grp_name": "CRM_GROUP",
+             "grt_function_id__fct_name": "CRM_CTC_HIST_R",
+             "grt_function_id__fct_object_id__obj_type": "O",
+             "grt_function_id__fct_object_id__obj_name": "CrmContactHistoric",
+             "grt_function_id__fct_action_id__act_name": null,
+             "grt_function_id__fct_function": "L",
+             "grt_activ": true,
+             "row_module_id__mdl_name": "Crm"
+            }
            }
-          }
-         ]
-        }]
-       }]
+          ]
+         }]
+        }
+       ]
       }
      ]
     },
