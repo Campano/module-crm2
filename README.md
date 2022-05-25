@@ -13,6 +13,20 @@
 
 
 
+`CrmCollaborator` business object definition
+--------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+
+### Custom actions
+
+* `resetPassword`: 
+
 `CrmAccSector` business object definition
 -----------------------------------------
 
@@ -58,20 +72,6 @@
 | `crmCompName`                                                | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `crmCompComment`                                             | text(1000)                               |          | yes       |          | -                                                                                |
 | `crmCompDocuments`                                           | document                                 |          | yes       |          | -                                                                                |
-
-`CrmCollaborator` business object definition
---------------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-
-### Custom actions
-
-* `resetPassword`: 
 
 `CrmAccount` business object definition
 ---------------------------------------
