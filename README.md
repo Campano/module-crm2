@@ -181,6 +181,8 @@
 | _Ref. `crmLeadAccId.crmAccComment`_                          | _text(1500)_                             |          |           |          | -                                                                                |
 | _Ref. `crmLeadAccId.crmAccSecId`_                            | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `crmAccSecId.crmSecSector`_                            | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmLeadAccId.crmAccColId`_                            | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmAccColId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | `crmLeadColId` link to **`CrmCollaborator`**                 | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmLeadColId.usr_login`_                              | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | `crmLeadSrcId` link to **`CrmSource`**                       | id                                       |          | yes       |          | -                                                                                |
@@ -204,15 +206,15 @@
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `crmOppTitle`                                                | char(255)                                | yes*     | yes       |          | -                                                                                |
 | `crmOppState`                                                | enum(30) using `CRM_OPP_STATE` list      | yes      | yes       |          | -                                                                                |
+| `crmOppAmount`                                               | float(11, 2)                             |          |           |          | -                                                                                |
+| `crmOppEstimatedAmount`                                      | float(10, 2)                             |          |           |          | -                                                                                |
 | `crmOppColId` link to **`CrmCollaborator`**                  | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmOppColId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
 | _Ref. `crmOppColId.usr_first_name`_                          | _char(50)_                               |          |           | yes      | _First name_                                                                     |
 | _Ref. `crmOppColId.usr_last_name`_                           | _char(50)_                               |          |           | yes      | _Last name_                                                                      |
-| `crmOppDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
-| `crmOppAmount`                                               | float(11, 2)                             |          |           |          | -                                                                                |
-| `crmOppEstimatedAmount`                                      | float(10, 2)                             |          |           |          | -                                                                                |
 | `crmOppLeadId` link to **`CrmLead`**                         | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmOppLeadId.crmLeadCreation`_                        | _date_                                   |          |           |          | -                                                                                |
+| `crmOppDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
 | _Ref. `crmOppLeadId.crmLeadTitle`_                           | _char(255)_                              |          |           |          | -                                                                                |
 | _Ref. `crmOppLeadId.crmLeadCtcId`_                           | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `crmLeadCtcId.crmCtcFirstName`_                        | _char(40)_                               |          |           |          | -                                                                                |
@@ -220,10 +222,17 @@
 | _Ref. `crmLeadCtcId.crmCtcMobile`_                           | _phone(100)_                             |          |           |          | -                                                                                |
 | _Ref. `crmLeadCtcId.crmCtcEmail`_                            | _email(100)_                             |          |           |          | -                                                                                |
 | _Ref. `crmLeadCtcId.crmCtcFunction`_                         | _char(255)_                              |          |           |          | -                                                                                |
-| `crmOppComment`                                              | text(2000)                               |          | yes       |          | -                                                                                |
 | `crmOppAccId` link to **`CrmAccount`**                       | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `crmOppAccId.crmAccName`_                              | _char(255)_                              |          |           |          | -                                                                                |
 | _Ref. `crmOppAccId.crmAccComment`_                           | _text(1500)_                             |          |           |          | -                                                                                |
+| _Ref. `crmOppLeadId.crmLeadAccId`_                           | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmLeadAccId.crmAccComment`_                          | _text(1500)_                             |          |           |          | -                                                                                |
+| _Ref. `crmLeadAccId.crmAccName`_                             | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmLeadAccId.crmAccSecId`_                            | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmOppLeadId.crmLeadColId`_                           | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmLeadColId.usr_login`_                              | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| `crmOppComment`                                              | text(2000)                               |          | yes       |          | -                                                                                |
+| _Ref. `crmAccSecId.crmSecSector`_                            | _char(255)_                              |          |           |          | -                                                                                |
 
 ### Lists
 
@@ -253,6 +262,25 @@
 | _Ref. `crmActivityCrmActTypefk.crmActTypeLabel`_             | _char(255)_                              |          |           |          | -                                                                                |
 | `crmActDescription`                                          | text(2000)                               |          | yes       |          | -                                                                                |
 | `crmAccAct` link to **`CrmAccount`**                         | id                                       |          | yes       |          | -                                                                                |
+| `crmActOppId` link to **`CrmOpportunity`**                   | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `crmActOppId.crmOppTitle`_                             | _char(255)_                              |          |           |          | -                                                                                |
+| _Ref. `crmActOppId.crmOppState`_                             | _enum(30) using `CRM_OPP_STATE` list_    |          |           |          | -                                                                                |
+| _Ref. `crmActOppId.crmOppColId`_                             | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmOppColId.usr_login`_                               | _regexp(100)_                            |          |           | yes      | _Login_                                                                          |
+| _Ref. `crmActOppId.crmOppAccId`_                             | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `crmOppAccId.crmAccName`_                              | _char(255)_                              |          |           |          | -                                                                                |
+
+### Lists
+
+* `CRM_OPP_STATE`
+    - `DR` Draft
+    - `PR` Prospection
+    - `QU` Qualification
+    - `OF` Offer
+    - `NE` Negociation
+    - `W` Won
+    - `LO` Lost
+    - `AB` Abandonned
 
 `CrmProduct` business object definition
 ---------------------------------------
@@ -362,41 +390,6 @@
 | `crmOppctcCtcId` link to **`CrmContact`**                    | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `crmOppctcCtcId.crmCtcName`_                           | _char(30)_                               |          |           |          | -                                                                                |
 | _Ref. `crmOppctcCtcId.crmCtcFirstName`_                      | _char(40)_                               |          |           |          | -                                                                                |
-
-`CrmOppAct` business object definition
---------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `crmOppactOppId` link to **`CrmOpportunity`**                | id                                       | yes*     | yes       |          | -                                                                                |
-| _Ref. `crmOppactOppId.crmOppTitle`_                          | _char(255)_                              |          |           |          | -                                                                                |
-| _Ref. `crmOppactOppId.crmOppState`_                          | _enum(30) using `CRM_OPP_STATE` list_    |          |           |          | -                                                                                |
-| _Ref. `crmOppactOppId.crmOppLeadId`_                         | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `crmOppactOppId.crmOppComment`_                        | _text(2000)_                             |          |           |          | -                                                                                |
-| _Ref. `crmOppactOppId.crmOppDocuments`_                      | _document_                               |          |           |          | -                                                                                |
-| `crmOppactActId` link to **`CrmActivity`**                   | id                                       | yes*     | yes       |          | -                                                                                |
-| _Ref. `crmOppactActId.crmActTitle`_                          | _char(255)_                              |          |           |          | -                                                                                |
-| _Ref. `crmOppactActId.crmActWhen`_                           | _datetime_                               |          |           |          | -                                                                                |
-| _Ref. `crmOppactActId.crmActivityCrmActTypefk`_              | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `crmActivityCrmActTypefk.crmActTypeLabel`_             | _char(255)_                              |          |           |          | -                                                                                |
-| _Ref. `crmOppactActId.crmActDocuments`_                      | _document_                               |          |           |          | -                                                                                |
-| _Ref. `crmOppactActId.crmActDescription`_                    | _text(2000)_                             |          |           |          | -                                                                                |
-
-### Lists
-
-* `CRM_OPP_STATE`
-    - `DR` Draft
-    - `PR` Prospection
-    - `QU` Qualification
-    - `OF` Offer
-    - `NE` Negociation
-    - `W` Won
-    - `LO` Lost
-    - `AB` Abandonned
 
 `CrmCompOpp` business object definition
 ---------------------------------------
