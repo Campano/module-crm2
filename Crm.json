@@ -11,98 +11,6 @@
  },
  "links": [
   {
-   "object": "UserSysParam",
-   "label": "User parameter",
-   "icon": "img/system/system_param",
-   "field": "row_module_id",
-   "list": [
-    {
-     "object": "UserSysParam",
-     "userkey": "crm_admin~CLIENT_ID",
-     "item": {
-      "usp_user_id__usr_login": "crm_admin",
-      "usp_param_id__sys_code": "CLIENT_ID",
-      "usp_value": "[{\n \"dt\": \"2022-05-25 10:02:51\",\n \"ag\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0\",\n \"id\": \"1PpYBWnFxGQlRIWlQIWrY7lwIq54e4011Azsyx2JO6Wo2xXbE8fpdiLF5ZYxvVVS1640081370616\"\n}]",
-      "usp_param_id__sys_type": null,
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": null,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "UserSysParam",
-     "userkey": "crm_admin~HISTORY CrmAdminScope",
-     "item": {
-      "usp_user_id__usr_login": "crm_admin",
-      "usp_param_id__sys_code": "HISTORY CrmAdminScope",
-      "usp_value": "[{\"object\":\"CrmOpportunity\",\"rowId\":\"1\",\"label\":\"Opportunity : Contract for multiple engines\"},\n{\"object\":\"CrmOpportunity\",\"rowId\":\"2\",\"label\":\"Opportunity : Technical inspection on 5 vehicules\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"1\",\"label\":\"Account : Origin\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"3\",\"label\":\"Account : Drake Interplanetary\"},\n{\"object\":\"CrmActivity\",\"rowId\":\"1\",\"label\":\"Activity\"},\n{\"object\":\"CrmActCol\",\"rowId\":\"1\",\"label\":\"Activity / Collaborator : Meeting hari_sheldon\"},\n{\"object\":\"CrmContact\",\"rowId\":\"3\",\"label\":\"Contact : Blanchefle Fournier\"},\n{\"object\":\"CrmCtcAct\",\"rowId\":\"1\",\"label\":\"Activity / Contact : Blanchefle Fournier\"},\n{\"object\":\"CrmLead\",\"rowId\":\"1\",\"label\":\"Lead\"},\n{\"object\":\"CrmContact\",\"rowId\":\"6\",\"label\":\"Contact : Aimé Lamy\"},\n{\"object\":\"CrmContact\",\"rowId\":\"10\",\"label\":\"Contact : Slainie Lamontagne\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"4\",\"label\":\"Account : Consolidated Outland\"},\n{\"object\":\"CrmContact\",\"rowId\":\"2\",\"label\":\"Contact : Fabien Meunier\"},\n{\"object\":\"CrmContact\",\"rowId\":\"1\",\"label\":\"Contact : Matthieu Paquette\"},\n{\"object\":\"CrmAccount\",\"rowId\":\"2\",\"label\":\"Account : Musashi Industrial & Starflight Concern\"},\n{\"object\":\"CrmContact\",\"rowId\":\"5\",\"label\":\"Contact : Pinabel Ratté\"},\n{\"object\":\"CrmContact\",\"rowId\":\"4\",\"label\":\"Contact : Eloise Lajeunesse\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"46\",\"label\":\"Collaborator : Hari Sheldon\"},\n{\"object\":\"CrmCollaborator\",\"rowId\":\"47\",\"label\":\"Collaborator : Golan Trevize\"}]",
-      "usp_param_id__sys_type": null,
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": null,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "UserSysParam",
-     "userkey": "crm_admin~HISTORY CrmUserScope",
-     "item": {
-      "usp_user_id__usr_login": "crm_admin",
-      "usp_param_id__sys_code": "HISTORY CrmUserScope",
-      "usp_value": "[]",
-      "usp_param_id__sys_type": null,
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": null,
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "UserSysParam",
-     "userkey": "crm_admin~SCOPE_PREFS",
-     "item": {
-      "usp_user_id__usr_login": "crm_admin",
-      "usp_param_id__sys_code": "SCOPE_PREFS",
-      "usp_value": "CrmAdminScope,CrmUserScope",
-      "usp_param_id__sys_type": "LFL",
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": "Technical, do not change/remove, needed in user's parameters",
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "UserSysParam",
-     "userkey": "golan_trevize~FORCE_CHANGE_PASSWORD",
-     "item": {
-      "usp_user_id__usr_login": "golan_trevize",
-      "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
-      "usp_value": "yes",
-      "usp_param_id__sys_type": "PRV",
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": "Force password change (set at user level)",
-      "row_module_id__mdl_name": "Crm"
-     }
-    },
-    {
-     "object": "UserSysParam",
-     "userkey": "hari_sheldon~FORCE_CHANGE_PASSWORD",
-     "item": {
-      "usp_user_id__usr_login": "hari_sheldon",
-      "usp_param_id__sys_code": "FORCE_CHANGE_PASSWORD",
-      "usp_value": "yes",
-      "usp_param_id__sys_type": "PRV",
-      "usp_param_id__sys_value": "empty",
-      "usp_param_id__sys_value2": null,
-      "usp_param_id__sys_desc": "Force password change (set at user level)",
-      "row_module_id__mdl_name": "Crm"
-     }
-    }
-   ]
-  },
-  {
    "object": "Group",
    "label": "Groups",
    "icon": "img/system/group",
@@ -32178,15 +32086,15 @@
       "dt_name": "Users",
       "dt_file": {
        "path": "data/Users.xml",
-       "size": 79741,
+       "size": 84276,
        "field": "dt_file",
        "mime": "text/xml",
        "name": "ApplicationUsers-0.1.xml",
-       "id": "13342",
+       "id": "13344",
        "object": "Dataset",
-       "rowid": "9"
+       "rowid": "11"
       },
-      "dt_desc": "Collaborators + resp\nScopes"
+      "dt_desc": null
      }
     }
    ]

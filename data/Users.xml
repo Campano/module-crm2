@@ -145,6 +145,92 @@
 	</data>
 </object>
 <object>
+	<name>UserSysParam</name>
+	<action>upsert</action>
+	<data>
+		<usp_user_id.usr_login>crm_admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>CLIENT_ID</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{
+ "dt": "2022-05-25 10:02:51",
+ "ag": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0",
+ "id": "1PpYBWnFxGQlRIWlQIWrY7lwIq54e4011Azsyx2JO6Wo2xXbE8fpdiLF5ZYxvVVS1640081370616"
+}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>crm_admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY CrmAdminScope</usp_param_id.sys_code>
+		<usp_value><![CDATA[[{"object":"CrmOpportunity","rowId":"1","label":"Opportunity : Contract for multiple engines"},
+{"object":"CrmOpportunity","rowId":"2","label":"Opportunity : Technical inspection on 5 vehicules"},
+{"object":"CrmAccount","rowId":"1","label":"Account : Origin"},
+{"object":"CrmAccount","rowId":"3","label":"Account : Drake Interplanetary"},
+{"object":"CrmActivity","rowId":"1","label":"Activity"},
+{"object":"CrmActCol","rowId":"1","label":"Activity / Collaborator : Meeting hari_sheldon"},
+{"object":"CrmContact","rowId":"3","label":"Contact : Blanchefle Fournier"},
+{"object":"CrmCtcAct","rowId":"1","label":"Activity / Contact : Blanchefle Fournier"},
+{"object":"CrmLead","rowId":"1","label":"Lead"},
+{"object":"CrmContact","rowId":"6","label":"Contact : Aimé Lamy"},
+{"object":"CrmContact","rowId":"10","label":"Contact : Slainie Lamontagne"},
+{"object":"CrmAccount","rowId":"4","label":"Account : Consolidated Outland"},
+{"object":"CrmContact","rowId":"2","label":"Contact : Fabien Meunier"},
+{"object":"CrmContact","rowId":"1","label":"Contact : Matthieu Paquette"},
+{"object":"CrmAccount","rowId":"2","label":"Account : Musashi Industrial & Starflight Concern"},
+{"object":"CrmContact","rowId":"5","label":"Contact : Pinabel Ratté"},
+{"object":"CrmContact","rowId":"4","label":"Contact : Eloise Lajeunesse"},
+{"object":"CrmCollaborator","rowId":"46","label":"Collaborator : Hari Sheldon"},
+{"object":"CrmCollaborator","rowId":"47","label":"Collaborator : Golan Trevize"}]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>crm_admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>HISTORY CrmUserScope</usp_param_id.sys_code>
+		<usp_value><![CDATA[[]]]></usp_value>
+		<usp_param_id.sys_type/>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc/>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>crm_admin</usp_user_id.usr_login>
+		<usp_param_id.sys_code>SCOPE_PREFS</usp_param_id.sys_code>
+		<usp_value><![CDATA[CrmAdminScope,CrmUserScope]]></usp_value>
+		<usp_param_id.sys_type>LFL</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc><![CDATA[Technical, do not change/remove, needed in user's parameters]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>golan_trevize</usp_user_id.usr_login>
+		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
+		<usp_value><![CDATA[yes]]></usp_value>
+		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+	<data>
+		<usp_user_id.usr_login>hari_sheldon</usp_user_id.usr_login>
+		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
+		<usp_value><![CDATA[yes]]></usp_value>
+		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
+		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
+		<usp_param_id.sys_value2/>
+		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
+		<row_module_id.mdl_name>ApplicationUsers</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>Responsability</name>
 	<action>upsert</action>
 	<data>
