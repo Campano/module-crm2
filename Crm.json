@@ -11,140 +11,6 @@
  },
  "links": [
   {
-   "object": "User",
-   "label": "Users",
-   "icon": "img/system/user",
-   "field": "row_module_id",
-   "list": [
-    {
-     "object": "User",
-     "userkey": "crm_admin",
-     "item": {
-      "usr_image_id": null,
-      "usr_login": "crm_admin",
-      "usr_timezone": null,
-      "usr_minrows": 20,
-      "usr_maxrows": 50,
-      "usr_title": null,
-      "usr_first_name": null,
-      "usr_last_name": null,
-      "usr_lang": "ENU",
-      "usr_email": null,
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": null,
-      "usr_active": "1",
-      "usr_home_id__viw_name": "CrmAdminScope",
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": true,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": "2022-05-25 10:22:20",
-      "usr_dateformat": null,
-      "usr_lang_pref": "ENU",
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    },
-    {
-     "object": "User",
-     "userkey": "golan_trevize",
-     "item": {
-      "usr_image_id": {
-       "path": "files/User/golan_trevize.png",
-       "size": 24835,
-       "field": "usr_image_id",
-       "mime": "image/png",
-       "name": "user_fra.png",
-       "id": "13304",
-       "object": "CrmCollaborator",
-       "rowid": "47"
-      },
-      "usr_login": "golan_trevize",
-      "usr_timezone": null,
-      "usr_minrows": null,
-      "usr_maxrows": null,
-      "usr_title": null,
-      "usr_first_name": "Golan",
-      "usr_last_name": "Trevize",
-      "usr_lang": "ENU",
-      "usr_email": null,
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": null,
-      "usr_active": "1",
-      "usr_home_id__viw_name": null,
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": null,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": null,
-      "usr_dateformat": null,
-      "usr_lang_pref": null,
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    },
-    {
-     "object": "User",
-     "userkey": "hari_sheldon",
-     "item": {
-      "usr_image_id": {
-       "path": "files/User/hari_sheldon.png",
-       "size": 31069,
-       "field": "usr_image_id",
-       "mime": "image/png",
-       "name": "admin.png",
-       "id": "13305",
-       "object": "CrmCollaborator",
-       "rowid": "46"
-      },
-      "usr_login": "hari_sheldon",
-      "usr_timezone": null,
-      "usr_minrows": null,
-      "usr_maxrows": null,
-      "usr_title": null,
-      "usr_first_name": "Hari",
-      "usr_last_name": "Sheldon",
-      "usr_lang": "ENU",
-      "usr_email": null,
-      "usr_work_num": null,
-      "usr_home_num": null,
-      "usr_cell_num": null,
-      "usr_active": "1",
-      "usr_home_id__viw_name": null,
-      "usr_address1": null,
-      "usr_address2": null,
-      "usr_zipcode": null,
-      "usr_city": null,
-      "usr_state": null,
-      "usr_country": null,
-      "row_module_id__mdl_name": "Crm",
-      "usr_menu": null,
-      "usr_menu_defcollapsed": null,
-      "usr_menu_defdomain_id__obd_name": null,
-      "usr_last_logon": null,
-      "usr_dateformat": null,
-      "usr_lang_pref": null,
-      "usr_mfa_method": null,
-      "usr_mfa_settings": null
-     }
-    }
-   ]
-  },
-  {
    "object": "UserSysParam",
    "label": "User parameter",
    "icon": "img/system/system_param",
@@ -6481,11 +6347,11 @@
       "obo_class": null,
       "obo_script_id": {
        "path": "src/com/simplicite/objects/Crm/CrmCollaborator.java",
-       "size": 935,
+       "size": 786,
        "field": "obo_script_id",
        "mime": "text/plain",
        "name": "CrmCollaborator.java",
-       "id": "13303",
+       "id": "13338",
        "object": "ObjectInternal",
        "rowid": "2025"
       },
@@ -22446,7 +22312,7 @@
      "obd_type": "D",
      "obd_view_id__viw_name": null,
      "obd_nohome": true,
-     "obd_icon": "img/color/graph_clique",
+     "obd_icon": "img/color/view_social",
      "obd_order": 1000,
      "obd_domain_id__obd_name": null,
      "row_module_id__mdl_name": "Crm"
@@ -32540,21 +32406,21 @@
    "field": "row_module_id",
    "list": [{
     "object": "Dataset",
-    "userkey": "Crm~Crm-data-20220525111347",
+    "userkey": "Crm~Crm-data-20220525112209",
     "item": {
      "row_module_id__mdl_name": "Crm",
-     "dt_name": "Crm-data-20220525111347",
+     "dt_name": "Crm-data-20220525112209",
      "dt_file": {
-      "path": "data/Crm-data-20220525111347.zip",
-      "size": 59866,
+      "path": "data/Crm-data-20220525112209.zip",
+      "size": 59877,
       "field": "dt_file",
       "mime": "application/zip",
-      "name": "Crm-data-20220525111347.zip",
-      "id": "13336",
+      "name": "Crm-data-20220525112209.zip",
+      "id": "13339",
       "object": "Dataset",
-      "rowid": "6"
+      "rowid": "7"
      },
-     "dt_desc": "Created by module's data export on 2022-05-25 11:13:47"
+     "dt_desc": "Created by module's data export on 2022-05-25 11:22:09"
     }
    }]
   },
