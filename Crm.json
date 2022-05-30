@@ -3238,36 +3238,20 @@
           "label": "Grant",
           "icon": "img/system/grant",
           "field": "grt_function_id",
-          "list": [
-           {
-            "object": "Grant",
-            "userkey": "CRM_GROUP~CRM_SEC_CRUD~CrmAccSector~",
-            "item": {
-             "grt_group_id__grp_name": "CRM_GROUP",
-             "grt_function_id__fct_name": "CRM_SEC_CRUD",
-             "grt_function_id__fct_object_id__obj_type": "O",
-             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
-             "grt_function_id__fct_action_id__act_name": null,
-             "grt_function_id__fct_function": "CMS",
-             "grt_activ": true,
-             "row_module_id__mdl_name": "Crm"
-            }
-           },
-           {
-            "object": "Grant",
-            "userkey": "DEMO_ADMIN~CRM_SEC_CRUD~CrmAccSector~",
-            "item": {
-             "grt_group_id__grp_name": "DEMO_ADMIN",
-             "grt_function_id__fct_name": "CRM_SEC_CRUD",
-             "grt_function_id__fct_object_id__obj_type": "O",
-             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
-             "grt_function_id__fct_action_id__act_name": null,
-             "grt_function_id__fct_function": "CMS",
-             "grt_activ": true,
-             "row_module_id__mdl_name": "Crm"
-            }
+          "list": [{
+           "object": "Grant",
+           "userkey": "CRM_ADMIN~CRM_SEC_CRUD~CrmAccSector~",
+           "item": {
+            "grt_group_id__grp_name": "CRM_ADMIN",
+            "grt_function_id__fct_name": "CRM_SEC_CRUD",
+            "grt_function_id__fct_object_id__obj_type": "O",
+            "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
+            "grt_function_id__fct_action_id__act_name": null,
+            "grt_function_id__fct_function": "CMS",
+            "grt_activ": true,
+            "row_module_id__mdl_name": "Crm"
            }
-          ]
+          }]
          }]
         },
         {
@@ -3289,9 +3273,9 @@
           "field": "grt_function_id",
           "list": [{
            "object": "Grant",
-           "userkey": "CRM_ADMIN~CRM_SEC_R~CrmAccSector~",
+           "userkey": "CRM_GROUP~CRM_SEC_R~CrmAccSector~",
            "item": {
-            "grt_group_id__grp_name": "CRM_ADMIN",
+            "grt_group_id__grp_name": "CRM_GROUP",
             "grt_function_id__fct_name": "CRM_SEC_R",
             "grt_function_id__fct_object_id__obj_type": "O",
             "grt_function_id__fct_object_id__obj_name": "CrmAccSector",
@@ -31079,7 +31063,7 @@
          "tsl_typeFieldArea": "Z",
          "tsl_id__ofa_name": "CrmOpportunity-7",
          "tsl_lang": "FRA",
-         "tsl_value": "Account",
+         "tsl_value": "Compte",
          "row_module_id__mdl_name": "Crm"
         }
        }
