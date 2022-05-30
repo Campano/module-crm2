@@ -255,6 +255,7 @@
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `crmActId`                                                   | int(11)                                  | yes*     | yes       |          | -                                                                                |
 | `crmActWhen`                                                 | datetime                                 | yes      | yes       |          | -                                                                                |
 | `crmActTitle`                                                | char(255)                                | yes      | yes       |          | -                                                                                |
 | `crmActDocuments`                                            | document                                 |          | yes       |          | -                                                                                |
@@ -319,6 +320,7 @@
 | _Ref. `crmCtcactCtcId.crmCtcName`_                           | _char(30)_                               |          |           |          | -                                                                                |
 | _Ref. `crmCtcactCtcId.crmCtcFirstName`_                      | _char(40)_                               |          |           |          | -                                                                                |
 | `crmCtcactActId` link to **`CrmActivity`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `crmCtcactActId.crmActId`_                             | _int(11)_                                |          |           |          | -                                                                                |
 | _Ref. `crmCtcactActId.crmActTitle`_                          | _char(255)_                              |          |           |          | -                                                                                |
 
 `CrmMeanOfContact` business object definition
@@ -420,6 +422,7 @@
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `crmActcolActId` link to **`CrmActivity`**                   | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `crmActcolActId.crmActId`_                             | _int(11)_                                |          |           |          | -                                                                                |
 | _Ref. `crmActcolActId.crmActWhen`_                           | _datetime_                               |          |           |          | -                                                                                |
 | _Ref. `crmActcolActId.crmActTitle`_                          | _char(255)_                              |          |           |          | -                                                                                |
 | _Ref. `crmActcolActId.crmActivityCrmActTypefk`_              | _id_                                     |          |           |          | -                                                                                |

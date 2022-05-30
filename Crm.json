@@ -3567,7 +3567,7 @@
            "item": {
             "fld_name": {"value": "crmActId"},
             "fld_dbname": "crm_act_id",
-            "fld_visible": "4",
+            "fld_visible": "0",
             "fld_updatable": "1",
             "fld_required": true,
             "fld_fonctid": true,
@@ -32229,12 +32229,12 @@
        "size": 59992,
        "field": "dt_file",
        "mime": "application/zip",
-       "name": "Crm-data-20220530154415.zip",
-       "id": "13361",
+       "name": "Crm-data-20220530155314.zip",
+       "id": "13362",
        "object": "Dataset",
-       "rowid": "19"
+       "rowid": "20"
       },
-      "dt_desc": "Created by module's data export on 2022-05-30 15:44:15"
+      "dt_desc": "Created by module's data export on 2022-05-30 15:53:14"
      }
     }
    ]
