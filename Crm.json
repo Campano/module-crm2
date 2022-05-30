@@ -28990,7 +28990,7 @@
      "userkey": "CrmActivity",
      "item": {
       "tpl_name": "CrmActivity",
-      "tpl_ui": "<div class=\"row\">\n  <div class=\"area col-sm-6\" data-area=\"1\"><\/div>\n  <div class=\"area col-sm-6\" data-area=\"2\"><\/div>\n<\/div>",
+      "tpl_ui": "<div>\n  <div class=\"field\" data-field=\"crmAccAct\"><\/div>\n  <div class=\"row\">\n    <div class=\"area col-sm-6\" data-area=\"1\"><\/div>\n    <div class=\"area col-sm-6\" data-area=\"2\"><\/div>\n  <\/div>\n<\/div>",
       "tpl_min": null,
       "tpl_image": null,
       "row_module_id__mdl_name": "Crm"
@@ -32226,15 +32226,15 @@
       "dt_name": "2nd import - Datas",
       "dt_file": {
        "path": "data/2nd import - Datas.zip",
-       "size": 60076,
+       "size": 60005,
        "field": "dt_file",
        "mime": "application/zip",
-       "name": "Crm-data-20220530150134.zip",
-       "id": "13359",
+       "name": "Crm-data-20220530153624.zip",
+       "id": "13360",
        "object": "Dataset",
-       "rowid": "17"
+       "rowid": "18"
       },
-      "dt_desc": "Created by module's data export on 2022-05-30 15:01:34"
+      "dt_desc": "Created by module's data export on 2022-05-30 15:36:24"
      }
     }
    ]
