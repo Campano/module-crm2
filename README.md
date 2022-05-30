@@ -13,6 +13,17 @@
 
 
 
+`CrmAccSector` business object definition
+-----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `crmSecSector`                                               | char(255)                                | yes*     | yes       |          | -                                                                                |
+
 `CrmCollaborator` business object definition
 --------------------------------------------
 
@@ -26,17 +37,6 @@
 ### Custom actions
 
 * `resetPassword`: 
-
-`CrmAccSector` business object definition
------------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `crmSecSector`                                               | char(255)                                | yes*     | yes       |          | -                                                                                |
 
 `CrmSource` business object definition
 --------------------------------------
